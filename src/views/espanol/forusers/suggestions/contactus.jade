@@ -1,0 +1,56 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  section.dashboardPage
+    div.secondHeader
+      div.ThreeSegments
+        div.firstSHomePage#segment1()
+
+        div.secondSHomePage#segment2()
+
+          div.box_contact_us
+
+            div.first_text
+              if success.length > 0
+                p.messwelcome<strong></strong> #{success}
+              div.imgsrc
+                div.img(style='background-image:url("#{user.imageProfile}")')
+                if ambassador.length
+                  for embajador_data in ambassador
+                    if embajador_data.nameAmb
+                      h2= embajador_data.nameAmb+','
+                else
+                  h2= user.first_name+','
+
+
+              h3 Estarémos atentos a tus mensajes, de ser necesario nos comunicarémos contigo personalmente.
+
+            div.box_form
+              form(method='post', action='/Dintair/suggestions', name='formu', onsubmit='return Validate()')
+
+                h4 Tipo de mensaje
+                select(name='select_type', id='select_type')
+                  option(value='Duda') Duda
+                  option(value='Consulta') Consulta
+                  option(value='Queja') Queja
+                  option(value='Sugerencia') Sugerencia
+                #error_select_type.error_select_type
+
+                input.id(type='hidden', id='id', name='id', value='#{user._id}')
+                input.id(type='hidden', id='id', name='username', value='#{user.username}')
+
+
+                h4 Escribe una breve explicación
+                
+                textarea(name='text_suggest', id='text_suggest')
+                #error_text_suggest.error_text_suggest
+                
+
+                div.send_msg
+                  input(type='submit', name='', id='', value='Enviar')
+
+            
+              
+            
+  script(src='/javascripts/validations/contactus.js')

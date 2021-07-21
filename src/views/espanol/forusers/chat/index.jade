@@ -1,0 +1,72 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsersRecommends()
+    section.fieldContent
+      div.boxCenterPData2
+
+        div.titlePage
+          div.headChats
+            img(src='/images/icons/logochat.png')
+            h4 Mensajes
+          input(type="hidden" id="userId" name="userId" value="#{user_id}")
+          //input(type="hidden" id="userIdE" name="userIdE" value="#{user._id}")
+          section#content-business(data-url="/Platform/chat-business", data-url-update-notification="/Platform/chat-update-notification")
+            //
+              article.active
+                img(src="/images/compIconComp.png")
+                p Cliente 1
+                  span 15
+
+              article
+                img(src="/images/compIconComp.png")
+                p Cliente 2
+                  span 7
+
+              article
+                img(src="/images/compIconComp.png")
+                p Cliente 3
+                  span 10
+
+
+
+
+      div.boxCenterReco2()
+          
+        div#sectionLoader.showRecommends
+          h2 Se están cargando los mensajes.
+          img(src='/gif/spiral.gif', class="loader-first")
+
+        section#content-chat(data-url="/Platform/chat-message")
+          div.body-chat(id='boxCenterReco2')
+            //
+              article.one
+                img(src="/images/compIconComp.png")
+                p Cliente 2
+                  span 11:01
+              article.two
+                img(src="/images/compIconComp.png")
+                p Cliente 2
+                  span 11:01
+              article.one
+                img(src="/images/compIconComp.png")
+                p Cliente 2
+                  span 11:01
+              article.two
+                img(src="/images/compIconComp.png")
+                p Cliente 2
+                  span 11:01
+
+          .body-text()
+            p#notificationText 'mostrando escritura'
+            div.justtext
+              textarea.writeTime(name="txtMsg" id="txtMsg" placeholder="Escribe un mensaje" rows="5" data-url="")
+              button(class='writeTime' type="submit" name="btnSend" id="btnSend" value="Enviar" data-chat-id="") Enviar
+                //img(src='/images/icons/planesend.png')
+
+          .ctn-img-loader
+            img(src='/gif/spiral.gif', id='loaderImg', name='loaderImg')
+
+  script(src='/javascripts/size_screen/forchat.js')
+

@@ -1,0 +1,78 @@
+extends ../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsers
+      
+    h2.titleBoxStart Nuevo producto
+    
+    div.box_mrg
+      form#msform(action='/Dintair/add/restricted', method='post', name='formu', enctype='multipart/form-data')
+        // progressbar
+        ul#progressbar_choco
+          li.active.restricted
+          li.restricted
+          
+          
+        // fieldsets
+        
+        fieldset
+          h2.fs-title Información del producto
+         
+          img.icon(src='/images/icons/alMayorPord.png')  
+          h4 Nombre
+          #error_nombre.error_nombre
+          input(type='text', name='nombre', id='nombre', required="", data-error-id="error_nombre")
+          
+          img.icon(src='/images/listBook.png')  
+          h4 Precio (S/)
+          #error_precio_permiso.error_precio_permiso
+          input(type='text', name='precio_permiso', id='precio_permiso', data-error-id="error_precio_permiso", placeholder="")
+
+
+          img.icon(src='/images/icons/descriptionProd.png')  
+          h4 Descripción
+          #error_comentario.error_comentario
+          textarea(name='comentario', id='comentario', data-error-id="error_comentario", placeholder="")
+
+          input.id(type='hidden', id='id', name='id', value='#{user._id}')
+      
+          input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+
+      
+
+
+        fieldset
+          h2.fs-title Agrega una imagen referencial (opcional)
+
+          section(class="content-photo", style="width:100%;", id='sectionCONT')
+            div(id='list', name='list')
+              img(src='/images/img_Servicios.png', id='btnFhoto')
+              input(type='file', id='btnFiles', name='imgProducto', multiple )
+              input(type='hidden' name='newFile' id='newFile' value='')
+
+            section#ct-items()
+
+            img.spiral(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.submit.action-button(type='submit', name='submit', value='Registrar producto', id='btnSend')
+
+
+
+
+
+  script(src='/javascripts/catch_coin_products.js')
+  //script(src='/javascripts/previewImages/previewProducts.js')
+
+  script.
+    $('#editable-select').editableSelect({
+      effects: 'slide',
+      duration: 80,
+      appendTo: 'body'
+    });
+
+  script(src='/javascripts/dynamicForms/script.js')
+  script(src='/javascripts/dynamicForms/script1.js')
+  script(src='/javascripts/chocolatina/script.js')
+  script(src='/javascripts/chocolatina/validateMulti.js')

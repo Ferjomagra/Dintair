@@ -1,0 +1,78 @@
+extends ../../templates/templateProducts/default
+
+block content
+
+  
+  section.dintairBox
+    div.afterbox
+      div.block_prods
+        div.info_box
+          h1 Siempre hay alguien con quién hacer buenos negocios, encuentra en Dintair a tus posibles socios.
+
+          div.lookingfor
+            form(id="formSearchHeader")
+              select(name="selectSearch", id="selectSearch")
+                option(value="product") Productos
+              input(type="text", name="txtSearchHeader", id="txtSearchHeader", data-source="/Dintair/search-header", autocomplete="off", placeholder="Busca un producto")
+              img(src="/images/icons/iconsscope.png")
+          div(class="block_search")
+            section(id="content-search-header", style="display:block")
+          
+        
+          a(href="/Dintair/es/Signin")
+            button.signin_prods Iniciar sesión
+
+
+        
+      div.two_boxes
+        a.kernel_box(href="/")
+          div.producers
+            div.flex
+              div.picture(style='background-image: url("/images/dintair/dintaircover.png");')
+                div.color_reco
+              div.text
+                p Dintair
+
+        a.kernel_box(href="/Dintair/services/recommendations")
+          div.recommendations
+            div.flex
+              div.picture(style='background-image: url("/images/defaultimages/image1.jpeg");')
+                div.color
+              div.text
+                p Relaciones empresariales
+      
+
+
+  footer
+    div.whole_footer
+      div.footer_one
+        a(href="/Dintair/es/Signin", class="a_btn_footer")
+          div.a_box_footer
+            p Iniciar sesión
+        a(href="/Dintair/es/Signup", class="a_btn_footer")
+          div.a_box_footer
+            p Registrarse
+        a(href="/Dintair/index/products", class="a_btn_footer")
+          div.a_box_footer
+            p Productos
+        a(href="/Dintair/contact", class="a_btn_footer")
+          div.a_box_footer
+            p Contacto
+
+
+      div.footer_two
+        a(href="/Dintair/privacyPolice", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Políticas de privacidad
+        a(href="/Dintair/termsOfUse", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Condiciones de uso
+        a()
+          div.a_box_footer
+            h2 © 2020 Dintair
+
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  script(src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/easing.js')
+  script(src="/javascripts/searchengine/searchprincipal.js")
+  script(src='/javascripts/companiesIndex/companiesIndex.js')

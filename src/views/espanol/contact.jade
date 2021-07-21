@@ -1,0 +1,54 @@
+extends templates/default
+
+block content
+  #image.image
+  div.contactusbackcolor
+    section.environmentProds
+      div.box_contactme
+        h3.titlecontactme Contacta con nosotros
+
+        h4.secondtitle ¿Cómo podemos ayudarte?
+
+      div.box_card
+        if success.length > 0
+          p.messwelcome<strong></strong> #{success}
+        div.picture
+          
+
+        form(method='post', action='/Dintair/contact/us', name='formu', onsubmit='return Validate()')
+
+          h4 Tipo de mensaje
+          select(name='select_type', id='select_type')
+            option(value='Consulta') Consulta
+            option(value='Queja') Queja
+            option(value='Sugerencia') Sugerencia
+          #error_select_type.error_select_type
+
+          h4 Nombre completo
+          input(type="text", name="name_p", id="name_p")
+          #error_name_p.error_name_p
+
+          h4 Correo electrónico
+          input(type="text", name="mail", id="mail")
+          #error_mail.error_mail
+
+          h4 Escribe una breve explicación
+          
+          textarea(name='text_suggest', id='text_suggest')
+          #error_text_suggest.error_text_suggest
+          
+
+          div.send_msg
+            input(type='submit', name='', id='', value='Enviar')
+
+        div.box_phone
+          a(href='https://wa.me/915196779', target='_blank')
+            p +51 915 196 779
+
+  script(src='/javascripts/validations/contactus.js')
+
+
+
+
+
+

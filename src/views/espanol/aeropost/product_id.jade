@@ -1,0 +1,280 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Productos restringidos
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="icon" href="/images/dintair/dintaircover.png")
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/estilos.css')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/javascripts/navegadores/navjs.js')
+    script(src='/javascripts/navBar/script.js')
+    script(src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
+
+
+  body
+    header
+      div.head
+        a(href='/')
+          div.logodintair
+            img(src='/images/dintair/isotipo.png')
+
+        .HomePage
+          ul
+            li.none
+              a.action(href='/Dintair') Iniciar sesión
+            li.none
+              a.action(href='/Dintair/es/Signup') Registrarse
+
+            li.none
+              a.action(href='/Dintair/index/products') Productos
+
+            li.none
+              a.action(href='/Dintair/aeropost') Productos restringidos
+
+            li.none
+              a.action(href='/Dintair/contact') Contacto
+
+            li.none
+              a.action(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
+
+            li.none
+              a.action(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
+
+        div.menu-toggle
+          i(class="fas fa-bars")
+    
+
+    div(class="background_product_color" style='background-image: url("/images/back_restrict.png");')
+      div.margin_content
+        div.info_product
+          div.top_info
+            div.contenido_img
+              div(class="example_pic" style="background-image: url(#{restricted_product.imgProductos}")
+            div.contenido_text
+              if restricted_product.iam == "Prohibido"
+                h3(class="iam_prohibido prods")= 'Producto '+ restricted_product.iam
+              if restricted_product.iam == "Restringido"
+                h3(class="iam_restringido prods")= 'Producto '+ restricted_product.iam
+              if restricted_product.iam == "Sin restricción"
+                h3(class="iam_sinrest prods")= 'Producto '+ restricted_product.iam
+
+              h3(class="nombre")= restricted_product.nombre
+              if restricted_product.subpartida
+                h3(class="partida")= 'PA: '+restricted_product.subpartida
+
+              if restricted_product.iam == "Sin restricción"
+                div.contacts
+                  div.whatsapp()
+                    div.wtp_btn(style='background-image: url("/images/defaultimages/0.jpg");')
+                      a(href="https://wa.me/51946122872" target="_blank")
+                        button(class="btn_wtp") Contactar a Aeropost
+
+                  if restricted_product.aeropost_link != undefined
+                    div.aeropost
+                      div(class="btn_start")
+                        a(href="#{restricted_product.aeropost_link}" target="_blank" style="text-decoration: none;")
+                          button(class="aero_button" style="") Encuentralo en
+      
+                        div(class="aeropost-btn" style="")
+                          a(href="#{restricted_product.aeropost_link}" target=_blank style="text-decoration: none;")
+                            img(src="/images/iconos/aero.jpg", style="width:95px;margin-left:8px;vertical-align:-18.5px;")
+
+          div.general_info
+            if restricted_product.iam == "Restringido"
+              div.necessary_documents
+                div.whole_content_1
+                  div.sub_content
+                    div.text_docu
+                      h3(class="needs") ¿Qué trámite necesita?
+                      h3(class="entidad")= restricted_product.entidad
+                      h3(class="documents_prod")= restricted_product.documents
+                    div.img_docu
+                      if restricted_product.tupa_permiso && restricted_product.precio_permiso
+                        div.precio_permiso
+                          p(class="focus") A tener en cuenta:
+                          p(class="permiso")='Tramitar TUPA: '+ restricted_product.tupa_permiso
+                          p(class="precio")='Precio: '+ restricted_product.precio_permiso
+                      div.target_docu
+                        p Documentación de apoyo
+                        if restricted_product.entidad == "PRODUCE"
+                          if restricted_product.documents == "Certificado sanitario expedido por la autoridad competente del país de origen"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=6" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/produce/produce_.PNG" title="VUCE - PRODUCE")
+
+                          if restricted_product.documents == "Certificado de Procedencia del Ministerio de Pesquería o Direcciones Regionales"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=4" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/produce/produce_sanipes.PNG" title="VUCE - SANIPES")
+
+                          if restricted_product.documents == "Permiso de Importación de OTO / PERU"
+                            div.img_document
+                              a(href="http://otoperu-news.blogspot.com/p/permiso-de-importacion-de-saos.html" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/produce/oto.PNG" title="OTO / PERU")
+
+                          if restricted_product.documents == "Certificado de Conformidad, Constancia de Cumplimiento"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=6" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/produce/produce_.PNG" title="VUCE - PRODUCE")
+
+                          if restricted_product.documents == "DGAAI-PRODUCE (SAO)"
+                            div.img_document
+                              a(href="http://otoperu-news.blogspot.com/p/permiso-de-importacion-de-saos.html" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/produce/oto.PNG" title="OTO / PERU")
+
+                        if restricted_product.entidad == "MINAGRI"
+                          if restricted_product.documents == "Permiso fitosanitario de Importación del SENASA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minagri/senasa/minagri_senasa.PNG" title="VUCE - SENASA")
+
+                          if restricted_product.documents == "Permiso zoosanitario de Importación del SENASA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minagri/senasa/minagri_senasa.PNG" title="VUCE - SENASA")
+
+                          if restricted_product.documents == "Certificado de Internamiento de SENASA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minagri/senasa/minagri_senasa.PNG" title="VUCE - SENASA")
+
+                          if restricted_product.documents == "Certificado de análisis SENASA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minagri/senasa/minagri_senasa.PNG" title="VUCE - SENASA")
+
+                          if restricted_product.documents == "Certificado fito o zoosanitario del país de origen SENASA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minagri/senasa/minagri_senasa.PNG" title="VUCE - SENASA")
+
+                          if restricted_product.documents == "Permiso de SENASA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minagri/senasa/minagri_senasa.PNG" title="VUCE - SENASA")
+
+                        if restricted_product.entidad == "MININTER"
+                          if restricted_product.documents == "Permiso emitido por SUCAMEC"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=37" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/mininter/mininter_sucamec.PNG" title="VUCE - SUCAMEC")
+
+                          if restricted_product.documents == "Autorización de importación de productos pirotécnicos y materiales relacionados"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=37" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/mininter/mininter_sucamec.PNG" title="VUCE - SUCAMEC")
+
+                        if restricted_product.entidad == "MRREE"
+                          if restricted_product.documents == "Resolución Directoral emitida por el MRREE"
+                            div.img_document
+                              a(href="http://transparencia.rree.gob.pe/index.php/datos-generales-11/13-normas-emitidas-por-la-entidad/1-3-5-resoluciones-directorales-rd/ano-2017-22/enero-5" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/mrree/mrree.PNG" title="MRREE")
+
+                        if restricted_product.entidad == "MINSA"
+                          if restricted_product.documents == "Permiso emitido por DIGEMID"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digemid/digemid.PNG" title="VUCE")
+                            div.img_document
+                              a(href="http://www.digemid.minsa.gob.pe/Main.asp?Seccion=872" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digemid/web.PNG" title="Instructivo")
+                            div.img_document
+                              a(href="/images/ministerios/minsa/digemid/modeloreceta.pdf", download="Modeloreceta", target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digemid/modeloreceta_img.PNG" title="Modelo de Receta Médica")
+
+                          if restricted_product.documents == "DIGEMID - Necesita registro y/o receta médica visada"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=3" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digemid/digemid.PNG" title="VUCE")
+                            div.img_document
+                              a(href="http://www.digemid.minsa.gob.pe/Main.asp?Seccion=872" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digemid/web.PNG" title="Instructivo")
+                            div.img_document
+                              a(href="/images/ministerios/minsa/digemid/modeloreceta.pdf", download="Modeloreceta", target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digemid/modeloreceta_img.PNG" title="Modelo de Receta Médica")
+
+                          if restricted_product.documents == "Permiso emitido por DIGESA"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=1" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digesa/digesa.PNG" title="VUCE")
+                            div.img_document
+                              a(href="/images/ministerios/minsa/digesa/DGS014_Autorizacion_Sanitaria_para_importacion_Juguetes_yo_Utiles_Escritorio.pdf", download="Instructivo_digesa", target="_blank")
+                                img(class="img_produce" src="/images/ministerios/minsa/digesa/instructivo_digesa.PNG" title="Intructivo")
+
+                        if restricted_product.entidad == "MTC"
+                          if restricted_product.documents == "Permiso de Internamiento"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=2" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/mtc/mtc.PNG" title="VUCE - MTC")
+                          if restricted_product.documents == "Requiere ser homologado"
+                            div.img_document
+                              a(href="https://www.vuce.gob.pe/vuce/fmt.htm?method=cargarFormatosPorEntidad&entidad=2" target="_blank")
+                                img(class="img_produce" src="/images/ministerios/mtc/mtc.PNG" title="VUCE - MTC")
+
+
+                        if restricted_product.url_tramite
+                          a(href="#{restricted_product.url_tramite}" target="_blank")
+                            button(class="btn_minin") Iniciar trámite
+
+                      if restricted_product.comentario
+                        div.add_msg
+                          p Comentario adicional
+                          h3()= restricted_product.comentario
+
+                div.whole_content_2
+                  div.sub_content
+                    div.whatsapp(style='background-image: url("/images/defaultimages/0.jpg");')
+                      p(class="title") ¿Desea más información?
+                      p(class="s_text") Contacte a un asesor de Aeropost
+                      div.wtp_btn()
+                        a(href="https://wa.me/51946122872" target="_blank")
+                          button(class="btn_wtp") Enviar WhatsApp
+                    if restricted_product.aeropost_link
+                      div.aeropost_btn
+                        
+                        div(style="background:#8fc7e8; width: 100%;border-radius:5px;")
+                          div(class="aeropost-btn" style="text-align:center")
+                            a(href="'+item.aeropost_link+'" target=_blank style="text-decoration: none;")
+                              img(src="/images/iconos/aero.jpg", style="width:95px; vertical-align:0px;")
+                          a(href="#{restricted_product.aeropost_link}" target="_blank" style="text-decoration: none;")
+                            button(style="background: white; display:block; border-radius:5px; padding:8px;border:0px; color:#002d93;text-decoration: none; width: 100%;") Ver productos
+        
+                          
+             
+
+            if restricted_product.comentario
+              if restricted_product.iam == "Prohibido"
+                div.comment_prohibido
+                  p Comentario adicional
+                  h3()= restricted_product.comentario
+
+              if restricted_product.iam == "Restringido"
+                
+              if restricted_product.iam == "Sin restricción"
+                div.comment
+                  p Comentario adicional
+                  h3()= restricted_product.comentario
+
+          div.font
+            p(class="text_font") Fuente de información, 
+              a(href="#{restricted_product.link}" target="_blank") aquí
+        
+
+        
+      
+
+      
+
+      
+
+
+
+  //script(src="/javascripts/aeropost/jsTest.js")
+  script(src="/javascripts/aeropost/searchengine.js")

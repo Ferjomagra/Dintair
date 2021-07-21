@@ -1,0 +1,166 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsers
+
+    h2.titleBoxStart Nuevo servicio
+    div.box_mrg
+      form#msform(action='/Dintair/services/addmultiple', method='post', name='formu', enctype='multipart/form-data')
+        // progressbar
+        ul.progressService#progressbarServ
+          li.active
+          li 
+          li 
+          li
+          li
+
+        fieldset
+          h2.fs-title Mercado meta
+
+          h4 Selecciona a qué rubro quisieras dirigir este servicio
+
+          #error_rubro.error_rubro
+          select#editable-select.targetsell(name='targetsell', data-error-id="error_rubro")
+
+            //Nueva lista
+            option(value='A todos los rubros') A todos los rubros
+            option(value='Actividades Deportivas y Fitness') Actividades Deportivas y Fitness
+            option(value='Alimentos y Bebidas') Alimentos y Bebidas
+            option(value='Arte, Cultura y Creatividad') Arte, Cultura y Creatividad
+            option(value='Diseño, Construcción e Ingeniería') Diseño, Construcción e Ingeniería
+            option(value='Fotografía y Audiovisuales') Fotografía y Audiovisuales
+            option(value='Maquinaria, Equipo y Tecnología') Maquinaria, Equipo y Tecnología
+            option(value='Medios, Entretenimiento y Publicaciones') Medios, Entretenimiento y Publicaciones
+            option(value='Productos de Belleza') Productos de Belleza
+            option(value='Ropa, Moda y Accesorios') Ropa, Moda y Accesorios
+            option(value='Servicios logísticos') Servicios logísticos
+            option(value='Servicios de marketing / agencia') Servicios de marketing / agencia
+            option(value='Tecnología de Información y Comunicaciones') Tecnología de Información y Comunicaciones
+            option(value='Tienda de Alimentos Naturales y Orgánicos') Tienda de Alimentos Naturales y Orgánicos
+            
+          
+          script.
+            $('#editable-select').editableSelect({
+              effects: 'slide',
+              duration: 80,
+              appendTo: 'fieldset',
+            });
+
+      
+          input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+        fieldset
+          h2.fs-title Información general del servicio
+         
+          img.icon(src='/images/icons/prodName.png')
+          h4 Nombre del servicio
+          #error_name_serv
+          input(type='text', name='name_serv', id='name_serv', autocomplete='off', data-error-id="error_name_serv")
+          
+
+          input.id(type='hidden', id='id', name='id', value='#{user._id}')
+
+          img.icon(src='/images/icons/descriptionProd.png') 
+          h4 Tipo de servicio (Ejemplos: Delivery; Análisis de información; Restaurante)
+          #error_tipo_serv
+          input(type='text', name='tipo_serv', id='tipo_serv', autocomplete='off', data-error-id="error_tipo_serv")
+          
+
+          img.icon(src='/images/icons/LandProd.png') 
+          h4 Descripción del servicio
+          #error_desc_serv
+          textarea(name='desc_serv', id="desc_serv", data-error-id="error_desc_serv")
+          
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+
+        fieldset
+          h2.fs-title Procedencia y especialidades
+          
+          img.icon(src='/images/icons/stockProd.png') 
+          h4 Lugar de procedencia
+          #error_origin_serv
+          input(type='text', name='origin_serv', id='origin_serv', placeholder='Ejm: Lima', data-error-id="error_origin_serv")
+          
+
+          h4 Especialidades del servicio
+          #error_especialidades_serv
+          textarea(name='especialidades_serv', id='especialidades_serv', placeholder='¿En qué se especializa el servicio?', data-error-id="error_especialidades_serv")
+          
+
+
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar')
+
+        fieldset
+
+          h2.fs-title Horarios de atención (opcional)
+          #error_horainicio
+          #error_horafinal
+          div.choose_time
+            
+            div.first.flex_b_t
+              h2 Día y hora de apertura
+              div.day
+                
+                select(name='dia_i', id='dia_i')
+                  option(value='Lunes') Lunes
+                  option(value='Martes') Martes
+                  option(value='Miércoles') Miércoles
+                  option(value='Jueves') Jueves
+                  option(value='Viernes') Viernes
+                  option(value='Sábado') Sábado
+                  option(value='Domingo') Domingo
+                
+                input.time(id='horainicio', name='horainicio', data-error-id="error_horainicio")
+                script.
+                  $('#horainicio').timepicker()
+
+              
+
+            div.second.flex_b_t
+              h2 Día y hora de cierre
+              div.day
+                select(name='dia_f', id='dia_f', data-error-id="error_dia_f")
+                  option(value='Lunes') Lunes
+                  option(value='Martes') Martes
+                  option(value='Miércoles') Miércoles
+                  option(value='Jueves') Jueves
+                  option(value='Viernes') Viernes
+                  option(value='Sábado') Sábado
+                  option(value='Domingo') Domingo
+
+                input.time(id='horafinal', name='horafinal', data-error-id="error_horafinal")
+                script.
+                  $('#horafinal').timepicker()
+
+              
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar')
+
+        fieldset
+          h2.fs-title Agrega imágenes de tu servicio (máximo 4 imágenes)
+
+          section(class="content-photo")
+            div(id='list', name='list')
+              img(src='/images/img_Servicios.png', id='btnFhoto')
+              input(type='file', id='btnFiles', name='imgProducto', multiple )
+              input(type='hidden' name='newFile' id='newFile' value='')
+
+            section#ct-items
+
+            img.spiral(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.submit.action-button(type='submit', name='submit', value='Registrar servicio', id='btnSend')
+
+  script(src='/javascripts/dynamicForms/script.js')
+  script(src='/javascripts/dynamicForms/script1.js')
+
+  script(src='/javascripts/MultiStepForm/services/validateMulti.js')
+  script(src='/javascripts/MultiStepForm/services/script.js')
+  script(src='/javascripts/focuses/create_service.js')
+

@@ -1,0 +1,63 @@
+extends ../../../templates/forcatalogs/defaultforcatalogs
+
+block content
+
+  
+  section.dintairBox
+    div.afterbox
+      div.block.block_reco
+        div.info_box
+          
+          h3.reco Relaciones empresariales
+          h1 Obten una lista de los proveedores y productores que más coincidencia tengan con los productos o servicios que hayas registrado.
+
+          a(href="/Dintair/es/Signin")
+            button.signin_reco Iniciar sesión
+        
+
+      div.two_boxes
+        a.kernel_box(href="/Dintair/index/products")
+          div.producers
+            div.flex
+              div.picture(style='background-image: url("/images/defaultimages/collage.png")')
+                div.color
+              div.text
+                p Productos
+
+        a.kernel_box(href="/")
+          div.recommendations
+            div.flex
+              div.picture(style='background-image: url("/images/dintair/dintaircover.png");')
+                div.color_reco
+              div.text
+                p Dintair
+      
+
+
+  footer
+    div.whole_footer
+      div.footer_one.col
+        a(href="/Dintair/es/Signin", class="a_btn_footer")
+          div.a_box_footer
+            p Iniciar sesión
+        a(href="/Dintair/es/Signup", class="a_btn_footer")
+          div.a_box_footer
+            p Registrarse
+        a(href="/Dintair/index/products", class="a_btn_footer")
+          div.a_box_footer
+            p Productos
+        a(href="/Dintair/contact", class="a_btn_footer")
+          div.a_box_footer
+            p Contacto
+
+
+      div.footer_two.col
+        a(href="/Dintair/privacyPolice", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Políticas de privacidad
+        a(href="/Dintair/termsOfUse", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Condiciones de uso
+        a()
+          div.a_box_footer
+            h2 © 2020 Dintair

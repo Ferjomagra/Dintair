@@ -1,0 +1,201 @@
+extends templates/default
+
+block content
+
+  .prod-start
+    .perfiluser
+      if newUser== null || newUser.deleted == true || newUser.id_url == 73 || newUser.id_url == 74
+
+        div.content_default
+          img(src='/images/defaultimages/default_company.png')
+
+          p.first Lo sentimos,
+          p.second esta página no está disponible.
+
+          a(href='/Dintair')
+            button() Volver a Dintair
+      else
+        div.box_portada(style='background-image: url("#{newUser.imagePortada}")')
+            
+
+
+        div.information_boxes
+          div.environment_userprofile
+            div.first_box_inline
+              div.profile_pic_c(id='navbar')
+                div.profile_here(style='background-image: url("#{newUser.imageProfile}")')
+
+                div.data_prof
+                  div.name_comp
+                    h2.comp_name= newUser.comp_name
+
+
+                  a(href='/Dintair/es/Signin')
+                    button.contact_message() Enviar mensaje
+                  
+                  div.copy_url
+                    div.title_copy
+                      img(class='for_title', src='/images/icons/link.png')
+                      h3(class='for_title', ) Enlace web
+                    div.btn_copy
+                      input(type='text', id='GfGInput', value='https://www.dintair.com/profile/#{newUser.new_comp_name}'+'-'+'#{newUser.id_url}')
+                      button(onclick='GeeksForGeeks()') Copiar
+
+                
+
+
+            div.second_box_inline
+              div.box_turn
+                ul.nav.nav-tabs
+                  li.active
+                    a(data-toggle='tab', href='#menu') Información
+                  li
+                    a(data-toggle='tab', href='#menu1') Publicaciones
+                  li
+                    a(data-toggle='tab', href='#menu2') Productos
+                  li
+                    a(data-toggle='tab', href='#menu3') Representante
+                .tab-content
+                  #menu.tab-pane.fade.in.active
+                    div.comp_data_table
+                      div.firstPart
+
+                        
+
+                        div.imageComp
+                          img(src='#{newUser.imageProfile}')
+                        div.comp_data
+
+                          h3 Mi Empresa
+
+                          if newUser.comp_name == ""
+                            div.comp_table
+
+                              a(href='')
+                                button() Agrega los datos de la empresa
+
+                              p Puedes agregar imágenes como el logo y portada de la empresa ingresando a tu cuenta de Dintair y editando tu perfil empresarial desde allí.
+                          else
+                            div.comp_data_table
+                              div.firstPart.col-lg-6.col-md-6.col-sm-6
+                                if newUser.comp_name
+                                  div.field
+                                    h4 Nombre de la empresa
+                                    p= newUser.comp_name
+                                else
+
+                                if newUser.rubroTarget
+                                  div.field
+                                    h4 Rubro
+                                    p= newUser.rubroTarget
+                                else
+
+                                if newUser.country
+                                  div.field
+                                    h4 País
+                                    p= newUser.country
+                                else
+
+                                if newUser.direccion
+                                  div.field
+                                    h4 Dirección
+                                    p= newUser.direccion
+                                else
+
+                                if newUser.comp_inicios
+                                  div.field
+                                    h4 Sobre la empresa
+                                    p= newUser.comp_inicios
+                                else
+
+                                if newUser.skills_comp
+                                  div.field
+                                    h4 Especialidades
+                                    p= newUser.skills_comp
+                                else
+
+
+                              div.secondPart.col-lg-6.col-md-6.col-sm-6
+                                if newUser.iam
+                                  if newUser.iam == 'Ambos'
+                                    div.field
+                                      h4 Dedicación
+                                      p Proveedor y Comprador
+                                  else
+                                    div.field
+                                      h4 Dedicación
+                                      p= newUser.iam
+
+                                else
+
+                                if newUser.cant_trabajadores_comp
+                                  div.field
+                                    h4 Cantidad de empleados
+                                    p= newUser.cant_trabajadores_comp
+                                else
+
+                                if newUser.dia && newUser.mes && newUser.ano
+                                  div.field
+                                    h4 Inicio de operaciones
+                                    p= newUser.dia+' de '+newUser.mes+' de '+newUser.ano
+                                else
+
+                                if newUser.comp_dedicacion
+                                  div.field
+                              
+                                    h4 Especialidades
+                                    p= newUser.comp_dedicacion
+                                else
+
+
+                                if newUser.pagina_web
+                                  div.field
+                                    h4 Página web
+                                    a(href='http://'+newUser.pagina_web, target='_blank')
+                                      p= newUser.pagina_web
+                                else
+                                  
+
+                                if newUser.urlFace
+                                  div.field
+                                    h4 Página en Facebook
+                                    a(href=newUser.urlFace, target='_blank')
+                                      p= newUser.face_page
+                                else
+
+                            a(href='')
+                              button() 
+                                
+                                
+                    
+                  #menu1.tab-pane.fade
+                    div.center_box_max
+                      h2 Inicia sesión en Dintair para mayor información
+                      a(href='/Dintair/es/Signin')
+                        button() Iniciar sesión
+
+                  #menu2.tab-pane.fade
+                    div.center_box_max
+                      h2 Inicia sesión en Dintair para mayor información
+                      a(href='/Dintair/es/Signin')
+                        button() Iniciar sesión
+
+                  #menu3.tab-pane.fade
+                    div.center_box_max
+                      h2 Inicia sesión en Dintair para mayor información
+                      a(href='/Dintair/es/Signin')
+                        button() Iniciar sesión
+
+  script.
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }

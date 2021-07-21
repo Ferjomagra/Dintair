@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Productos restringidos
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="icon" href="/images/dintair/dintaircover.png")
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/estilos.css')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/javascripts/navegadores/navjs.js')
+    script(src='/javascripts/navBar/script.js')
+    
+    script(src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
+
+    // Global site tag (gtag.js) - Google Analytics
+    script(src='https://www.googletagmanager.com/gtag/js?id=UA-187803952-1' async='')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-187803952-1');
+
+  body
+    header
+      div.head
+        a(href='/')
+          div.logodintair
+            img(src='/images/dintair/isotipo.png')
+
+        .HomePage
+          ul
+            li.none
+              a.action(href='/Dintair') Iniciar sesión
+            li.none
+              a.action(href='/Dintair/es/Signup') Registrarse
+
+            li.none
+              a.action(href='/Dintair/index/products') Productos
+
+            li.none
+              a.action(href='/Dintair/aeropost') Productos restringidos
+
+            li.none
+              a.action(href='/Dintair/contact') Contacto
+
+            li.none
+              a.action(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
+
+            li.none
+              a.action(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
+
+        div.menu-toggle
+          i(class="fas fa-bars")
+    
+
+    div.color_aeropost(style='background-image: url("/images/back_restrict.png");')
+    div(class="content_aeropost", align="center")
+      div.box_titles_aeropost
+        h2 ¿Importarás un producto?
+        h3(align="center") Entérate si es restringido
+      form(id="formSearchHeader")
+        div.search_bar_aeropost
+          input(type="text", name="search", id="search", placeholder="Busca un producto, o escribe una palabra clave", data-source="/Dintair/aeropost/search")
+          div.scope_aeropost
+            img(src="/images/icons/scope_d.png")
+      ul(class="list-group result_list", id="content-search-header", style="display:block")
+
+
+      
+
+      
+
+
+
+  //script(src="/javascripts/aeropost/jsTest.js")
+  script(src="/javascripts/aeropost/searchengine.js")
+

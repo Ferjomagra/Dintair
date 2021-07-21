@@ -1,0 +1,144 @@
+extends ../../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsersRecommends
+    section.data_target
+      div.box
+        div.btn_drop
+          button(onclick="document.getElementById('id0inst').style.display='block'")
+            | Ver instrucciones
+        div.clientes(id="id0inst" class="modal")
+          div.modal-content.clientes
+            div.header_message
+             
+              div(class="imgcontainer", style="width: 100%;")
+                span(onclick="document.getElementById('id0inst').style.display='none'" class="close" title="Close Modal") &times
+
+              div.box_for_instructor
+                div.title
+                  h2= user.first_name + ', bienvenido al instructor'
+                  h3 Sigue estos pasos para lograr una publicación exitosa
+
+                div.step1
+                  h2 1. Redes sociales
+                  h5 Desplaza el cursor por encima del botón "Redes sociales", a continuación se desplegará la lista de las disponibles. Coloca las urls de tu página en las redes sociales mostradas. Por defecto aparecerá la url de tu página en Dintair.
+                  h3 Nota: No es necesario agregar todas, solo en las que tengas una página.
+                  img(src='/images/defaultimages/defaultimage_1.png')
+
+                div.step1
+                  h2 2. Contenido textual
+                  h5 El segundo paso es escribir lo que quieres comunicar con tu publicación. Ten en cuenta que debes especificar lo más relevante para captar atención del público recomendado.
+                  h5 Observa el ejemplo a continuación.
+                  img(src='/images/defaultimages/defaultimage_3.png')
+
+                div.step1
+                  h2 3. Contenido visual
+                  h5 Como tercer paso, agrega las imágenes que quieres mostrar al público. Puedes arrastrar o hacer clic en la nube. Recomendamos que estas imágenes sean objetivas y comunicativas.
+                  h3 Nota: Podrás agregar hasta dos imágenes con un peso máximo de 2MB cada una.
+                  img(src='/images/defaultimages/defaultimage_2.png')
+
+                div.step1
+                  h2 Publicar
+                  h5 Una vez que tengas tu publicación lista, lo último que queda es publicarlo.
+                  img(src='/images/defaultimages/defaultImage_4.png')
+
+                  button.ok(onclick="document.getElementById('id0inst').style.display='none'") Entendido
+
+                
+                
+
+        div.box_start
+          form#msform(action='/Dintair/make/public/edition/#{boxpublications._id}?_method=put', method='POST', enctype='multipart/form-data')
+            div.header
+              div.target_users.inlineboxes
+                div.profileimg.inline(style='background-image: url("#{user.imageProfile}")')
+                p.inline= user.comp_name
+
+              div.networks.inlineboxes
+                p.dropbtn Redes sociales
+                div.dropdown-content
+                  .radio-group
+                    label.title Ingresa los enlaces de tu negocio o empresa
+                    div.boxsocial
+                      img.inline(src='/images/dintair/dintair_iso.png')
+                      input.inline(type='text', id='urldintair', name='urldintair', value='https://www.dintair.com/profile/#{user.new_comp_name}'+'-'+'#{user.id_url}')
+
+                    div.boxsocial
+                      img.inline.face(src='/images/icons/facebook.png')
+                      input.inline(type='text', id='urlfacebook', name='urlfacebook', value='#{boxpublications.urlfacebook}')
+
+                    div.boxsocial
+                      img.inline.face(src='/images/icons/instagram.png')
+                      input.inline(type='text', id='urlinstagram', name='urlinstagram',  value='#{boxpublications.urlinstagram}')
+
+                    div.boxsocial
+                      img.inline.link(src='/images/icons/linkedin.png')
+                      input.inline(type='text', id='urllinkedin', name='urllinkedin',  value='#{boxpublications.urllinkedin}')
+              
+
+              div.text
+                textarea(name='estemensaje', id='estemensaje', placeholder='Escribe aquí')= boxpublications.estemensaje
+
+
+              div.port_img.sectionDrag()
+                
+                div.boxSection(id='list', name='list')
+                  input(type='file', id='btnFiles', name='imagePublics', limit="2" multiple )
+                  input(type='hidden' name='fileOld' id='fileOld' value='#{boxpublications.imagePublics}')
+                  input(type='hidden' name='newFile' id='newFile' value='')
+                  div.align_item(id='btnFhoto')
+                    img(src='/images/iconos/cloudsxls.png')
+                    p.palabra Sube tus imágenes
+              p.max_pics Máximo dos imágenes
+
+
+              section#ct-items()
+
+                for item in boxpublications.files
+                  article
+                    span(data-img='#{item}') x
+                    img(src='#{item}')
+
+              img.spiral(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+
+
+
+            div.upload
+              //button.upload(id='btnSend') Editar
+              input(type='submit', value='Editar', id='btnSend')
+
+
+
+  script(src='/javascripts/dragover/script.js')
+  script(src='/javascripts/publication-my-recommended.js')
+  //script(src='/javascripts/MultiStepForm/public_recommended/script.js')
+
+  style(type="text/css").
+    #ct-items {
+      display: flex;
+      overflow: auto;
+    }
+
+    #ct-items article {
+      position: relative;
+    }
+
+    #ct-items article img {
+      width: auto;
+      height: 80px;
+    }
+
+    #ct-items span {
+      font-size: 30px;
+      color: #000000;
+      width: 40px;
+      height: 40px;
+      background: #ffffff;
+      position: absolute;
+      right: 0px;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }

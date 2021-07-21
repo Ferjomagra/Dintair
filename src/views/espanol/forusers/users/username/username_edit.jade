@@ -1,0 +1,32 @@
+extends ../../../../templates/forusers/HomePage/default
+
+block content
+  .prod-start
+    .perfiluser
+
+      div.content_group
+
+        if resetMessage.length > 0
+            p.messageWrong<strong></strong> #{resetMessage}
+
+        div.miniProfile
+          div.sprofile(style="background-image: url(#{user.imageProfile})")  
+            
+          h3.title_user= user.comp_name
+
+        form(method='post', action='/Dintair/profile/username/#{user.id}/#{user.username}?_method=put', name='formu', onsubmit='return Validate()')
+
+          div.inputs_pass
+            .input_username
+              .part_label
+                label Nuevo correo electrónico
+              input.field_username(type='text', name='username')
+              #error_comp_email.error_comp_email
+
+            input#changeUsername(type='submit', value='Restablecer')
+
+          div.alert_message
+            h5 Recuerda que al establecer un nuevo correo electrónico estás reemplazando el correo con el que sueles ingresar a tu cuenta de Dintair.
+
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/home/cases.js')

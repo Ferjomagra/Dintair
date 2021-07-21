@@ -1,0 +1,36 @@
+extends ../../../templates/forusers/defaultforusers
+
+block content
+  .prod-start.col-lg-12.col-md-12.col-sm-12.col-xs-12
+    .allNews
+
+      a(href='/Dintair/Newsbook/'+1)
+        h2.titles_News Newsbook
+
+      div.Feriadex
+        img.feriadex(src='/images/feriadex_logoE.png')
+
+      div.section_wall.col-lg-12.col-md-12.col-sm-12.col-xs-12
+
+        if allNews.length
+          for dataNews in allNews
+            if dataNews.semanal == 'Feriadex'
+              div.dataFlow.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                div.allNews
+                  div.TandD
+                
+                    p.date= dataNews.dia
+                    p.date de
+                    p.date= dataNews.mes
+                    p.date de
+                    p.date= dataNews.año
+                  
+                  div.titular_a
+                    a.titular(href='/Dintair/Newsbook/selectNews/#{dataNews._id}')= dataNews.titular
+                  
+                  if dataNews.imgNews
+                    a(href='/Dintair/Newsbook/selectNews/#{dataNews._id}')
+                      img.img_news(src=dataNews.imgNews)
+                  else
+
+                  p.section= dataNews.seccion

@@ -1,0 +1,39 @@
+extends ../../../../templates/forusers/HomePage/default
+
+block content
+
+  section.dashboardPage
+    div.title_space_market(style='background-image: url("/images/defaultimages/test.jpg");')
+      div.down_title
+        h3.title_seg Markets y tiendas online
+    div.big_box_markets()
+      
+      for newUser in usuarios
+        if newUser.deleted == false
+          if newUser.rubroTarget == 'Tienda de Alimentos Naturales y Orgánicos'
+
+            div.box_each_market.col-lg-4.col-md-4
+              a(href='/Dintair/#{newUser._id}')
+                div.second_part
+                  div.profile_picture
+                    div.profile_pic_market(style='background-image: url("#{newUser.imageProfile}")')
+
+                  div.part_2
+                    h2= newUser.comp_name
+                    div.wtp_icon
+                      if newUser.wtpnumber == undefined
+                      else
+                        div.part1
+                          img.icons(src='/images/defaultimages/whatsapp-logo.png')
+                          p.icons= newUser.wtpnumber
+                      div.part2
+                        img.icons(src='/images/icons/planesend.png')
+                        p.icons= newUser.username
+
+
+          
+
+          
+
+
+

@@ -1,0 +1,47 @@
+if message.length > 0
+    p.messagesend<strong></strong> #{message}
+
+if messageReset.length > 0
+  p.messagesend<strong></strong> #{messageReset}
+header
+  div.head
+    a(href='/')
+      div.logodintair
+        img(src='/images/dintair/isotipo.png')
+
+    .HomePage
+      ul
+        li
+          a.active(href='/Dintair') Iniciar sesión
+
+        li
+          a.action(href='/Dintair/es/Signup') Registrarse
+
+        li.none
+          a.action(href='/Dintair/index/products') Productos
+
+        li.none
+              a.action(href='/Dintair/aeropost') Productos restringidos
+
+        li.none
+          a.action(href='/Dintair/contact') Contacto
+
+        li.none
+          a.action(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
+
+        li.none
+          a.action(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
+
+
+
+    div.menu-toggle
+      i(class="fas fa-bars")
+
+
+
+
+
+
+
+script(src='/javascripts/navBar/script.js')
+        

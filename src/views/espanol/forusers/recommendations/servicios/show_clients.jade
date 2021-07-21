@@ -1,0 +1,67 @@
+extends ../../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsersRecommends
+    section.fieldContent
+      h3.forRespText Puede resultar más cómodo visualizar desde un ordenador.
+      div.boxCenterPData
+        
+        div.titlePage
+
+          div.picProd
+            div.picture_pic
+              - file = data_serv.imageServicios.split('---')
+              img(src='#{file[0]}')
+            
+            div.info_pic
+              h3.nombre= data_serv.name_serv
+
+              label Mercado meta
+              h3.target_rubro=data_serv.targetsell
+
+          div.explainF
+            if data_serv.targetsell == 'A todos los rubros'
+              h3 Las recomendaciones aparecerán en base al mercado meta que seleccionó al agregar su producto.
+            else
+              h3 Las recomendaciones aparecerán en base al mercado meta que seleccionó al agregar su producto. De no aparecer algún contacto que se dedique al mercado meta colocado, se mostrarán los siguientes contactos más propensos en estar interesados en este producto.
+
+      div.boxCenterReco
+        div.tableBoxData
+          //h1.fl Resultados: 
+            span#numItem 0
+          div.btnAction
+            a(id="btnRedactar",href="/Platform/service/recommendation-search", data-email="/Platform/recommendation-email", data-url-prev='/Dintair/create/publication/progress-prev', class="btnRedactar fr js-publication") Continuar
+        div#sectionLoader.showRecommends
+          h2 Se está buscando los contactos de interés por este producto.
+          img(src='/gif/spiral.gif', class="loader-first")
+
+      
+        table(id="sectionResult",class="ctn-table")
+        
+          thead
+            tr
+              th 
+                input(type="checkbox", name="chxAll", id="chxAll", value="all", checked="true")
+              //th N
+              th
+              th Foto
+              th Empresa
+              th Rubro
+              th Representante
+              th Email
+              th País
+              
+            tbody(id="result", data-url="/Platform/service/recommendation-search", data-page='1', data-url-chat="/Platform/chat-link")
+
+        .ctn-img-loader  
+          img(src='/gif/spiral.gif', id='loaderImg', name='loaderImg')
+
+
+  script(src='/javascripts/recommends/collapsible.js')
+  script(src='/javascripts/recommends/product.js')
+  script(src='/javascripts/list-recommended.js')
+  style(type="text/css").
+    .btn-publication {
+      display: block!important;
+    }

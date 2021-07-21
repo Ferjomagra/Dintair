@@ -1,0 +1,192 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsers
+    div.box_mrg
+      form#msform(action='/Dintair/products/addmultiple/#{productos_user.id}?_method=put', method='post', name='formu', enctype='multipart/form-data')
+        // progressbar
+        ul#progressbar
+          li.active
+          li 
+          li 
+          li 
+          li 
+          li
+        // fieldsets
+
+        fieldset
+          h2.fs-title Mercado meta
+
+          h4 Selecciona a qué rubro quisieras dirigir este producto
+
+          #error_rubro.error_rubro
+          select#editable-select.targetsell(name='targetsell', data-error-id="error_rubro")
+
+            //Nueva lista
+            option(value='A todos los rubros', selected=productos_user.targetsell=='A todos los rubros') A todos los rubros
+
+            option(value='Actividades Deportivas y Fitness', selected=productos_user.targetsell=='Actividades Deportivas y Fitness') Actividades Deportivas y Fitness
+            option(value='Alimentos y Bebidas', selected=productos_user.targetsell=='Alimentos y Bebidas') Alimentos y Bebidas
+            option(value='Arte, Cultura y Creatividad', selected=productos_user.targetsell=='Arte, Cultura y Creatividad') Arte, Cultura y Creatividad
+            option(value='Diseño, Construcción e Ingeniería', selected=productos_user.targetsell=='Diseño, Construcción e Ingeniería') Diseño, Construcción e Ingeniería
+            option(value='Fotografía y Audiovisuales', selected=productos_user.targetsell=='Fotografía y Audiovisuales') Fotografía y Audiovisuales
+            option(value='Maquinaria, Equipo y Tecnología', selected=productos_user.targetsell=='Maquinaria, Equipo y Tecnología') Maquinaria, Equipo y Tecnología
+            option(value='Medios, Entretenimiento y Publicaciones', selected=productos_user.targetsell=='Medios, Entretenimiento y Publicaciones') Medios, Entretenimiento y Publicaciones
+            option(value='Productos de Belleza', selected=productos_user.targetsell=='Productos de Belleza') Productos de Belleza
+            option(value='Ropa, Moda y Accesorios', selected=productos_user.targetsell=='Ropa, Moda y Accesorios') Ropa, Moda y Accesorios
+            option(value='Servicios logísticos', selected=productos_user.targetsell=='Servicios logísticos') Servicios logísticos
+            option(value='Servicios de marketing / agencia', selected=productos_user.targetsell=='Servicios de marketing / agencia') Servicios de marketing / agencia
+            option(value='Tecnología de Información y Comunicaciones', selected=productos_user.targetsell=='Tecnología de Información y Comunicaciones') Tecnología de Información y Comunicaciones
+            option(value='Tienda de Alimentos Naturales y Orgánicos', selected=productos_user.targetsell=='Tienda de Alimentos Naturales y Orgánicos') Tienda de Alimentos Naturales y Orgánicos
+            
+          
+          script.
+            $('#editable-select').editableSelect({
+              effects: 'slide',
+              duration: 80,
+              appendTo: 'fieldset',
+            });
+      
+          input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+        fieldset
+          h2.fs-title Información general
+         
+          img.icon(src='/images/icons/prodName.png')  
+          h4 Nombre del producto
+          
+          #error_nombre.error_nombre
+          input(type='text', name='nombre', id='nombre', required="", value='#{productos_user.nombre}', data-error-id="error_nombre")
+          
+
+          input.id(type='hidden', id='id', name='id', value='#{user._id}')
+
+          img.icon(src='/images/icons/descriptionProd.png') 
+          h4 Descripción del producto
+          #error_descripcionP.error_descripcionP
+          textarea(id='descripcion' name='descripcion', data-error-id="error_descripcionP")= productos_user.descripcion
+          
+
+          img.icon(src='/images/icons/LandProd.png') 
+          h4 Lugar de procedencia
+          #error_procedencia.error_procedencia
+          input.lado(type='text', name='procedencia', id='procedencia', required="", value='#{productos_user.procedencia}', data-error-id="error_procedencia")
+          
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+
+
+        fieldset
+          h2.fs-title Stock disponible y peso unitario
+          
+          img.icon(src='/images/icons/stockProd.png') 
+          h4 Stock total disponible
+
+          #error_stock.error_stock
+          #error_tipo_unidades.error_tipo_unidades
+          input.peso(type='Number', name='stock', id='stock', value='#{productos_user.stock}', data-error-id="error_stock")
+          input.medida_venta(type='text', id='tipo_unidades', name='tipo_unidades', placeholder='Unidad de entrega', value='#{productos_user.tipo_unidades}', data-error-id="error_tipo_unidades")
+
+          
+
+          img.icon(src='/images/icons/weightProd.png')
+          h4 Peso unitario
+          #error_peso.error_peso
+          input.peso(type='Number', name='peso', id='peso', value='#{productos_user.peso}', data-error-id="error_peso")
+          select.peso(name='medida' required, id='medida')
+            option(value='') Unidad de medida
+            option(value='Kg', selected=productos_user.medida=='Kg') Kg
+            option(value='g', selected=productos_user.medida=='g') g
+            option(value='Lb', selected=productos_user.medida=='Lb') Lb
+            option(value='oz', selected=productos_user.medida=='oz') oz
+            
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar')
+
+
+        fieldset
+          h2.fs-title Precio
+          
+          img.icon(src='/images/icons/coinProd.png')
+          h4 Seleccione la moneda e ingrese el precio unitario
+          #error_precio.error_precio
+          select.moneda(name='moneda', id='moneda', onchange='populate(this.id)')
+            option(value='US $', selected=productos_user.moneda=='$') US $ United State Dollars (USD) 
+            option(value='€', selected=productos_user.moneda=='€') € Euro (EUR) 
+            option(value='S/', selected=productos_user.moneda=='S/') S/ Sol Peruano (PEN)
+            option(value='£', selected=productos_user.moneda=='£') £ United Kingdom Pounds (GBP) 
+            option(value='$a', selected=productos_user.moneda=='$a') $a Peso Argentino (ARS) 
+            option(value='R$', selected=productos_user.moneda=='R$') R$ Real Brasileño (BRL) 
+            option(value='Bs.', selected=productos_user.moneda=='Bs.') Bs. Boliviano (BOB) 
+            option(value='$', selected=productos_user.moneda=='$') $ Peso chileno (CLP) 
+            option(value='$', selected=productos_user.moneda=='$') $ Peso Colombiano (COP) 
+            option(value='RD$', selected=productos_user.moneda=='RD$') RD$ Peso Dominicano (DOP)
+            option(value='Contactar al Representante', selected=productos_user.moneda=='Contactar al Representante') Contactar al Representante
+
+          input.monedass(type='Number', name='precio', id='precio', placeholder='Ingrese el precio', value='#{productos_user.precio}')
+
+          img.Mayor(src='/images/icons/alMayorPord.png')
+          h3.fs-subtitle.Mayor Venta al por mayor
+
+          h4 Cantidad mínima de venta al por mayor (opcional)
+          input.monedas(type='number', name='cantidad_min', id='cantidad_min', value='#{productos_user.cantidad_min}')
+
+          h4(id='title_Pmin') Precio de la cantidad mínima puesto anteriormente (opcional)
+          input.monedas_numb(type='number', name='precio_min', id='precio_min', value='#{productos_user.precio_min}')
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar')
+   
+
+        fieldset
+          h2.fs-title Variantes opcionales
+
+          img.icon(src='/images/icons/colorsProds.png')
+          h4 Color
+          input(type='text', name='color', id='color', placeholder='Separe las opciones con una coma', value='#{productos_user.color}')
+
+          img.icon(src='/images/icons/dimensionProd.png')
+          h4 Dimensiones
+          input(type='text', name='dimensiones', id='dimensiones', placeholder='Separe las opciones con una coma', value='#{productos_user.dimensiones}')
+        
+          img.icon(src='/images/icons/toolsProds.png')
+          h4 Material
+          input(type='text', name='material', id='material', placeholder='Separe las opciones con una coma', value='#{productos_user.material}')
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar')
+
+        fieldset
+          h2.fs-title Agrega imágenes de tu producto (máximo 4 imágenes)
+
+          section(class="content-photo")
+            div(id='list', name='list')
+              img(src='/images/img_Servicios.png', id='btnFhoto')
+              input(type='file', id='btnFiles', name='imgProducto', multiple )
+              input(type='hidden' name='fileOld' id='fileOld' value='#{productos_user.imgProductos}')
+              input(type='hidden' name='newFile' id='newFile' value='')
+
+            section#ct-items()
+              for item in productos_user.files
+                article
+                  span(data-img='#{item}') x
+                  img(src='#{item}')
+
+            img.spiral(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.submit.action-button(type='submit', name='submit', value='Actualizar', id='btnSend')
+
+
+
+
+  script(src='/javascripts/dynamicForms/script.js')
+  script(src='/javascripts/dynamicForms/script1.js')
+
+  script(src='/javascripts/MultiStepForm/products/validateMulti.js')
+  script(src='/javascripts/MultiStepForm/products/script.js')
+
+  script(src='/javascripts/catch_coin_products.js')
+
+

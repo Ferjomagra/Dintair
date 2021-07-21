@@ -1,0 +1,142 @@
+extends ../../../templates/forusers/defaultforusers
+
+block content
+  .prod-start.col-lg-12.col-md-12.col-sm-12.col-xs-12
+    .finder_title
+
+
+      img.Dintname(src='/images/dintair/Dintair_name_blue.png')
+
+      form.buscador(action='/Dintair/Search/'+1, method='GET', name='formu', id='user-search', onsubmit='return Validate()')
+        
+        div.InlineField
+          select#rubroTarget.js-category(name='valueSelect')
+            option(value='', selected='selected') Seleccione un rubro
+            option(value='Actividades Deportivas y Fitness') Actividades Deportivas y Fitness
+            option(value='Aeropuertos, Viajes aéreos y Servicios a fines') Aeropuertos, Viajes aéreos y Servicios a fines
+            option(value='Agricultura y Cosecha') Agricultura y Cosecha
+            option(value='Alimentos y Bebidas') Alimentos y Bebidas
+            option(value='Alimentos y bebidas - Distribución') Alimentos y bebidas - Distribución
+            option(value='Almacenaje, Logística y Distribución') Almacenaje, Logística y Distribución
+            option(value='Arte, Cultura y Creatividad') Arte, Cultura y Creatividad
+            option(value='Calzado y Accesorios de calzado') Calzado y Accesorios de calzado
+            option(value='Confección - Productos, Servicios y Actividades') Confección - Productos, Servicios y Actividades
+            option(value='Consultoría y Capacitación') Consultoría y Capacitación
+            option(value='Diseño, Construcción e Ingeniería') Diseño, Construcción e Ingeniería
+            option(value='Ecología - Bebidas y alimentos') Ecología - Bebidas y alimentos
+            option(value='Educación') Educación
+            option(value='Envases y Embajales') Envases y Embajales
+            option(value='Fotografía y Audiovisuales') Fotografía y Audiovisuales
+            option(value='Fundaciones, ONGs, Voluntariado y sin fines de lucro') Fundaciones, ONGs, Voluntariado y sin fines de lucro
+            option(value='Farmacéuticos') Farmacéuticos
+            option(value='Gestión de residuos') Gestión de residuos
+            option(value='Gobierno y Sector Público') Gobierno y Sector Público
+            option(value='Imprenta y Textilería') Imprenta y Textilería
+            option(value='Ingredientes de comida') Ingredientes de comida
+            option(value='Insumos Alimenticios') Insumos Alimenticios
+            option(value='Interiores, acondicionamiento y productos de construcción') Interiores, acondicionamiento y productos de construcción
+            option(value='Investigacion y científico') Investigacion y científico
+            option(value='Limpieza profesional - Productos, Servicios y Actividades') Limpieza profesional - Productos, Servicios y Actividades
+            option(value='Maquinaria Industrial') Maquinaria Industrial
+            option(value='Maquinaria, Equipo y Tecnología') Maquinaria, Equipo y Tecnología
+            option(value='Marítimos - Productos, Servicios y Actividades') Marítimos - Productos, Servicios y Actividades
+            option(value='Medios, Entretenimiento y Publicaciones') Medios, Entretenimiento y Publicaciones
+            option(value='Papelería y Papelería Fina') Papelería y Papelería Fina
+            option(value='Pesca - Productos, Servicios y Actividades') Pesca - Productos, Servicios y Actividades
+            option(value='Productos de Belleza') Productos de Belleza
+            option(value='Productos Deportivos') Productos Deportivos
+            option(value='Productos Químicos Finos') Productos Químicos Finos
+            option(value='Propiedad y Bienes Raíces') Propiedad y Bienes Raíces
+            option(value='Recursos y Utilidades') Recursos y Utilidades
+            option(value='Repuestos de Maquinas y Equipos') Repuestos de Maquinas y Equipos
+            option(value='Repostería y pastelería') Repostería y pastelería
+            option(value='Ropa, Moda y Accesorios') Ropa, Moda y Accesorios
+            option(value='Salud y seguridad') Salud y seguridad
+            option(value='Salud y tecnología médica') Salud y tecnología médica
+            option(value='Seguridad - Productos, Servicios y Actividades') Seguridad - Productos, Servicios y Actividades
+            option(value='Servicios Electrónicos') Servicios Electrónicos
+            option(value='Servicios Financieros y Legales') Servicios Financieros y Legales
+            option(value='Servicios logísticos') Servicios logísticos
+            option(value='Servicios de marketing / agencia') Servicios de marketing / agencia
+            option(value='Tecnología de Información y Comunicaciones') Tecnología de Información y Comunicaciones
+            option(value='Tiendas y Establecimientos de venta al por menor') Tiendas y Establecimientos de venta al por menor
+            option(value='Transporte y Movilidad') Transporte y Movilidad
+            option(value='Ventas y exportaciones de productos orgánicos') Ventas y exportaciones de productos orgánicos
+            option(value='Viajes, espacios y ocio') Viajes, espacios y ocio
+          input.comp_searching(type='text', id='searching', name='search', placeholder='Escribe el nombre de una empresa', autocomplete='off')
+          button.comp_searching(id='btnSubmit', name='', type='submit', data-url='/Dintair/Searchss/', data-page='1')
+            span.icons-one.icon-magnifying-glass
+
+
+      #searchResult
+      #wrap
+        
+
+        if noMatch
+          script.
+            document.getElementById("wrap").style.display = 'block';
+          div.content_search
+          
+            h3.message_text No se encontró ninguna similitud.
+          
+        else
+
+          for newUser in usuarios
+            if newUser.deleted == false
+              .globo.col-lg-4.col-md-4.col-sm-4.col-xs-6
+                .ourusers#ouruser
+                  
+                  a(href='/Dintair/#{newUser._id}')
+                    img.img-responsive.img_ourusers(src='#{newUser.imageProfile}')
+                    p.nombre_user_search= newUser.comp_name
+                    p= newUser.rubroTarget
+                    p= newUser.country
+
+
+            else
+
+      if noMatch
+
+      else
+        if pages
+          div.durignLoaderImg.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            img(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+
+          div.center.col-lg-12.col-md-12.col-sm-12.col-xs-12(style="display:none")
+            nav.pagination(id='pagination_edit')
+              ul.pagination
+
+         
+
+                if current == '1'
+                  li(class='page-item disabled')
+                    a(href='', class='page-link') First
+
+                else
+                  li.page-item
+                    a(href='/Dintair/Search/1', class='page-link') First
+
+
+                - var i = Number(current) > 5 ? Number(current) - 3 : 1 
+
+                
+
+                - for (i ; i <= Number(current) + 4 && i <= pages; i++)
+                
+                  li.page-item
+                    a.numbers(href='/Dintair/Search/'+i)= i
+
+         
+                if current == pages
+                  li(class='page-item disabled')
+                    a(href='', class='page-link') Last
+
+                else
+                  li(class='page-item')
+                    a(href='/Dintair/Search/'+pages, class='page-link') Last
+
+
+
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/Searching/find.js')

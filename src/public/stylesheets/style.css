@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+  background-color: #1652f0;
+}
+
+.select-start-sign-in{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 90px;
+  width: 100%;
+  /*height: 800px;*/
+  height: 100%;
+  /*padding-left: 37%;
+  padding-right: 37%;*/
+  background: linear-gradient(180deg, #1652f0, #1652f0);
+}
+.select-start-sign-in h2{
+  text-align: center;
+  font-size: 35px;
+  color: #00b359;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.select-start-sign-in div.dintair{
+  text-align: center;
+  margin: 0 auto;
+}
+.select-start-sign-in div.dintair img.dintair{
+  padding-bottom: 10px;
+  width: 100%;
+    max-width: 90px
+}
+
+.select-start-sign-in p.loginmessage{
+  text-align: center;
+  background: #ff6666;
+  width: 100%;
+  color: #b30000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+.select-start-sign-in .box-sign-in{
+  border: 2px solid #f2f2f2;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+.select-start-sign-in .box-sign-in h3{
+  text-align: center;
+  color: #008ae6;
+}
+/*INPUT USER*/
+.select-start-sign-in .box-sign-in .input-name{
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  padding: 7px;
+  border: 1px solid #bfbfbf;
+}
+.select-start-sign-in .box-sign-in .input-name:hover {
+  transform: (1.1,1.1);
+  border: 1px solid #00ff80;
+}
+/*FIN DE INPUT USER*/
+
+/*INPUT email*/
+.select-start-sign-in .box-sign-in .input-email{
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #bfbfbf;
+  font-size: 16px;
+  -webkit-appearance: none;
+}
+
+/*FIN DE INPUT email*/
+
+.select-start-sign-in .box-sign-in .input-pass{
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #bfbfbf;
+  font-size: 16px;
+  -webkit-appearance: none;
+}
+
+.select-start-sign-in .box-sign-in .cube-sign-in .btn_signIn{
+  height: 100%;
+}
+.select-start-sign-in .box-sign-in .cube-sign-in .btn_signIn input[type='submit']{
+  transition: all 0.3s ease;
+  outline: none;
+  background: #00cc99;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+}
+.select-start-sign-in .box-sign-in .cube-sign-in .btn_signIn input[type='submit']:hover{
+  transform: (1.1,1.1);
+  background-color: #00b386; 
+  color: white;
+}
+.select-start-sign-in .box-sign-in .cube-sign-in div.center{
+  text-align: center;
+  
+}
+.select-start-sign-in .box-sign-in .cube-sign-in div.center .btn_a_register{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.select-start-sign-in .box-sign-in .cube-sign-in div.center .btn_a_register a{
+  color: #008ae6;
+  font-size: 14px;
+  border: 1px solid white;
+  background: white;
+  outline: none;
+  text-decoration: none;
+  margin: 0 0 0px;
+}
+.select-start-sign-in .box-sign-in .cube-sign-in div.center a.btn_a_forget{
+  color: #008ae6;
+  margin: 0 0 0px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid white;
+  background: white;
+  outline: none;
+}
+
+
+/*INICIO DE PASSWORDRESET*/
+body.body{
+  background: hsl(0, 0%, 97%);
+}
+.center_pass_reset{
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 800px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+.center_pass_reset .div_center{
+  margin-top: 15%;
+  margin-bottom: 20px;
+}
+
+.center_pass_reset div.content_window{
+  /*padding-top: 50px;*/
+}
+.center_pass_reset div.content_window a img.logocolor{
+  margin: 0 auto;
+}
+
+.center_pass_reset div.first_window{
+  background: white;
+  height: 100%;
+  widows: 100%;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 4px rgb(102, 153, 204);
+
+          box-shadow: 0px 1px 4px rgb(102, 153, 204);
+}
+.center_pass_reset div.first_window img.dintair{
+  width: 60px;
+  margin-bottom: 20px;
+}
+.center_pass_reset div.first_window p.messageReset{
+  color: #cc0000;
+  font-size: 17px;
+  background: #ff6666;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.center_pass_reset div.first_window h2.title_access{
+  font-size: 18px;
+  color: #008ae6;
+  margin: 0 0 0px;
+}
+.center_pass_reset div.first_window form{
+  padding-top: 20px;
+}
+.center_pass_reset div.first_window form input.input-email[type='email']{
+  width: 70%;
+  border: 1px solid #008ae6;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+.center_pass_reset div.first_window form div._btn_corroborate{
+  padding-top: 20px;
+}
+.center_pass_reset div.first_window form div._btn_corroborate input._corroborate[type='submit']{
+  border: 1px solid #00cc99;
+  background: #00cc99;
+  color: white;
+  width: 30%;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.center_pass_reset div.first_window form div._btn_corroborate input._corroborate[type='submit']:hover {
+  transform: (1.1,1.1);
+  background: #00b386;
+  border: 1px solid #00b386;
+}
+/*FIN DE PASSWORDRESET*/
+
+/*INICIO DE PASSWORD RESET CON TOKEN*/
+.center_pass_reset .div_center div.first_window form div.input_password_1{
+  padding-bottom: 20px;
+}
+.center_pass_reset .div_center div.first_window form div.input_password_1 input[type='password']{
+  width: 70%;
+  border: 1px solid #33adff;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+}
+.center_pass_reset .div_center div.first_window form div.input_password_1 #error_password{
+  color: #cc0000;
+  font-size: 15px;
+  text-align: center;
+}
+.center_pass_reset .div_center div.first_window form div.input_password input[type='submit']{
+  border: 1px solid #33adff;
+  background: #33adff;
+  color: white;
+  width: 30%;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.center_pass_reset .div_center div.first_window form div.input_password input[type='submit']:hover {
+  transform: (1.1,1.1);
+  background: #007acc;
+}
+/*FIN DE PASSWORD RESET CON TOKEN*/
+
+
+
+
+
+
+/*INICIO DE LOGOUT PARA CIERRE DE CUENTA*/
+section.out{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  height: 100%;
+}
+section.out div.view_afterdelete{
+  margin-top: 50px;
+  padding: 5px;
+}
+section.out div.view_afterdelete div.white{
+  background-color: white;
+  margin:0 auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+section.out div.view_afterdelete div.white div.flexbox{
+  display: block;
+  padding: 20px;
+}
+section.out div.view_afterdelete div.white div.flexbox div.img_logo{
+  padding: 4px;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+section.out div.view_afterdelete div.white div.flexbox div.img_logo img{
+  width: 100px;
+}
+section.out div.view_afterdelete div.white div.flexbox div.message{
+  padding: 3px;
+  width: 100%;
+}
+section.out div.view_afterdelete div.white div.flexbox div.message h5{
+  margin:0 0 0px;
+  padding: 0 0 0px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: .6px;
+  padding-top: 10px;
+}
+section.out div.view_afterdelete div.white div.flexbox div.message h2{
+  margin: 0 0 0px;
+  padding: 0 0 0px;
+  margin: 1.25em 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+section.out div.view_afterdelete div.white div.btn_out{
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+section.out div.view_afterdelete div.white div.btn_out a button{
+  background-color: #00cc88;
+  color: white;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+  padding: 8px;
+  border:none;
+  transition: all 0.3s ease;
+}
+section.out div.view_afterdelete div.white div.btn_out a button:hover{
+  transform: (1.1,1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/*FIN DE LOGOUT PARA CIERRE DE CUENTA*/
+
+
+
+@media only screen and (max-width: 767px){
+
+
+  /*INICIO DE VISTA passwordReset*/
+  .center_pass_reset div.first_window form input.input-email[type='email']{
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .center_pass_reset div.first_window form div._btn_corroborate input._corroborate[type='submit']{
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  /*FIN DE VISTA passwordReset*/
+
+  /*INICIO DE PASSWORD RESET CON TOKEN*/
+  .center_pass_reset .div_center div.first_window form div.input_password_1 input[type='password']{
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .center_pass_reset .div_center div.first_window form div.input_password input[type='submit']{
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  /*FIN DE PASSWORD RESET CON TOKEN*/
+
+  
+
+}
+

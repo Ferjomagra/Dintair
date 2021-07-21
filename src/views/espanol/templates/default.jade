@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title  Dintair - Conecta con clientes y proveedores potenciales
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='theme-color' content='#1652f0')
+    link(rel="icon" href="/images/dintair/dintaircover.png")
+
+    //link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css")
+
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/estilos.css')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/javascripts/navegadores/navjs.js')
+    script(src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
+
+    // Global site tag (gtag.js) - Google Analytics
+    script(src='https://www.googletagmanager.com/gtag/js?id=UA-187803952-1' async='')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-187803952-1');
+    
+  body.index
+    
+    .bubble-wrap
+      div.bubbles
+        .backcolor
+
+    include nav
+  
+    block content

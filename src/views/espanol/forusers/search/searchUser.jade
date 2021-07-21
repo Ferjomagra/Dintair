@@ -1,0 +1,55 @@
+extends ../../../templates/forusers/defaultforusers
+
+block content
+  .prod-start.col-lg-12.col-md-12.col-sm-12.col-xs-12
+    .finder_title
+
+
+      img.Dintname(src='/images/dintair/Dintair_name_blue.png')
+
+      form.buscador(action='/Dintair/Search/'+1, method='GET', name='formu', id='user-search', onsubmit='return Validate()')
+        
+        //input.comp_searching(type='text', id='searching', name='search', placeholder='Escribe el nombre de una empresa, letra o palabra clave', onkeyup="showResults(this.value)", autocomplete='off')
+
+
+        select#rubroTarget.ui.fluid.dropdown.rubroTarget(name='valueSelect')
+          option(value='', selected='selected') Seleccione un rubro
+          option(value='Accesorios para vehículos') Accesorios para vehículos
+          option(value='Animales y mascotas') Animales y mascotas
+          option(value='Arte y Antigüedades') Arte y Antigüedades
+          option(value='Autos, motos y otros') Autos, motos y otros
+          option(value='Cámaras y Accesorios') Cámaras y Accesorios
+          option(value='Celulares y Teléfonos') Celulares y Teléfonos
+          option(value='Coleccionables y Hobbies') Coleccionables y Hobbies
+          option(value='Computación') Computación
+          option(value='Consolas y Videojuegos') Consolas y Videojuegos
+          option(value='Deportes y Fitness') Deportes y Fitness
+          option(value='Electrodomésticos') Electrodomésticos
+          option(value='Electrónica, Audio y Video') Electrónica, Audio y Video
+          option(value='Finanzas') Finanzas
+          option(value='Herramientas y Construcción') Herramientas y Construcción
+          option(value='Hogar, Muebles y Jardín') Hogar, Muebles y Jardín
+          option(value='Industrias y Oficinas') Industrias y Oficinas
+          option(value='Inmuebles') Inmuebles
+          option(value='Instrumentos Musicales') Instrumentos Musicales
+          option(value='Joyas y Relojes') Joyas y Relojes
+          option(value='Juegos y Juguetes') Juegos y Juguetes
+          option(value='Libros, Revistas y Comics') Libros, Revistas y Comics
+          option(value='Música y Películas') Música y Películas
+          option(value='Ropa y Accesorios') Ropa y Accesorios
+          option(value='Salud y Belleza') Salud y Belleza
+          option(value='Servicios empresariales') Servicios empresariales
+          option(value='Servicios') Servicios
+          option(value='Tecnología') Tecnología
+          option(value='Otras categorías') Otras categorías
+
+      
+        span.highlight
+
+        span.bar
+              
+        button.comp_searching(id='', name='', type='submit')  
+          span.icons-one.icon-magnifying-glass
+
+  script(src='/javascripts/Searching/find.js')
+  

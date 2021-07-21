@@ -1,0 +1,302 @@
+extends ../../templates/forusers/HomePage/default
+
+block content
+
+  section.dashboardPage
+
+    div.thirdHeaderContent()
+
+      div.contenidoTHC
+
+        div.firstSHomePage#segment1()
+          div.markets_place(style='background-image: url("/images/defaultimages/test.jpg");')
+            a(href='/Dintair/markets/list')
+              div.box_to_mplace()
+                h3 Markets
+          div.markets_place_2(style='background-image: url("/images/defaultimages/image1.jpeg");')
+            a(href='/Dintair/recommendations/board')
+              div.box_to_mplace()
+                h3 Recomendaciones de posibles clientes
+                
+
+          if user.username == '1@dintair.com'
+            div.markets_place_3(style='background-image: url("/images/back_chat.PNG");')
+              div.box_to_mplace()
+                h3 Agregar un producto restringido
+                a(href="/Dintair/restricted")
+                  button() Agregar
+
+          if user.username == 'chocolatinape@gmail.com'
+            div.markets_place_3(style='background-image: url("/images/back_chat.PNG");')
+              div.box_to_mplace()
+                h3 Agregar un producto a Chocolatina
+                a(href="/Dintair/chocolatina/product/system")
+                  button() Agregar
+        
+          div.moreinfo
+            div.textsContents(id='navbar')
+              ul
+                li © 2021 Dintair.
+                li
+                  a(href="/Dintair/aeropost", target="_blank") Productos restringidos
+                li
+                  a(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
+                li
+                  a(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
+                li
+                  a(href='/Dintair/contact/us') Contáctanos
+                li
+                  a(href='/Dintair/companies/catalogs', target='_blank') Productores
+
+
+
+        div.secondSHomePage#segment2()
+          div.public_dirig_net(id='public_dirig')
+            div.box_vista_public
+              
+            div.overboxes
+              div.markets_place(style='background-image: url("/images/defaultimages/test.jpg");')
+                a(href='/Dintair/markets/list')
+                  div.box_to_mplace()
+                    h3 Markets
+              div.markets_place_2(style='background-image: url("/images/defaultimages/image1.jpeg");')
+                a(href='/Dintair/recommendations/board')
+                  div.box_to_mplace()
+                    h3 Recomendaciones de posibles clientes
+
+          nav.content-menu-publication
+            if user.username == "aromadejaen@gmail.com"
+              div.markets_place_3_add_product(style='background-image: url("/images/defaultimages/test.jpg");')
+                a(href='/Dintair/system/ajaen')
+                  div.box_to_mplace()
+                    h3 Sistema para Aroma de Jaén
+
+
+
+          nav.content-menu-publication
+            if user.username == 'aeropost.lim@aeropost.com'
+              div.markets_place_3_add_product(style='background-image: url("/images/back_chat.PNG");')
+                div.box_to_mplace()
+                  h3 Agregar un producto restringido
+                  a(href="/Dintair/restricted")
+                    button() Agregar
+            ul
+              a(href="/Dintair", class="") 
+                li.active Recomendados
+              
+              //a(href="/Dintair/publication-post", class="") 
+                li Contactos
+
+
+          div.boxCreatePublication.js-content-post(data-url-like="/Dintair/publication-like")
+
+            if publications.length
+              for publication in publications
+                if publication.status == false
+                  if myContact.indexOf(user._id.toString()) != -1
+                    div.boxeachpublication(data-id="#{publication._id}")
+                      div.header
+                        div.imgandname
+                          a(href='/Dintair/#{publication.creator.id}')
+                            div.profileimg(style='background-image: url("#{publication.creator.imageProfile}")')
+                          a(href='/Dintair/#{publication.creator.id}')
+                            p= publication.creator.comp_name
+
+                        if publication.urldintair || publication.urlfacebook || publication.urlinstagram || publication.urllinkedin
+                          div.so_networks.dropdown
+                            p(class='btn btn-primary dropdown-toggle', data-toggle="dropdown") Redes sociales
+                            ul(class='dropdown-menu')
+                              if publication.urldintair
+                                li
+                                  a(href='/Dintair/'+'#{publication.creator._id}')
+                                    img(src='/images/dintair/dintair_iso.png')
+                              if publication.urlfacebook
+                                li
+                                  a(target='_blank', href='#{publication.urlfacebook}')
+                                    img(src='/images/icons/facebook.png')
+                              if publication.urlinstagram
+                                li
+                                  a(target='_blank', href='#{publication.urlinstagram}')
+                                    img(src='/images/icons/instagram.png')
+                              if publication.urllinkedin
+                                li
+                                  a(target='_blank', href='#{publication.urllinkedin}')
+                                    img(src='/images/icons/linkedin.png')
+                        else
+
+
+                      div.dates
+                        if publication.created_at
+                          p.js-time-elapsed(data-create-at='#{publication.created_at}', style='font-size:11px;')
+                        else
+                          p.dates= publication.fecha+' | '+publication.nuevafecha
+
+                    
+
+                      
+
+                      div.comment.msg-post
+                        - var gmsg = publication.estemensaje.split("\n")
+                        for itemMsg in gmsg
+                          p#estemensaje #{itemMsg}
+
+                      if publication.imagePublics == undefined
+                      else
+
+                        -var gImg = publication.imagePublics.split('---');
+
+
+                        if gImg.length == 1
+                          div.spaceLun
+                            div.firstitem
+                              p(onclick="document.getElementById('id0img1').style.display='block'")
+                                img.one_image(src='#{gImg}', data-list-id='#{publication.imagePublics}')
+                              div.first_img_cr(id="id0img1" class="modal_one_img")
+
+                                div.modal-content_one_img(id='sectionResult')
+                                  div.header_message
+                                   
+                                    div(class="imgcontainer", style="width: 100%;")
+                                      span(onclick="document.getElementById('id0img1').style.display='none'" class="close" title="Close Modal") &times
+
+                                    div.messages(id='result')
+                                      
+
+                        else
+                        if gImg.length == 2
+                          div.picturescontent
+                            div.seconditem
+                              p(onclick="document.getElementById('id0img2').style.display='block'")
+                                img.one_image(src='#{gImg[0]}', data-list-id='#{gImg[0]}')
+
+                              div.first_img_cr(id="id0img2" class="modal_one_img")
+
+                                div.modal-content_one_img(id='sectionResult_2')
+                                  div.header_message
+                                   
+                                    div(class="imgcontainer", style="width: 100%;")
+                                      span(onclick="document.getElementById('id0img2').style.display='none'" class="close" title="Close Modal") &times
+
+                                    div.messages(id='result_2')
+
+                          div.picturescontent
+                            div.thirditem
+                              p(onclick="document.getElementById('id0img3').style.display='block'")
+                                img.one_image(src='#{gImg[1]}', data-list-id='#{gImg[1]}')
+
+
+                              div.first_img_cr(id="id0img3" class="modal_one_img")
+
+                                div.modal-content_one_img(id='sectionResult_2')
+                                  div.header_message
+                                   
+                                    div(class="imgcontainer", style="width: 100%;")
+                                      span(onclick="document.getElementById('id0img3').style.display='none'" class="close" title="Close Modal") &times
+
+                                    div.messages(id='result_3')
+
+                      div.cando.like
+                        div.check.boxsize
+                          div.countn
+                            img(src='/images/recommend-ok.png')
+                            .js-like-number
+
+                              if publication.like == undefined
+                                p 0
+                              else
+
+                                p #{publication.like}
+                          
+                          if myLike.indexOf(publication._id.toString()) != -1
+                            button.button.btn-like.btn-like-ok.js-like()
+                              img(src='/images/recommend-ok.png')
+                              | Recomendar
+                          
+                          else
+                            button.button.btn-like.btn-like-ok.js-like()
+                              img(src='/images/recommend-not.png')
+                              | Recomendar
+
+                          div.count_n_2(style="display:none;")
+                            .js-like-number
+                              if publication.like == undefined
+                                | 0
+                              else
+                                | #{publication.like}
+                      
+
+                      if publication.creator.username == user.username
+                        div.e_public_ation
+                          a(href='/Dintair/make/public/edition/#{publication.id}')
+                            button() Editar publicación
+                      else
+
+                else
+            else
+              P No hay publicaciones
+
+              a(href='/Dintair/recommendations/board')
+                button.click_action() Inicia una publicación dirigida
+
+        div.thirdSHomePage#segment3()
+          div.boxProducts
+            
+            if myproducts.length || myServices.length
+              a(href='/Dintair/kindProduct')
+                button() Ver mis productos
+              if myproducts.length
+                
+                p.titleSegmentServ Mis productos
+                for productos_user in myproducts
+                  if productos_user.deleted == false
+                    div.boxForPS
+                      a(href='/Dintair/products/view/#{productos_user._id}')
+                        .list_other_prod
+                          if productos_user.imgProductos
+                            //img(src='#{productos_user.imgProductos}')
+
+                            - file = productos_user.imgProductos.split('---')
+                            div.imageprod(style='background-image: url("#{file[0]}")')
+                            img(src='#{file[0]}')
+                          else
+                          p.nameT= productos_user.nombre
+
+              if myServices.length
+                p.titleSegmentServ Mis servicios
+                for data_serv in myServices
+                  if data_serv.deleted == false
+                    div.boxForPS
+                      a(href='/Dintair/services/view/#{data_serv._id}')
+                        .list_other_prod
+                          if data_serv.imageServicios
+                            //img(src='#{data_serv.imageServicios}')
+
+                            - file = data_serv.imageServicios.split('---')
+                            img(src='#{file[0]}')
+                          else
+                          p.nameT= data_serv.name_serv
+            else
+              div.defaultNoProducts
+                div.default_box
+                  img(src='/images/defaultimages/defaultpicpordserv.png')
+                div.textandbtn
+                  p No haz agregado ningún producto o servicio
+    
+                div.btns
+                  a(href='/Dintair/products/add/Product')
+                    button() Producto
+                  a(href='/Dintair/services/add/Service')
+                    button() Servicio
+
+
+
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/forChat/main.js')
+  script(src='/javascripts/autotyping/forpublications.js')
+  script(src='/javascripts/publication-my-contact.js')
+  script(src='/javascripts/PopUp/publications.js')
+  script(src='/javascripts/PopUp/publications_2.js')
+  script(src='/javascripts/PopUp/publications_3.js')
+  script(src='/javascripts/timeElapsed.js')
+  script(src='/javascripts/link/v1.js')
+  script(src='/javascripts/publication-my-recommended-link.js')

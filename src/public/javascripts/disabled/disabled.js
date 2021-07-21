@@ -1,0 +1,1 @@
+document.getElementById('GfGInput').disabled = true;

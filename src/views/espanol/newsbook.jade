@@ -1,0 +1,79 @@
+extends templates/default
+
+block content
+  .bigContenido
+
+    .newsField
+
+
+      div.weekNews.col-lg-12.col-md-12.col-sm-12.col-xs-12
+        div(id='port_img')
+          p Noticia de la semana
+        if newsWeek.length
+          for dataNewsS in newsWeek
+            if dataNewsS.newWeek == true
+              div.left
+                a(href='/Dintair/Newsbook/week/#{dataNewsS.id}')
+                  img.pictureWeek(src=dataNewsS.imgNews)
+
+              div.right
+                p= dataNewsS.dia
+                p.date de
+                p= dataNewsS.mes
+                p.date de
+                p= dataNewsS.año
+                div.dataweek
+                  a(href='/Dintair/Newsbook/week/#{dataNewsS.id}')
+                    h4= dataNewsS.titular
+                div.dataweek
+                  h5= dataNewsS.primerParrafo
+
+      div.fairs.col-lg-12.col-md-12.col-sm-12.col-xs-12
+        h3 Nuestras visitas
+        ul
+          a(href="/Dintair/Newsbook/Feriadex")
+            li.adex
+              img.feriadex(src="/images/feriadex_logoE.png")
+
+          a(href='/Dintair/Newsbook/districts')
+            li.district
+              button() Ferias
+
+
+          a(href='/Dintair/Newsbook/ExpoProveedores/navExpo')
+            li.FeriaNavJockey
+              img.feriaJockey(src="/images/expoproveedores.PNG")
+
+
+          a(href='/Dintair/Newsbook/feriaJockey/navJockey')
+            li.FeriaNavJockey
+              img.feriaJockey(src="/images/logoFJockey.PNG")
+
+          
+
+      div.dayNews
+        if news.length
+          for dataNews in news
+            if dataNews.semanal == 'diario'
+              div.dataFlow.col-lg-6.col-md-6.col-sm-12.col-xs-12
+                div.allNews
+                  div.TandD
+                
+                    p.date= dataNews.dia
+                    p.date de
+                    p.date= dataNews.mes
+                    p.date de
+                    p.date= dataNews.año
+                  
+                  div.titular_a
+                    a.titular(href='/Dintair/Newsbook/day/#{dataNews.id}')= dataNews.titular
+                  
+                  if dataNews.imgNews
+                    a(href='/Dintair/Newsbook/day/#{dataNews.id}')
+                      img.img_news(src=dataNews.imgNews)
+                  else
+
+                  p.section= dataNews.seccion
+          
+
+      

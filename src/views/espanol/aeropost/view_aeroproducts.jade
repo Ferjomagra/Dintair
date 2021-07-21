@@ -1,0 +1,29 @@
+extends ../../templates/forusers/HomePage/default
+
+block content
+
+  
+
+  div.color_aeropost(style='background-image: url("/images/back_chat.PNG");')
+  div(class="content_aeropost", align="center")
+    div.box_titles_aeropost
+      h2 ¿Importarás un producto?
+      h3(align="center") Entérate si es restringido
+    form(id="formSearchHeader")
+      div.search_bar_aeropost
+        input(type="text", name="search", id="search", placeholder="Busca un producto, o escribe una palabra clave", data-source="/Dintair/aeropost/search/users")
+        div.scope_aeropost
+          img(src="/images/icons/scope_d.png")
+    div.defaultText
+      p ¿No encuentra lo que busca? Intente buscar por palabra referencial o, contáctese con aerepost.lim@aeropost.com para mayor información.
+    ul(class="list-group result_list", id="content-aeropost", style="display:block")
+
+
+      
+
+      
+
+
+
+  //script(src="/javascripts/aeropost/jsTest.js")
+  script(src="/javascripts/aeropost/search_for_users.js")

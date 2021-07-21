@@ -1,0 +1,81 @@
+extends ../../../../templates/forusers/defaultforusers
+
+block content
+  .prod-start.col-lg-10.col-md-10.col-sm-10.col-xs-12
+    .allNews
+
+      a(href='/Dintair/Newsbook/'+1)
+        h2.titles_News Newsbook
+
+      .global_content.col-lg-12
+
+        div.allSections.col-lg-4.col-md-4
+          p.Aviable Secciones
+
+          a.newsSection(href='/Dintair/Newsbook/Sections/International/'+1)
+            h4 Mercado internacional
+
+          a.newsSection(href='/Dintair/Newsbook/Sections/Peruvian/'+1)
+            h4 Mercado peruano
+
+         
+
+
+        div.section_wall.col-lg-8.col-md-8
+
+          if allInternational.length
+            for dataNews in allInternational
+              if dataNews.seccion == 'Mercado Internacional'
+                div.allNews
+                  div.TandD
+                  
+                    p.date= dataNews.dia
+                    p.date= dataNews.mes
+                    p.date= dataNews.año
+                 
+
+                  div.titular_a
+                    a.titular(href='/Dintair/Newsbook/selectNews/#{dataNews._id}')= dataNews.titular
+                  
+                  if dataNews.imgNews
+                    a(href='/Dintair/Newsbook/selectNews/#{dataNews._id}')
+                      img.img_news(src=dataNews.imgNews)
+                  else
+                  p.primerParrafo= dataNews.primerParrafo
+
+                  p= dataNews.seccion
+
+          if pages
+            div.center
+              nav.pagination
+                ul.pagination
+
+              
+
+                  if current == '1'
+                    li(class='page-item disabled')
+                      a(href='', class='page-link') First
+
+                  else
+                    li.page-item
+                      a(href='/Dintair/Newsbook/Sections/International/1', class='page-link') First
+
+
+
+                  - var i = Number(current) > 5 ? Number(current) - 3 : 1 
+
+                  
+
+                  - for (i ; i <= Number(current) + 4 && i <= pages; i++)
+                  
+                    li.page-item
+                      a.numbers(href='/Dintair/Newsbook/Sections/International/'+i)= i
+
+                
+                  if current == pages
+                    li(class='page-item disabled')
+                      a(href='', class='page-link') Last
+
+                  else
+                    li(class='page-item')
+                      a(href='/Dintair/Newsbook/Sections/International/'+pages, class='page-link') Last

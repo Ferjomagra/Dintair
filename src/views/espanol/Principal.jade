@@ -1,0 +1,96 @@
+extends templates/default
+
+block content
+
+  
+  section.dintairBox
+    div.afterbox
+      div.block
+        div.info_box
+          
+          h3 ¿Qué hacemos?
+          h1 Dintair es una plataforma B2B enfocada en alimentos y bebidas. Aquí podrás encontrar contactos de importantes markets, proveedores y productores.
+
+          a(href="/Dintair/es/Signin")
+            button.signin Iniciar sesión
+        div.snackbar
+          h4 *Estás viendo de fondo algunas de las empresas con las que trabajamos.
+
+      div.report
+        div.foods(style='background-image: url("/images/element5-digital-acrBf9BlfvE-unsplash_two.jpg");')
+          h2 ¿Interesado en conocer la realidad peruana y las tendencias post COVID-19?
+
+          
+          a(target="_blank", href="/pdf/Covid-19_y_su_impacto_en_el_mercado_peruano.pdf")
+            button.btn_report Leer el reporte comercial
+
+      div.two_boxes
+        a.kernel_box(href="/Dintair/index/products")
+          div.producers
+            div.flex
+              div.picture(style='background-image: url("/images/defaultimages/collage.png")')
+                div.color
+              div.text
+                p Productos
+
+        a.kernel_box(href="/Dintair/services/recommendations")
+          div.recommendations
+            div.flex
+              div.picture(style='background-image: url("/images/defaultimages/image1.jpeg");')
+                div.color
+              div.text
+                p Relaciones empresariales
+
+      
+      
+
+
+
+
+
+
+
+  footer
+    div.whole_footer
+      div.footer_one
+        a(href="/Dintair/es/Signin", class="a_btn_footer")
+          div.a_box_footer
+            p Iniciar sesión
+        a(href="/Dintair/es/Signup", class="a_btn_footer")
+          div.a_box_footer
+            p Registrarse
+        a(href="/Dintair/index/products", class="a_btn_footer")
+          div.a_box_footer
+            p Productos
+        
+        a(href="/Dintair/contact", class="a_btn_footer")
+          div.a_box_footer
+            p Contacto
+
+
+      div.footer_two
+        a(href="/Dintair/aeropost", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Productos restringidos
+        a(href="/Dintair/privacyPolice", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Políticas de privacidad
+        a(href="/Dintair/termsOfUse", target="_blank", class="a_btn_footer")
+          div.a_box_footer
+            p Condiciones de uso
+        a()
+          div.a_box_footer
+            h2 © 2020 Dintair
+
+
+
+  
+  script(src='/javascripts/searchengine/searchprincipal.js')
+  script(src='/javascripts/bubbles/bubbles.js')
+  script(src='/javascripts/validations/placeholderChange.js')
+
+
+
+
+
+     

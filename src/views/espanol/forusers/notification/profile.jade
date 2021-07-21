@@ -1,0 +1,35 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  section.dashboardPage()
+    div.g_box_views
+      div.profile
+
+        div.profile_portada(style="background-image: url(#{user.imagePortada})")
+        div.absolute
+          div.profile_image(style="background-image: url(#{user.imageProfile})")
+        div.comp_name
+          p.name= user.comp_name
+          p.representative= user.full_name
+          a(href='/Dintair/profile/user')
+            button() Mi perfil
+
+      div.theyviews
+
+        h2 Visitaron tu perfil
+        
+        if visit
+          for item in visit
+            div.each_view
+              a(href='/Dintair/#{item.user_id_emisor.id}')
+                article
+                  div.profile_other(style="background-image: url(#{item.user_id_emisor.imageProfile})")
+                  p #{item.user_id_emisor.comp_name} ha visto tu perfil
+                p.date #{item.fecha}
+
+
+
+
+  script(src='/javascripts/size_screen/forchat.js')
+

@@ -1,0 +1,153 @@
+extends ../templates/templateProductsFolder/default
+
+block content
+
+  div.covercolor
+  
+    section.environmentUsersProds
+
+      div.box_prods_vista
+        div.compcreator
+          div.cont_img
+            div.profile(style='background-image: url("#{productos_user.creator.imageProfile}")')
+          div.names
+            p= productos_user.creator.comp_name
+            a(href='/Dintair/#{productos_user.creator.id}')
+              button() Ver perfil
+
+        div.box_by_flex
+          div.box_prods_vista_1
+            div.views_number
+              
+            div.leftBOX
+              #myCarousel.carousel.slide
+                .carousel-inner
+                  each item, index in productos_user.files
+                    if index == 0
+                      .active.item(data-slide-number=index)
+                        .ctn-img
+                          img.img-fluid(src='#{item}')
+                    else 
+                      .item(data-slide-number=index)
+                        .ctn-img
+                          img.img-fluid(src='#{item}')
+
+                  a.carousel-control.left.pt-3(href='#myCarousel', data-slide='prev')
+                    i.fa.fa-chevron-left
+                  a.carousel-control.right.pt-3(href='#myCarousel', data-slide='next')
+                    i.fa.fa-chevron-right
+                
+                ul.carousel-indicators.list-inline
+                  each item, index in productos_user.files
+                    if index == 0
+                      li.list-inline-item.active
+                        a#carousel-selector-0.selected(data-slide-to=index, data-target='#myCarousel')
+                          img.img-fluid(src='#{item}')
+                    else 
+                      li.list-inline-item
+                        a#carousel-selector-0.selected(data-slide-to=index, data-target='#myCarousel')
+                          img.img-fluid(src='#{item}')
+
+            div.description
+              h2.name_prod= productos_user.nombre
+
+              div.precio
+                if productos_user.moneda == 'Contactar al Representante'
+                  div.weightTotal
+                    h5 Precio
+                    p.itemDe Contactar al Representante
+                else
+                  h2= productos_user.moneda +' '+ productos_user.precio
+
+
+              if productos_user.creator.wtpnumber == undefined
+              else
+                div.wtpmessage
+                  button.contact_message.cajas_btn(onclick="document.getElementById('id0mail').style.display='block'", style='background-image: url("/images/defaultimages/0.jpg");') Contactar al vendedor
+                  div(id="id0mail" class="modal")
+
+                    div.modal-content.animate
+                      div.header_message
+                        div(class="imgcontainer", style="width: 100%;")
+                          span(onclick="document.getElementById('id0mail').style.display='none'" class="close" title="Close Modal") &times
+                      div.backwtp(style='background-image: url("/images/defaultimages/0.jpg");')
+
+                      div.messagestoproducer
+                        div.intodiv
+                          a(href='https://wa.me/51'+productos_user.creator.wtpnumber+'?text=Hola,%20lo%20contacté%20a%20través%20de%20Dintair.%20Quisiera%20saber%20más%20acerca%20de%20su%20producto%20'+productos_user.nombre+'.%20Muchas%20gracias.', target='_blank')
+                            button.sendwtp() Continuar
+                      div.showText
+                        h2 El mensaje dirá:
+
+                        p= "Hola, lo contacté a través de Dintair. Quisiera más información acerca de su producto "+productos_user.nombre+". Muchas gracias."
+                      div.subtext
+                       p Es posible que pueda editar el mensaje en WhatsApp.
+
+
+                
+
+
+
+              h3 Descripción
+              - var gdescript = productos_user.descripcion.split("\n")
+              for itemdescript in gdescript
+                p.text #{itemdescript}
+
+          div.box_prods_vista_2
+            h2.title_second_p Información adicional
+            if productos_user.stock == ''
+            else
+              div.stock
+                p.titles Stock disponible
+                h2= productos_user.stock +' '+ productos_user.tipo_unidades
+
+            if productos_user.peso == ''
+            else
+              div.peso
+                p.titles Peso unitario
+                h2= productos_user.peso +' '+ productos_user.medida
+
+
+            if productos_user.precio_min == null | productos_user.cantidad_min == null
+            else
+              div.almayor
+                h2.title Venta al por mayor
+                div.leftright
+                  div.precio
+                    p.titles Precio mínimo
+                    h2.result= productos_user.moneda +' '+productos_user.precio_min
+                  div.cantidad
+                    p.titles Cantidad mínima
+                    h2.result= productos_user.cantidad_min+' '+productos_user.medida
+
+
+
+
+
+            div.opcionales
+              if productos_user.color || productos_user.dimensiones || productos_user.material
+                div.ProdsMayor.right
+                  div.titleBox
+                    h5.text Variantes opcionales
+                  div.flexBox
+                    if productos_user.color
+                      div.options
+                        h5 Colores
+                        p= productos_user.color
+                    else
+                    if productos_user.dimensiones
+                      div.options
+                        h5.titles Dimensiones
+                        p= productos_user.dimensiones
+                    else
+                    if productos_user.material
+                      div.options
+                        h5.titles Material
+                        p= productos_user.material
+                    else
+              else
+
+
+
+  script(src='/javascripts/alerts/alert_products.js')
+  script(src='/javascripts/carousel/viewProductsImages.js')

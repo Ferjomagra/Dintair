@@ -1,0 +1,362 @@
+extends ../../templates/forusers/HomePage/default
+
+block content
+
+  section.dashboardPage
+    div.secondHeader
+      div.ThreeSegments
+        div.firstSHomePage#segment1()
+          button(onclick="document.getElementById('id01').style.display='block'")
+            img(src='/images/icons/xicon.png')
+            | Encontrar clientes
+          div.clientes(id="id01" class="modal")
+            div.modal-content.clientes
+              div.header_message
+               
+                div(class="imgcontainer", style="width: 100%;")
+                  span(onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal") &times
+
+              
+              div.messages
+                div.box_c
+                  div.type-js
+                    h4.text-js ¿Buscas llegar a más mercados?
+
+                  div.type-js_second
+                    h4.text-js_second Nosotros te proporcionamos la confianza y fiabilidad para lograrlo.
+                    //h4 Ya sea que quieras generar branding, aumentar tus ventas o establecer relaciones comerciales, nosotros te proporcionamos la confianza y fiabilidad de lograrlo
+
+              div.text
+
+                div.box_type_content
+                  div.content_plus
+                    a(href='/Dintair/recommendations/board')
+                      div.picture
+                        img(src='/images/listBook.png')
+                      div.boxago
+                        h3 Publicaciones dirigidas
+                      
+                      div.explain
+                        h5 Crea publicaciones las cuales serán enviadas a un grupo de clientes potenciales en base al producto que seleccionaste.
+
+                  button.info(onclick="document.getElementById('id02').style.display='block'") Más información
+                  div.info(id="id02" class="modal")
+                    div.modal-content.animate
+                      div.header_message
+                       
+                        div(class="imgcontainer", style="width: 100%;")
+                          span(onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal") &times
+
+                      div.boxforexp
+                        div.expl
+                          div.content_explain
+                            h4 ¿Cómo funciona?
+                            h5 Después de haber seleccionado uno de tus productos o servicios, se pasará a buscar los clientes más propensos en adquirirlo. Luego, podrás editar la vista de una publicación, la cual esta compuesta por tres partes:
+                            h3 Contenido textual
+                            h3 Contenido visual
+                            h3 Redes sociales
+                            h5 Esta publicación será enviada a los empresarios que aparecieron en los resultados de la recomendación, y será mostrada en la página principal de cada uno de ellos.
+
+                            h4 ¿Cuánto cuesta?
+                            h5 Por el momento, este tipo de publicación es gratuita.
+
+
+                            h4 ¿Cuándo se usa?
+                            h5 Cuando quieras generar branding, aumentar tus ventas o establecer relaciones comerciales con otros empresarios.
+
+              div.bottomtext
+                h5 ¿Tienes dudas? Lee nuestras 
+                  a(href='') Condiciones de uso.
+            
+        div.secondSHomePage#segment2()
+
+          div.Search
+            div.boxcontentpublic
+              
+            div.btnstartrecom
+              div.publicTime
+                div.profilePic
+                  a(href='/Dintair/profile/user')
+                    div.imgprofilepic(style='background-image: url("#{user.imageProfile}")')
+
+              button.inPublic(onclick="document.getElementById('id03').style.display='block'") Inicia una publicación
+              div(id="id03" class="modal")
+                div.modal-content.animate
+                  div.header_message
+                   
+                    div(class="imgcontainer", style="width: 100%;")
+                      span(onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal") &times
+
+                  
+                  div.messages
+
+                    form#msform(action='/Dintair', method='POST', enctype='multipart/form-data')
+                      textarea(name='estemensaje', id='estemensaje', placeholder='Comunica tus noticias')
+
+                      div.box
+                        div.images.inlineboxes
+                          section(class="content-photo", style="width:100%;", id='sectionCONT')
+                            img.pic(src='/images/icons/camera.png', id='btnFhoto')
+
+                            div(id='list', name='list')
+                              input(type='file', id='btnFiles', name='imagePublics', limit="2" multiple )
+                              input(type='hidden' name='newFile' id='newFile' value='')
+                            span.tooltiptext() Agregar imágenes
+                        div.target_users.inlineboxes
+                          p.dropbtn Quiénes lo verán
+                          div.dropdown-content
+                            .radio-group
+                             
+                              input.publicTarget(type='radio', name='publicTarget', id='agregados', value='1')
+                              label(for='agregados') Solo mis contactos agregados
+                                p Esta publicación podrá ser vista solo por las empresas que sigo.
+
+                    
+                  
+                      
+                      section#ct-items()
+
+                      img.spiral(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+
+
+                      input(type='submit', name='submit', value='Publicar', id='btnSend')
+              
+              div.images(onclick="document.getElementById('id03').style.display='block'")
+                img(src='/images/icons/camera.png')
+
+
+            
+
+        div.thirdSHomePage#segment3()
+          
+
+    div.thirdHeaderContent()
+      div.contenidoTHC
+
+        div.firstSHomePage#segment1()
+          div.markets_place(style='background-image: url("/images/defaultimages/test.jpg");')
+            a(href='/Dintair/markets/list')
+              div.box_to_mplace()
+                h3 Markets y tiendas online
+
+
+        
+          div.moreinfo
+            div.textsContents(id='navbar')
+              ul
+                li © 2019 Dintair.
+                li
+                  a(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
+                li
+                  a(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
+                li
+                  a(href='/Dintair/contact/us') Contáctanos
+
+
+
+
+        div.secondSHomePage#segment2()
+          div.public_dirig_net(id='public_dirig')
+            div.box_vista_public
+              div.name_user_txt(class="imgcontainer", style="width: 100%;")
+                //span(onclick="document.getElementById('public_dirig').style.display='none'" class="close" title="Close Modal") &times
+
+                p.align.name= user.first_name+','
+                p.align dirige tus productos a quienes sí lo podrían adquirir
+              div.info_public
+                img(src='/images/listBook.png')
+                h2 Publicaciones dirigidas
+                h3 Crea publicaciones las cuales serán enviadas a un grupo de clientes potenciales en base al producto que seleccionaste.
+                a(href='/Dintair/recommendations/board')
+                  button() Probar
+
+            div.markets_place(style='background-image: url("/images/defaultimages/test.jpg");')
+              a(href='/Dintair/markets/list')
+                div.box_to_mplace()
+                  h3 Markets y tiendas online
+
+
+          nav.content-menu-publication
+            ul
+              a(href="/Dintair", class="") 
+                li Recomendados
+              
+              a(href="/Dintair/publication-post", class="") 
+                li.active Contactos
+
+          div.boxCreatePublication.js-content-post(data-url-like="/Dintair/publication-recommendation-like")
+
+            if publications.length
+              for publication in publications
+                if publication.status == false
+                  if myContact.indexOf(user._id.toString()) != -1
+                    div.boxeachpublication(data-id="#{publication._id}")
+                      div.header
+                        div.imgandname
+                          a(href='/Dintair/#{publication.creator.id}')
+                            div.profileimg(style='background-image: url("#{publication.creator.imageProfile}")')
+                          a(href='/Dintair/#{publication.creator.id}')
+                            p= publication.creator.comp_name
+                          
+
+                      div.dates
+                        p.dates= publication.fecha+' | '+publication.nuevafecha
+
+                        if publication.created_at
+                          p.js-time-elapsed(data-create-at='#{publication.created_at}')
+
+                      div.comment.msg-post
+                        - var gmsg = publication.estemensaje.split("\n")
+                        for itemMsg in gmsg
+                          p #{itemMsg}
+
+                      if publication.imagePublics == undefined
+                      else
+                        -var gImg = publication.imagePublics.split('---');
+
+
+                        if gImg.length == 1
+                          div.spaceLun
+                            div.firstitem
+                              p(onclick="document.getElementById('id0img1').style.display='block'")
+                                img.one_image(src='#{gImg}', data-list-id='#{publication.imagePublics}')
+                              div.first_img_cr(id="id0img1" class="modal_one_img")
+
+                                div.modal-content_one_img(id='sectionResult')
+                                  div.header_message
+                                   
+                                    div(class="imgcontainer", style="width: 100%;")
+                                      span(onclick="document.getElementById('id0img1').style.display='none'" class="close" title="Close Modal") &times
+
+                                    div.messages(id='result')
+                                      
+
+                        else
+                        if gImg.length == 2
+                          div.picturescontent
+                            div.seconditem
+                              p(onclick="document.getElementById('id0img2').style.display='block'")
+                                img.one_image(src='#{gImg[0]}', data-list-id='#{gImg[0]}')
+
+                              div.first_img_cr(id="id0img2" class="modal_one_img")
+
+                                div.modal-content_one_img(id='sectionResult_2')
+                                  div.header_message
+                                   
+                                    div(class="imgcontainer", style="width: 100%;")
+                                      span(onclick="document.getElementById('id0img2').style.display='none'" class="close" title="Close Modal") &times
+
+                                    div.messages(id='result_2')
+
+                          div.picturescontent
+                            div.thirditem
+                              p(onclick="document.getElementById('id0img3').style.display='block'")
+                                img.one_image(src='#{gImg[1]}', data-list-id='#{gImg[1]}')
+
+
+                              div.first_img_cr(id="id0img3" class="modal_one_img")
+
+                                div.modal-content_one_img(id='sectionResult_2')
+                                  div.header_message
+                                   
+                                    div(class="imgcontainer", style="width: 100%;")
+                                      span(onclick="document.getElementById('id0img3').style.display='none'" class="close" title="Close Modal") &times
+
+                                    div.messages(id='result_3')
+
+                      div.cando.like
+                        div.check.boxsize
+                          div.countn
+                            img(src='/images/recommend-ok.png')
+                            .js-like-number
+
+                              if publication.like == undefined
+                                p 0
+                              else
+
+                                p #{publication.like}
+                          
+                          if myLike.indexOf(publication._id.toString()) != -1
+                            button.button.btn-like.btn-like-ok.js-like()
+                              img(src='/images/recommend-ok.png')
+                              | Recomendar
+                          
+                          else
+                            button.button.btn-like.btn-like-ok.js-like()
+                              img(src='/images/recommend-not.png')
+                              | Recomendar
+
+                          div.count_n_2(style="display:none;")
+                            .js-like-number
+                              if publication.like == undefined
+                                | 0
+                              else
+                                | #{publication.like}
+                          
+                else
+            else
+              P No hay publicaciones
+              button.click_action(onclick="document.getElementById('id03').style.display='block'") Inicia una publicación
+
+        div.thirdSHomePage#segment3()
+          div.boxProducts
+            
+            if myproducts.length || myServices.length
+              a(href='/Dintair/kindProduct')
+                button() Ver mis productos
+              if myproducts.length
+                
+                p.titleSegmentServ Mis productos
+                for productos_user in myproducts
+                  if productos_user.deleted == false
+                    div.boxForPS
+                      a(href='/Dintair/products/view/#{productos_user._id}')
+                        .list_other_prod
+                          if productos_user.imgProductos
+                            //img(src='#{productos_user.imgProductos}')
+
+                            - file = productos_user.imgProductos.split('---')
+                            div.imageprod(style='background-image: url("#{file[0]}")')
+                            img(src='#{file[0]}')
+                          else
+                          p.nameT= productos_user.nombre
+
+              if myServices.length
+                p.titleSegmentServ Mis servicios
+                for data_serv in myServices
+                  if data_serv.deleted == false
+                    div.boxForPS
+                      a(href='/Dintair/services/view/#{data_serv._id}')
+                        .list_other_prod
+                          if data_serv.imageServicios
+                            //img(src='#{data_serv.imageServicios}')
+
+                            - file = data_serv.imageServicios.split('---')
+                            img(src='#{file[0]}')
+                          else
+                          p.nameT= data_serv.name_serv
+            else
+              div.defaultNoProducts
+                div.default_box
+                  img(src='/images/defaultimages/defaultpicpordserv.png')
+                div.textandbtn
+                  p No haz agregado ningún producto o servicio
+    
+                div.btns
+                  a(href='/Dintair/products/add/Product')
+                    button() Producto
+                  a(href='/Dintair/services/add/Service')
+                    button() Servicio
+
+
+
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/forChat/main.js')
+  script(src='/javascripts/autotyping/forpublications.js')
+  script(src='/javascripts/publication-my-contact.js')
+  script(src='/javascripts/PopUp/publications.js')
+  script(src='/javascripts/PopUp/publications_2.js')
+  script(src='/javascripts/PopUp/publications_3.js')
+  script(src='/javascripts/timeElapsed.js')
+

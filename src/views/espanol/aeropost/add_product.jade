@@ -1,0 +1,164 @@
+extends ../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsers
+
+    if messageprod.length > 0
+      div(id='mess' class='mod_restrict')
+        p.messeedit(id='messeedit')<strong></strong> #{messageprod}
+        div.close_x(style="width: 0%;")
+          span(onclick="document.getElementById('mess').style.display='none'" class="close_mess" title="Close Modal") &times
+
+    a(href="/Dintair/myrecords")
+      button.aeroprods() Ver registros
+      
+    h2.titleBoxStart Nuevo producto restringido
+    
+    div.box_mrg
+      form#msform(action='/Dintair/add/restricted', method='post', name='formu', enctype='multipart/form-data')
+        // progressbar
+        ul#progressbar
+          li.active.restricted
+          li.restricted
+          li.restricted 
+          
+          
+        // fieldsets
+        
+        fieldset
+          h2.fs-title Información general
+         
+          img.icon(src='/images/icons/alMayorPord.png')  
+          h4 Nombre del producto
+          #error_nombre.error_nombre
+          input(type='text', name='nombre', id='nombre', required="", data-error-id="error_nombre")
+          
+
+          img.icon(src='/images/icons/descriptionProd.png')
+          h4 Selecciona el estado del producto
+          .radio-group
+            input(type='radio', name='iam', id='prohibido', value='Prohibido')
+            label(for='prohibido') Prohibido
+
+            input(type='radio', name='iam', id='restringido', value='Restringido')
+            label(for='restringido') Restringido
+
+            input(type='radio', name='iam', id='sin_restriccion', value='Sin restricción')
+            label(for='sin_restriccion') Sin restricción
+          
+
+
+          img.icon(src='/images/iconos/greenCloud.png')  
+          h4 Link de referencia
+          #error_link.error_link
+          input(type='text', name='link', id='link', required="", data-error-id="error_link")
+
+
+          img.icon_aero(src='/images/icons/aeropost.jpg')
+          h4 Link hacia Aeropost
+          #error_aeropost_link.error_aeropost_link
+          input(type='text', name='aeropost_link', id='aeropost_link', data-error-id="error_aeropost_link")
+
+
+          input.id(type='hidden', id='id', name='id', value='#{user._id}')
+      
+
+          input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+
+
+        fieldset
+          h2.fs-title Entidades y documentación
+          
+          img.icon(src='/images/icons/toolsProds.png') 
+          h4 Selecciona la entidad reguladora
+          #error_entidad.error_entidad
+          select#editable-select1.entidad(name='entidad', style="width:100%;padding:8px;margin-bottom:15px;border:1px solid #ccc;", onchange='cambia();', data-error-id="error_entidad")
+            option(value="") Selecciona una entidad
+            option(value='PRODUCE') Ministerio de la Producción (PRODUCE)
+            option(value='MINAGRI') Ministerio de Agricultura (MINAGRI)
+            option(value='MININTER') Ministerio del Interior (MININTER)
+            option(value='MRREE') Ministerio de Relaciones Exteriores (MRREE)
+            option(value="MINSA") Ministerio de Salud (MINSA)
+            option(value="MTC") Ministerio de Transporte y Comunicaciones (MTC)
+
+
+          img.icon(src='/images/icons/colorsProds.png') 
+          h4 Permiso y documentación
+          #error_documents.error_documents
+          select#editable-select2.entidad.documents(name='documents', style="width:100%;padding:8px;margin-bottom:15px;border:1px solid #ccc;", data-error-id="error_documents")
+            option(value='')
+
+
+
+          img.icon(src='/images/listBook.png')  
+          h4 TUPA (Encontrado en VUCE)
+          #error_tupa_permiso.error_tupa_permiso
+          input(type='text', name='tupa_permiso', id='tupa_permiso', data-error-id="error_tupa_permiso", placeholder="Ejm: 118")
+          
+          img.icon(src='/images/listBook.png')  
+          h4 Precio del trámite (S/)
+          #error_precio_permiso.error_precio_permiso
+          input(type='text', name='precio_permiso', id='precio_permiso', data-error-id="error_precio_permiso", placeholder="Ejm: 14.07% de la UIT, S/ 100")
+
+          img.icon(src='/images/listBook.png')  
+          h4 Url del trámite en VUCE
+          #error_url_tramite.error_url_tramite
+          input(type='text', name='url_tramite', id='url_tramite', data-error-id="error_url_tramite")
+
+
+          img.icon(src='/images/listBook.png')  
+          h4 Subpartida nacional (opcional)
+          #error_subpartida.error_subpartida
+          input(type='text', name='subpartida', id='subpartida', data-error-id="error_subpartida", placeholder="Ejm: 9015.80.10.00")
+
+
+          img.icon(src='/images/icons/descriptionProd.png')  
+          h4 Comentario adicional (Opcional)
+          #error_comentario.error_comentario
+          textarea(name='comentario', id='comentario', data-error-id="error_comentario", placeholder="Ejm: Se puede traer Máximo 5 unidades para uso personal o privado.")
+          
+          
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.next.action-button(type='button', name='Continuar', value='Continuar')
+
+
+        fieldset
+          h2.fs-title Agrega una imagen referencial (opcional)
+
+          section(class="content-photo", style="width:100%;", id='sectionCONT')
+            div(id='list', name='list')
+              img(src='/images/img_Servicios.png', id='btnFhoto')
+              input(type='file', id='btnFiles', name='imgProducto', multiple )
+              input(type='hidden' name='newFile' id='newFile' value='')
+
+            section#ct-items()
+
+            img.spiral(src='/gif/spiral.gif', id='loaderImg', name='loaderImg', style="display:none;margin:0 auto; text-align:center;")
+
+          input.previous.action-button(type='button', name='Anterior', value='Anterior')
+          input.submit.action-button(type='submit', name='submit', value='Registrar producto', id='btnSend')
+
+
+
+
+
+  script(src='/javascripts/catch_coin_products.js')
+  //script(src='/javascripts/previewImages/previewProducts.js')
+
+  script.
+    $('#editable-select').editableSelect({
+      effects: 'slide',
+      duration: 80,
+      appendTo: 'body'
+    });
+
+  script(src='/javascripts/aeropost/select_documents.js')
+
+  script(src='/javascripts/dynamicForms/script.js')
+  script(src='/javascripts/dynamicForms/script1.js')
+  script(src='/javascripts/aeropost/script.js')
+  script(src='/javascripts/aeropost/validateMulti.js')
+
+  script(src='/javascripts/focuses/create_product.js')

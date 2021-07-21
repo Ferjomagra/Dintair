@@ -1,0 +1,3503 @@
+[
+  {
+    "Producto": "Repuestos usados y accesorios para vehículos motorizados",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos explosivos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Drogas/narcóticos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Dinero en efectivo y monedas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Animales vivos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Biberones y chupones para bebé",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Prendas de vestir (ropa) y calzado usados",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Artículos que son parte del patrimonio cultural",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Joyas y metales preciosos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Certificados de valor, cheques",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pieles animales",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Producto prohibido",
+    "Link": "https://aeropost.com/site/es/traer-envios-restringidos",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Recursos hidrobiológicos para investigación, recreación, difusión cultural y los destinados para fines ornamentales",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización del Ministerio de Pesquería, Certificado sanitario expedido por la autoridad competente del país de origen",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Recursos hidrobiológicos destinados para fines ornamentales",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización Sanitaria Nacional",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Especies hidrobiológicas en sus diferentes estados biológicos con fines de acuicultura",
+    "Subpartida_nacional": "-",
+    "Documentos": "Opinión favorable del Ministerio de Pesquería, Certificado sanitario expedido por la autoridad competente del país de origen",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Recursos hidrobiológicos destinados para fines ornamentales",
+    "Subpartida_nacional": "-",
+    "Documentos": "Certificado de Procedencia del Ministerio de Pesquería o Direcciones Regionales",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Recursos hidrobiológicos para investigación, recreación o difusión cultural",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización del Ministerio de Pesquería",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos e insumos químicos que directa o indirectamente pudieran ser destinados a la elaboración de pasta básica de cocaína, pasta lavada, clorhidrato de cocaína, morfina base bruta, morfina base y heroína",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de Importación del Ministerio de la Producción, Autorización de Exportación del Ministerio de la Producción",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sustancias agotadoras de la capa de ozono (SAO)",
+    "Subpartida_nacional": "-",
+    "Documentos": "Permiso de Importación de OTO / PERU",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Congelador (congeladora), Equipos de refrigeración, congelamiento y otros equipos de producción de frío y aire acondicionado",
+    "Subpartida_nacional": "-",
+    "Documentos": "Certificado expedido por el fabricante en el extranjero y visado por la autoridad competente de su país encargada de la implementación del Protocolo de Montreal (OTO/PERÚ).",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pilas y baterías de zinc carbón",
+    "Subpartida_nacional": "-",
+    "Documentos": "Certificado de Conformidad, Constancia de Cumplimiento, Declaración de Conformidad",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Neumáticos (llantas o llanta) para Automovil de turismo (carro)",
+    "Subpartida_nacional": "4011.10.10.00",
+    "Documentos": "Certificado de Conformidad, Constancia de Cumplimiento, Declaración de Conformidad",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Combinación de refrigerador y congelador con dos o más puertas separadas",
+    "Subpartida_nacional": "8418.10.10.00",
+    "Documentos": "DGAAI-PRODUCE (SAO)",
+    "Entidad": "Ministerio de la Producción - PRODUCE",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos vegetales",
+    "Subpartida_nacional": "-",
+    "Documentos": "Permiso fitosanitario de Importación del SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Plaguicidas químicos de uso agrícola, incluyendo los ingredientes activos grado técnico y sus formulaciones comerciales",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de importación del SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Animales, material de multiplicación, productos y subproductos de origen animal e insectos de valor benéfico (abejas)",
+    "Subpartida_nacional": "-",
+    "Documentos": "Permiso zoosanitario de Importación del SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Importación no comercial de mascotas (caninos, felinos, otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "SENASA - Certificado de salud, desparasitación y vacunación, emitido por la autoridad sanitaria correspondiente del país de origen, siempre que no requiera CITES",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos veterinarios terminados (farmacéuticos, biológicos, kits de diagnóstico y otros), alimentos, aditivos y premezclas",
+    "Subpartida_nacional": "-",
+    "Documentos": "Certificado de Internamiento de SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos biológicos",
+    "Subpartida_nacional": "-",
+    "Documentos": "Certificado de análisis SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos veterinarios terminados (farmacéuticos, biológicos, kits de diagnóstico y otros), alimentos, aditivos y premezclas",
+    "Subpartida_nacional": "-",
+    "Documentos": "Carta de autorización del titular del registro. Cuando el importador no es titular de registro este documento debe estar visado por SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Plantas, productos vegetales, animales, productos y subproductos de origen animal, que ingresen al país por puestos de control fronterizo terrestre, bajo cualquier modalidad, volumen, cantidad, fin al que se destine o medio de transporte que se utilice",
+    "Subpartida_nacional": "-",
+    "Documentos": "Certificado fito o zoosanitario del país de origen SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Semillas o plantas",
+    "Subpartida_nacional": "-",
+    "Documentos": "SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos y medicamentos para animales",
+    "Subpartida_nacional": "-",
+    "Documentos": "SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Insecticidas, plaguicidas y abonos",
+    "Subpartida_nacional": "-",
+    "Documentos": "SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Artículos para fiestas de navidad que sean o contengan material vegetal",
+    "Subpartida_nacional": "9505.10.00.00",
+    "Documentos": "SENASA",
+    "Entidad": "Ministerio de Agricultura - Minagri",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pistolas eléctricas, armas de CO2, pistolas para paintball, pistolas de balines",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de importación de productos pirotécnicos y materiales relacionados",
+    "Entidad": "SUCAMEC - Ministerio del Interior",
+    "Estado": "Producto restringido",
+    "Link": "https://www.sucamec.gob.pe/web/index.php/autorizacion-de-importacion-de-productos-pirotecnicos-y-materiales-relacionados/",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pistolas de bengala, señales de humo y repuestos o accesorios para armas",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de importación de productos pirotécnicos y materiales relacionados",
+    "Entidad": "SUCAMEC - Ministerio del Interior",
+    "Estado": "Producto restringido",
+    "Link": "https://www.sucamec.gob.pe/web/index.php/autorizacion-de-importacion-de-productos-pirotecnicos-y-materiales-relacionados/",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Armas de electrochoque y accesorios",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de importación de productos pirotécnicos y materiales relacionados",
+    "Entidad": "SUCAMEC - Ministerio del Interior",
+    "Estado": "Producto restringido",
+    "Link": "https://www.sucamec.gob.pe/web/index.php/autorizacion-de-importacion-de-productos-pirotecnicos-y-materiales-relacionados/",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Municiones de todo tipo, armas de fuego y cualquier artículo relacionado",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de importación de productos pirotécnicos y materiales relacionados",
+    "Entidad": "SUCAMEC - Ministerio del Interior",
+    "Estado": "Producto restringido",
+    "Link": "https://www.sucamec.gob.pe/web/index.php/autorizacion-de-importacion-de-productos-pirotecnicos-y-materiales-relacionados/",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Visores adaptables para armas",
+    "Subpartida_nacional": "-",
+    "Documentos": "Autorización de importación de productos pirotécnicos y materiales relacionados",
+    "Entidad": "SUCAMEC - Ministerio del Interior",
+    "Estado": "Producto restringido",
+    "Link": "https://www.sucamec.gob.pe/web/index.php/autorizacion-de-importacion-de-productos-pirotecnicos-y-materiales-relacionados/",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Abonos minerales o químicos con los tres elementos fertilizantes: nitrógeno, fósforo y potasio",
+    "Subpartida_nacional": "-",
+    "Documentos": "",
+    "Entidad": "SUCAMEC - Ministerio del Interior",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=3105200000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Solo cuadernos con referencia o representación de los límites del Perú.",
+    "Subpartida_nacional": "4820.20.00.00",
+    "Documentos": "Resolución Directoral emitida por el MRREE",
+    "Entidad": "Ministerio de Relaciones Exteriores (MRREE)",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Libros, revistas, mapas, cuadernos, diskettes, CDs, videocasetes, planos o cualquier otro material en que se represente o se haga referencia a los límites del Perú",
+    "Subpartida_nacional": "-",
+    "Documentos": "Resolución Directoral emitida por el MRREE",
+    "Entidad": "Ministerio de Relaciones Exteriores (MRREE)",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Instrumentos de ortodoncia",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cepillos de dientes eléctricos y sus repuestos",
+    "Subpartida_nacional": "9603.21.00.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Dispositivos médicos (medidores de glucosa, medidores de presión, medidores de grasa corporal, termómetros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos médicos opara uso médico, Equipo e instrumental médico (medico) en general",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Productos farmacéuticos, vitaminas en general, capsulas, pastilla, medicamentos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID - Necesita registro y/o receta médica visada",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Proteinas, Suplementos dietéticos, suplemento vitaminico, suplemento probiotico para el cuidado de la flora intestinal",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID - Necesita registro y/o receta médica visada",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Biberones, chupones, mordedores para dientes de bebé",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Banditas para heridas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Shampoos, lociones, lubricantes, cremas medicadas, limpiador facial hidratante, pasta de dientes (pasta dental, dentifrico), listerine (enjuague bucal), aceite para masajes",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Lentes de contacto",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Masajeadores eléctricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Máquinas para tatuajes",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Locion medicada",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Necesita receta médica visada"
+  },
+  {
+    "Producto": "Botox instantáneo y otros productos para rejuvenecimiento medicados",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Necesita receta médica visada"
+  },
+  {
+    "Producto": "Cosméticos (cosmeticos) entre otros, Artículos (artículos) Para Maquillaje en general (labiales, entre otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Microscopios",
+    "Subpartida_nacional": "9011.80.00.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Audifonos - audioprótesis",
+    "Subpartida_nacional": "9021.40.00.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Marcapasos, estimuladores cardiacos",
+    "Subpartida_nacional": "9021.50.00.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Perfumes y aguas de tocador",
+    "Subpartida_nacional": "3303.00.00.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/DS016-2011-MINSA.pdf",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Termómetros (termometros) para uso médico técnico",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/DS016-2011-MINSA.pdf",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Agujas tubulares de metal y agujas de sutura",
+    "Subpartida_nacional": "9018.32.00.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/DS016-2011-MINSA.pdf",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Preservativos (condones)",
+    "Subpartida_nacional": "4014.10.00.00",
+    "Documentos": "DIGEMID - Necesita registro y/o receta médica visada",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9504500000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Extractor de leche materna",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9504500000",
+    "Comentario": "Se puede importar hasta 4 (cuatro) unidades por envío, o 3 (tres) envíos por año"
+  },
+  {
+    "Producto": "Pañales para bebe",
+    "Subpartida_nacional": "9619.00.10.00",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9619001000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cepillo para limpieza de rostros, para el peinado de cabello de bebes o adultos, cepillo para lavado de biberones",
+    "Subpartida_nacional": "",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Alcoholímetro",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Algodoneras",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Almohadas antiácaros, antialergicas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Aparatos conservadores de órganos, tejidos, sangre",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Balanzas (mecánicas, digitales u otras)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Baterías / pilas y cargadores",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Bolígrafos de piel / marcadores de piel estériles o no estériles",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Bolsas para agua caliente o fría",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Bolsas para esterilización",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Brazaletes de plástico para identificación de recién nacidos y adultos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Brochas para aplicar maquillaje, esponjas de maquillaje",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Cajas o contenedores de esterilización",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Calzones plásticos reusables",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Cámara de refrigeración",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Cámaras para conservación de cadáveres",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Cojín (cojin) de espuma",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Cojín (cojin) que tiene un acceso a la música",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Colchones antiácaros",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Colchones antiescaras",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Colchonetas para realizar ejercicios",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Congeladores para uso hospitalario o de laboratorio clinico",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Densitómetros (no óseo)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Destructor de agujas hipodérmicas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Destructor de jeringas hipodérmicas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Esterilizadores",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Fajas elasticas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Figuritas decorativas hechas con esmalte, para uñas, Figuras para uñas, uñas postizas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Figuritas decorativas hechas de acrilico, para uñas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Gafas (lentes) de protección contra rayos X",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Juguetes sexuales (masturbadores, vibradores, consoladores, alargadores, dildos, entre otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "No se pueden importar o comercializar atribuyéndoseles propiedades terapéuticas"
+  },
+  {
+    "Producto": "Kits /sets para manicure, para pedicure",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Lámparas cialíticas, lámparas de techo y otras lámparas utilizadas para iluminar áreas de trabajo",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Lámparas de luz ultravioleta",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Maniquíes de entrenamiento",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Manómetros para gases",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Pantallas para visualizar películas radiográficas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Papel higiénico",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Papel toalla, toallitas humedas en general",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Plantillas ortopédicas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Protectores de cama, o colchones",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Prótesis de uso externo (pie, brazo, mamas u otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID. No incluyen ningún otro producto a parte."
+  },
+  {
+    "Producto": "Reloj cronómetro",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Servilletas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Sillas para bebe (asiento para bebe), coche para bebe",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Simuladores / maquetas de equipos biomédicos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Tambores",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Tapones para oidos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Termómetros ambientales",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Vajilla para comida de bebés",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Zapatos, zapatillas ortopédicos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Bencina",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Azufre en polvo",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Bicarbonato de sodio",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Mármol",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Andadores",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Bastones",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Cunas para recién nacidos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Plantillas ortopédicas, dedales, soporte para dedo",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digemid.minsa.gob.pe/UpLoad/UpLoaded/PDF/Publicaciones/DocumentosVarios/P32_2015-05-28_Listados_Productos.pdf",
+    "Comentario": "Puede importarlo con normalidad, no requieren registros sanitario emitido por la Dirección de Autorización Sanitarias de DIGEMID"
+  },
+  {
+    "Producto": "Pomadas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=2712109000",
+    "Comentario": "4 unidades por envío como máximo"
+  },
+  {
+    "Producto": "Paños humedos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4818900000",
+    "Comentario": "4 unidades por envío como máximo y para uso personal"
+  },
+  {
+    "Producto": "Pestañas postizas",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGEMID",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "4 unidades por envío como máximo y para uso personal"
+  },
+  {
+    "Producto": "Alimentos y bebidas industrializados (incluidos los recursos hidrobiológicos para consumo humano) - Operación realizada por el titular de Registro",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Desinfectantes y plaguicidas para uso doméstico y plaguicidas para uso en salud pública",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Residuos o desechos, cualquiera sea su origen o estado material, destinado a su reciclaje, reutilización o recuperación",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lotes o colecciones de juguetes para niños",
+    "Subpartida_nacional": "9503.00.96.00, 9503.00.99.01",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Alimentos (comidas) y bebidas envasadas destinadas para la comercialización",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Útiles escolares en cantidades destinadas para la comercialización",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Stickers para niños, o solamente stickers o calcomanias",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Ambientadores de todo tipo",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Dispositivos que requieran asegurar inocuidad para aplicar o ingerir medicamentos (Ej: cucharas dosificadoras para jarabe)",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Solo: Triciclos, coches y similares con ruedas para niños o niñas",
+    "Subpartida_nacional": "9503.00.10.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Solo: Muñecos y muñecas para niños o niñas",
+    "Subpartida_nacional": "9503.00.22.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Solo: Rompecabezas con menos de 500 piezas para niños o niñas",
+    "Subpartida_nacional": "9503.00.40.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Juguetes de animales, Juguetes que representen animales o seres no humanos (osos de peluche, entre otros)",
+    "Subpartida_nacional": "9503.00.93.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Solo: Instrumentos y aparatos de música para niños o niñas",
+    "Subpartida_nacional": "9503.00.94.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Solo: Pelotas inflables, de colores para niños y niñas, excluidas las reglamentarias para deporte",
+    "Subpartida_nacional": "9506.62.00.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Temperas y acuarelas",
+    "Subpartida_nacional": "3213.10.10.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "https://www.gob.pe/institucion/minsa/normas-legales/249239-008-2007-sa",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Galletas dulces (con adición de edulcorante), acondicionadas para su venta al por menor",
+    "Subpartida_nacional": "1905.31.00.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8708920000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Legos, o bloque para armar",
+    "Subpartida_nacional": "9503.00.40.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9503004000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Galletas saladas o aromatizadas, acondicionados para su venta al por menor",
+    "Subpartida_nacional": "1905.90.10.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=1905901000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Frutos secos (pasas, pecanas, mani, avellanas, damasco, entre otros)",
+    "Subpartida_nacional": "2008.19.90.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=2008199000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Probioticos",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=1901101000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Capsulas de café instantaneo (Preparaciones a base de extractos, esencias o concentrados o a base de café)",
+    "Subpartida_nacional": "2101.12.00.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=2101120000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Tierra diatomácea de marca Earthborn Elements",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "https://busquedas.elperuano.pe/normaslegales/decreto-supremo-que-aprueba-el-reglamento-del-sistema-nacion-decreto-supremo-n-001-2015-minagri-1194460-1/",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lapices carbon, lapiz bicolor, lapices colores, uso escolar (equipo de arte)",
+    "Subpartida_nacional": "9609.10.00.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9609100000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Aceite de oliva, aceite vegetal, aceite para cocina",
+    "Subpartida_nacional": "1509.90.00.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=1509900000",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Chololates, dulces en general, chicles (chicle)",
+    "Subpartida_nacional": "1806.10.00.00",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/servlet/EAIScroll?Partida=1806100000&Desc=",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Vinos (vino), whisky, cervezas, espumantes, licores",
+    "Subpartida_nacional": "-",
+    "Documentos": "DIGESA",
+    "Entidad": "Ministerio de Salud",
+    "Estado": "Producto restringido",
+    "Link": "http://www.aduanet.gob.pe/aduanas/infoaduanas/clasifica/clasificacionarancelaria/entidad/relacioncodigos.htm",
+    "Comentario": "Se puede importar Máximo 4 unidades para uso personal por envío. Caso contrario, requerirá permiso emitido por Digesa"
+  },
+  {
+    "Producto": "Equipos o aparatos de telecomunicaciones (Equipos inalambricos, Walkie talkies, Walkie talkie)",
+    "Subpartida_nacional": "-",
+    "Documentos": "Permiso de internamiento",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "PERMISO MTC  - HOMOLOGADOS PUEDE NUMERAR"
+  },
+  {
+    "Producto": "Aparatos emisores o rececptores, de radiotelefonía o radiotelegrafia",
+    "Subpartida_nacional": "8517.69.20.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Teléfonos móviles (celulares)",
+    "Subpartida_nacional": "8517.12.00.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Microfonos (microfono) (solos alámbricos) y soportes",
+    "Subpartida_nacional": "8518.10.00.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Teléfono (telefono) de auricular (audifonos) inalambrico combinado con micrófono",
+    "Subpartida_nacional": "8517.11.00.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Terminal colector de datos inalámbrico",
+    "Subpartida_nacional": "",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Repetidores de radio comunicación privada",
+    "Subpartida_nacional": "8517.69.20.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Estación meteorológica con conexión inalámbrica para transmisión de datos",
+    "Subpartida_nacional": "9015.80.10.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Analizadores de espectro (incluye analizadores de red WIFI, CELULAR).",
+    "Subpartida_nacional": "9030.89.00.00",
+    "Documentos": "Permiso MTC",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Terminal portátil del servicio de telefonía móvil (Telefonos celulares)",
+    "Subpartida_nacional": "8517.12.00.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Terminales portátiles inalámbricos Tablet y Phablet.",
+    "Subpartida_nacional": "8471.30.00.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Terminales para el servicio de telefonía fija, sólo alámbricos. 8517.18.00.00",
+    "Subpartida_nacional": "8517.18.00.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Lector de libros electrónicos (Kindle)",
+    "Subpartida_nacional": "8521.90.90.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "GPS –Trackers para localización vehicular.",
+    "Subpartida_nacional": "8526.91.00.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Smart Watch con módulo SIM",
+    "Subpartida_nacional": "8517.12.00.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Drones",
+    "Subpartida_nacional": "8802.11.00.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 1 unidad para uso personal. Superior a una unidad requerirá permiso de internamiento aún contanto con homologación."
+  },
+  {
+    "Producto": "Cámara (camaras) de televisión incorporada en drone",
+    "Subpartida_nacional": "8525.80.10.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 1 unidad para uso personal. Superior a una unidad requerirá permiso de internamiento aún contanto con homologación."
+  },
+  {
+    "Producto": "Cámaras (camaras) digitales o videocámaras, incorporadas en drones",
+    "Subpartida_nacional": "8525.80.20.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 1 unidad para uso personal. Superior a una unidad requerirá permiso de internamiento aún contanto con homologación."
+  },
+  {
+    "Producto": "Aviones o helicópteros, modelos reducidos a escala, de control remoto",
+    "Subpartida_nacional": "9503.00.30.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 1 unidad para uso personal. Superior a una unidad requerirá permiso de internamiento aún contanto con homologación."
+  },
+  {
+    "Producto": "Aviones o helicópteros, de juguetes, de control remoto",
+    "Subpartida_nacional": "9503.00.96.00",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "Se puede traer Máximo 1 unidad para uso personal. Superior a una unidad requerirá permiso de internamiento aún contanto con homologación."
+  },
+  {
+    "Producto": "Cámaras de vigilancia",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "Ministerio de Transportes y Telecomunicaciones",
+    "Estado": "Producto restringido",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "PERMISO MTC  - HOMOLOGADOS PUEDE NUMERAR"
+  },
+  {
+    "Producto": "Teléfonos IP, sólo alámbricos.",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cámaras (camaras) IP, sólo alámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Amplificador distribuidor para TV-Cable",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Switch o Conmutador para transmisión de datos (sólo alámbricos)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Router o Ruteadores para transmisión de datos (sólo alámbricos)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Convertidores de medios o de redes alámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos GPS únicamente receptores (no incluye los GPS-TRACKERS)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos de seguridad de redes o Firewall sólo alámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos codificadores, encoder, moduladores, sólo alámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos de cablemodem sólo alámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Ecosondas, Sonares",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Intercomunicadores, porteros para residencias y edificios",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Fuentes de alimentación",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Controladores y/o administradores de Access point",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Auriculares, audifonos Bluetooth",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Módulos, nodos, transceptores, transceivers, multiplexores, ópticos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Televisores con Wi-Fi",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cámaras (camaras) fotográficas con Wi-Fi, cámaras digitales",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Teclado (teclados) Inalámbrico",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Mouse Inalámbrico",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lapicero inalámbrico",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Servidores de video",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Videojuego Inalámbrico (Videoconsolas)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9504500000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Laptop o Computadora portatil",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos Notebook",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos DVD Players",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos blueray",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Parlantes, speakers o altavoces inalámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Filmadoras",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Impresoras alámbricas o inalámbricas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Proyectores alámbricos o inalámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Electrodomésticos (refrigeradoras, cocina, etc.)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Adaptadores TV BOX para TV",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Escáneres (escáner) alámbricos o inalámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Adaptador inalámbrico para TV HDMI o USB",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos Gateway sólo alámbricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Linternas (linterna), luz de trabajo, focos (foco), bombillas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Mochilas, Bolsos, contenedores, containers, cartera, billeteras, Baúles, cofres, maletas (valijas) y maletines, incluidos los de aseo, y contenidos similares",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4202111000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cascos de seguridad",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6506100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cascos para ciclistas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6506100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Calculadoras electrónicas que puedan funcionar sin fuente de energía eléctrica exterior y máquinas (maquinas) de bolsillo registradoras, reproductoras y visualizadoras de datos, con función de cálculo",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8470100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pantallas (pantalla), monitores (monitor) externos para uso personal",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Control de mando para tv (televisores), control remoto",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9504500000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Encendedores de gas, pipas, mecheros",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9613100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Carros a motor o eléctricos, diseñados para ser montados",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Carros a pedales, Bougui",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Coches para bebe sin accesorios de juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Bicicleta (bicicletas) para adulto o niño",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Caminador para bebes sin accesorios de juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Balancín, Mecedoras Sin Accesorios De Juguete",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Andador, Silla De Comer Para Niños, Sin Accesorios Que Califiquen Como Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Bacin /baño Para Bebe",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tina De Baño Para Bebe Sin Accesorios De Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Canguro Para Bebe. Portabebe Para Auto",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Silla Plegable Para Ninos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Toboganes Resbaladera Y Columpios Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Casita Para Niños Sin Accesorios Que Califiquen Como Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Carpas, Tiendas Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Artefactos De Madera Para Niños Sin Accesorios Que Califiquen Como Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pizarras Y Caballetes Sin Accesorios Que Califiquen Como Juguetes O Útiles De Escritorio",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cometas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Porfiados",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Zancos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Kit De Equilibrio Variado",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Colchonetas Y Juegos Para El Desarrollo Psicomotriz",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Conos De Actividades Deportivas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Antifaces Para Carnaval",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Disfraces Sin Máscara Ni Accesorios Plásticos Que Califiquen Como Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Vinchas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Bijouteria De Metal Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lamparas (lampara), lampara led, lamparas en general",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pack De Lentes De Sol Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Espejos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Inflador De Globos Con Agua, inflador de neumáticos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tapetes Sin Juguetes Ni Accesorios",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cenefas De Paredes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Titeres De Mano 100% Textil",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Teatrillo De Historias Clasicas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Maquetas Del Cuerpo Humano",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Mapas, Mapamundi, Globo Terráqueo",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Libros De Tela Sin Accesorio De Plastico Que Califiquen Como Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Libros De Juegos Sin Accesorio De Plastico Que Califiquen Como Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lienzos Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Libros, libretas, revistas, Cuentos, enciclopedias (que no representen mapas del Perú), cuadernos, folderes.",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juego De Memoria Y De Mesa De Carton Plastificado",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juego De Cartas Impresos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Ligas De Escritorio",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Ligas Y Collets Para Cabello",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tizas Para Pizarra, Tiza Pastel",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pintura (pinturas) Y Oleos Para Profesionales (juego de pinturas acrilicas)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Alfiler, Binder Clip, Chiches, Dispensador De Cinta",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Módulos Educativos: Circuitos Electricos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Adornos De Navidad",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos Náuticos (snorkel, Aletas)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juego De Dardos Profesional",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Bicicletas Estacionarias Para Ejercicio",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pilas O Baterias Que Se Utilizan Para El Funcionamiento De Los Juguetes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Scooters Diseñados Para Ser Montados",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Scooters Electricos Diseñados Para Ser Montados",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Patines, patinestas, petinete, longboards, skateboards (skate)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Equipos De Protección Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Relojes Con Diseños Infantiles",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Caleidoscopios De Material Cartón Y Espejo",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Esferas Acuáticas, Esfera Para Agua, Burbujas Humanas Y Balón Para Caminar",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juguetes Para Mascotas (pets Toys)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Rompecabezas De 500 Piezas A Más",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Instrumentos Musicales (flautas, Guitarras, Bajos, Saxofón, Entre Otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pelotas Reglamentarias Para Deporte (pelotas De Fultbol, Basketball, Tenis, Golf, Polo, Etc.)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Piscinas Inflables E Inflables Para Piscina",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Inflables Para Montar",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juegos Inflables Gigantes, set de golf",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Marcadores Permanentes Para Cd, Madera, Metal, Vidrio, Plástico, Cartón, Textil, Pizarra, Carne.",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lapiz Carboncillo",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Minas Para Lápiz O Minas Para Portaminas, Portaminas Sin Decoración Y Sin Diseño",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lapiceros Y Boligrafos De: Tinta Gel, Tinta Liquida (boligrafos de colores de punta fina)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lapicero Tinta Invisible (luz Uv / A Batería)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tijeras, Reglas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sacapuntas Sin Diseños Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cartucheras",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lápiz Carpintero",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sellos De Oficina",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Papelería De Oficina",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cuadernos Sin Stickers",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tomatodos (botella, frascos, envases para líquidos)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Llaveros",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Alcancias, Acancias Electricas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sorbetes, cañitas, pajillas, subsionador",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Platos De Cumpleaños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Resaltadores (marcadores)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lapiz Corrector (liquid Paper)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pintura Acrílica",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tarjetas De Papel Para Niños",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Post- It",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Set De Escritorio",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Limpiatipos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cintas Decorativas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Etiquetas Autoadhesivas Para Cuadernos Y Regalos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.digesa.minsa.gob.pe/DEPA/juguetes_utiles/pdf/Articulos_que_no_requieren_autorizacion_sanitaria.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lupas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/itarancel/arancelS01Alias",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Binoculares",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9005100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lentes de sol, monturas para lentes con medida",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9004100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sillas, o mesas de escritorio",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9001100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tripodes, flash externos (accesorios para camaras fotográficas)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9620000091",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Hamacas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9619001000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cable adaptador, cable de carga,",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Escaner inalámbrico",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Reloj multifuncional (Ejm: Masterclock), cronometros (cronometro)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Smart Watch con módulo SIM, Reloj",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Máximo 5 unidades para uso personal o privado. No requiere permiso de internamiento"
+  },
+  {
+    "Producto": "Reloj de pulsera con Bluetooth",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Máximo 5 unidades para uso personal o privado. No requiere permiso de internamiento"
+  },
+  {
+    "Producto": "Ropa en general (Polos, pantalones, poleras, casacas, sacos, chalecos, camisas, ternos, vestidos, blusas, pareos, medias, boxer, ropa interior en general, entre otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6301100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cables, Cable",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Ipods, reproductores Mp3 y Mp4",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Disco duro externos, y dispositivos de almacenamiento, tarjeta memoria MicroSD Sandisk",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Escaner portatil, inalmábrico",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Autopartes nuevas como: tubos de escape, silenciadores, neumáticos, faros, amortiguadores, entre otros, para automóviles (carros) o motociclestas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8708920000",
+    "Comentario": "Solo para productos nuevos. Prohibida la importación de productos usados."
+  },
+  {
+    "Producto": "Estuche (estuches), Case (cases), protectores (protector de pantalla) (micas), fundas para laptop, carcasas para teléfono móvil (celular)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7019909000",
+    "Comentario": "Para uso personal"
+  },
+  {
+    "Producto": "Agujas de coser, de tejer, pasacintas, agujas de ganchillo (croché), punzones para bordar y artículos similares, de uso manual, de hierro o acero; alfileres de gancho (imperdibles) y demás alfileres de hierro o acero",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7319400000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Refrigerantes para laptop",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6703000000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Floreros (florero), macetas (maceta) para plantas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7013990000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tablets (Ipad - Apple, Samsung, entre otras)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Máximo 5 unidades para uso personal o privado. No requiere permiso de internamiento"
+  },
+  {
+    "Producto": "Mezclador de sonido para DJ",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Máximo 5 unidades para uso personal o privado. No requiere permiso de internamiento"
+  },
+  {
+    "Producto": "Escurridor (escurridores)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7323931000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Discos musicales (disco musical), peliculas en CD",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8523801000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Contestadora digital",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Rasuradora eléctrica, máquinas (maquinas) de afeitar de uso personal, afeitador",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8212101000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Ropa para bebé (calcetines, pañales, medias, babero, mameluco, paños para eructos, bata, jeans, gorros, chaquetas, camisas, guantes, mitones, zapatillas, entre otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6301100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Controlador de carga solar",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9032891900",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Gorros, lentes de natación, ropa de baño",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9506290000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Repuestos para bicicletas, accesorios para bicicleta",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4011500000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sombreros (sombrero), gorros, gorras (gorro, gorra)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6505009000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Alfombrilla de escritorio de piel sintética",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4202121000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Mascarillas faciales protectoras (respirador de mascara de seguridad)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6307903000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Aspirador de poros para eliminar puntos negros, aspiradora (aspirador portatil) eléctrica, extractor de puntos negros, dispositivo de extracción, dispositivo de succión para mujeres",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8203200000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juego de olla (ollas), sartenes (sartén), cacerolas (cacerola), juego de cubiertos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7323921000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Marcos (marco, enmarque) para fotos, ventanas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7610900000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Alfombras, para piso y uso doméstico",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=5702410000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Canastas (canasta), cestos (cesta)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4419190000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Radios (Equipos para estaciones transmisoras radioeléctricas en general)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/RD_479-2016-MTC27.pdf",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tarimas de cama",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9403900000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Sacos de dormir (sleeping)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9404300000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Conchones (conchon)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9404290000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cobertor (cobertores), para carro, bicicletas, entre otros",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9506910000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Engrampadores",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8205599900",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Herramientas para albañiles, fundidores, cementeros, yeseros, pintores (llanas, paletas, pulidores, raspadores, etc), juego de herramientas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8205599200",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Bolsa de snowboard o similares, mochilas porta bicicletas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4012901000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Soporte para telefono (teléfono, celular) para carro (choche, automovil, auto)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9405920000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Aspiradora eléctrica (electrica) para automovil, o para hogar",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8203200000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pinceles de pintura (pincel), brochas, (Juego de pinceles de pintura)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9603301000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cuadernos, sketchbook, sketchpad, bloc de dibujo, libro de boceto de tapa dura",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4820100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cortapapeles, abrecartas, raspadores, sacapuntas, tajadores (tajador) y sus cuchillas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8214100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Lienzo para pintura preestirado, Lienzo para pintura, lienzo de algodon",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=5901900000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pizarras, tableros, paletas de plástico para pintura",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9610000000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Anillos de plástico, juego de herramientas de medición para medir el tamaño de las joyas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7326200000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Kit de Fabricación de pulseras para niñas y adolescentes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7326200000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Kit de limpieza, Articulos (artículos) de limpieza para auto, esponjas (esponja), almohadillas, gamuza de secado, escobilla de venta con mango",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7323100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Tablas (tabla) de surf, esquis acuaticos, deslizadores de vela",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9506290000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Funda (fundas) de volante o para asientos (asiento), Organizador de maletero o respaldo plegable, parasol plegable, cojin de espuma, alfombrillas de goma",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7325990000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Mesa multifuncional para respaldar de carro, gripmaster para automovil",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7325990000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Guantes (guante), guantes de compresión para artritis, mitones, guantes impermeables",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4015191000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Correas de amarre para motocicleta, arnes para remolque",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=5806329000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Filtro (filtros) de aire, fintros cónicos, filtro de aceite",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8421230000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Zapatos (zapato), zapatillas (zapatilla)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6402120000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Accesorios para autos, kit de rodamiento y sello, Frenos de disco, entre otros repuestos",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=4016930000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cargador de bateria para auto",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9031101000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Llave universal plegable, Gorchen herramienta de zocalo universal, medidor digital de presión, llave de tuerca, llave de peine carded, juego de tuercas, manguera para aire acondicionado, brazo pitman",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=8205599200",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Juegos de mesa (ajedrez, damas, mesa de poker, entre otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9504901000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Cartuchos de tinta para impresora",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9612100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Grabador de video HD (grabadora, videograbadora)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=9207100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Pantalla tactil (respuestos para teléfonos, tables, entre otros)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "TP-Link (enrutador WIFI inteligente)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Reproductor multimedia (ROKU, o similares)",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "https://portal.mtc.gob.pe/comunicaciones/concesiones/internamientos/documentos/No_Internamiento.pdf",
+    "Comentario": "Se puede traer Máximo 5 unidades para uso personal o privado."
+  },
+  {
+    "Producto": "Almohada (almohadas), cubrecamas, sábanas (sabanas), fundas",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7323100000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Botas para motocicleta, zapatos para trabajo",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=6402120000",
+    "Comentario": "-"
+  },
+  {
+    "Producto": "Joyería (joyeria), collares, pulseras, aretes",
+    "Subpartida_nacional": "-",
+    "Documentos": "-",
+    "Entidad": "-",
+    "Estado": "Sin restricciones",
+    "Link": "http://www.aduanet.gob.pe/servlet/AIScrollini?partida=7113190000",
+    "Comentario": "-"
+  }
+]

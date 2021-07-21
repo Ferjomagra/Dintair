@@ -1,0 +1,726 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  .prod-start
+    .perfiluser
+      if successedit.length > 0
+        div(id='mess' class='mod')
+          p.messeedit(id='messeedit')<strong></strong> #{successedit}
+          div.close_x(style="width: 100%;")
+            span(onclick="document.getElementById('mess').style.display='none'" class="close_mess" title="Close Modal") &times
+
+      if sucessamb.length > 0
+        div(id='mess' class='mod')
+          p.messeedit(id='messeedit')<strong></strong> #{sucessamb}
+          div.close_x(style="width: 100%;")
+            span(onclick="document.getElementById('mess').style.display='none'" class="close_mess" title="Close Modal") &times
+
+      if successPass.length > 0
+        div(id='mess' class='mod')
+          p.successPass(id='messeedit')<strong></strong> #{successPass}
+          div.close_x(style="width: 100%;")
+            span(onclick="document.getElementById('mess').style.display='none'" class="close_mess" title="Close Modal") &times
+
+      if deletePublic.length > 0
+        p.successPass<strong></strong> #{deletePublic}
+
+
+      button.btn_selec_pic(onclick="document.getElementById('id0cover').style.display='block'") Seleccionar imagen
+      div.btn_for_coverp
+        
+        div(id="id0cover" class="modal")
+          form.change_portada_form(class="modal-content animate", action="/Dintair/profile/user/#{user._id}/#{user.comp_name}?_method=put", method='post', enctype='multipart/form-data')
+            div(class="imgcontainer", style="width: 100%;")
+              span(onclick="document.getElementById('id0cover').style.display='none'" class="close" title="Close Modal") &times
+
+            div(class="", style='padding:15px;')
+              
+              div(id='port_img')
+                p.palabra Seleccionar imagen
+                input(type='file', name='imagePortada', id='portada_image')
+
+              div(id='uploadForm')
+
+
+              div(class='TextField', id='TextField', name='TextField', style="display:none")
+                p(name='textUploadDefect', id='textUploadDefect') Esta imagen es superior al límite de 1.5MB. Por favor, intente con otra.
+
+              input(type="hidden", name='imagePortadaCrop',id='imagePortadaCrop', value='')
+              div(id='cropped-original')
+
+              input.save_changes(type='submit', value='Guardar imagen')
+
+              
+
+
+      div.box_portada(style='background-image: url("#{user.imagePortada}")')
+          
+
+
+      div.information_boxes
+        div.environment_userprofile
+          div.first_box_inline
+            div.profile_pic_c(id='navbar')
+              button.popup_profile_enterprise(onclick="document.getElementById('id0_profile').style.display='block'")
+                div.profile_here(style='background-image: url("#{user.imageProfile}")')
+              div.clientes(id="id0_profile" class="modal")
+                div.modal-content.clientes
+                  div.header_message
+                   
+                    div(class="imgcontainer", style="width: 100%;")
+                      span(onclick="document.getElementById('id0_profile').style.display='none'" class="close" title="Close Modal") &times
+                  div.messages
+                    form(action='/Dintair/picture/#{user._id}?_method=PUT', method='POST', id='uploadForm', enctype='multipart/form-data')
+                      div.image
+                        
+                        img(src='#{user.imageProfile}')
+
+                        div(id='port_img')
+                          p.palabra(id='btnFhoto') Seleccionar imagen
+                          input(type='file', name='imgperfil', id='btn_enviar_profile')
+                          input(type='hidden' name='newFile' id='newFile' value='')
+
+                        section#ct-items
+
+                      input.submit(type='submit', value='Guardar')
+
+
+
+              div.data_prof
+                div.name_comp
+                  h2.comp_name= user.comp_name
+
+                div.numbers
+          
+                  if followers_count == 0
+                  else
+                    div.follow.flexible
+                      a(href='/Dintair/contacts/f&f')
+                        h3.viewsqtn()= followers_count
+                        h3.viewsqt Interesados
+
+                
+                  if user.wtpnumber
+                    div.WhatsApp(style='background-image: url("/images/defaultimages/0.jpg");')
+                      div.field
+                        div.center
+                          img(src='/images/icons/whatsapp-128.png')
+                          p= user.wtpnumber
+                  else
+
+
+                if user.rubroTarget == "Tienda de Alimentos Naturales y Orgánicos"
+                  if user.imageMarket
+                    button.popup_market(onclick="document.getElementById('id0_market').style.display='block'")
+                      div.frontalviewMarket(style='background-image: url("#{user.imageMarket}")')
+                    div.first_img_cr(id="id0_market" class="modal")
+
+                      div.modal-content()
+                        div.header_message
+                          div(class="imgcontainer", style="width: 100%;")
+                            span(onclick="document.getElementById('id0_market').style.display='none'" class="close" title="Close Modal") &times
+                          div.messages()
+                            form(action='/Dintair/picture/market/#{user._id}?_method=PUT', method='POST', id='uploadForm', enctype='multipart/form-data')
+                              div(id='port_img')
+                                p.palabra(id='btnPhoto') Seleccionar imagen
+                                input(type='file', name='imageMarket', id='btn_market')
+                                input(type='hidden' name='newFile' id='newFile' value='')
+
+                              section#items
+
+                              input.submit(type='submit', value='Guardar')
+
+
+
+
+                            img(src='#{user.imageMarket}')
+                  else
+                    
+                else
+                  
+
+ 
+                div.copy_url
+                  div.title_copy
+                    img(class='for_title', src='/images/icons/link.png')
+                    h3(class='for_title', ) Enlace web
+                  div.btn_copy
+                    input(type='text', id='GfGInput', value='https://www.dintair.com/profile/#{user.new_comp_name}'+'-'+'#{user.id_url}', style='background-color:white;')
+                    
+                    button(onclick='GeeksForGeeks()') Copiar
+
+          
+          div.second_box_inline
+            div.box_turn
+              ul.nav.nav-tabs
+                li.active
+                  a(data-toggle='tab', href='#menu') Información
+                li
+                  a(data-toggle='tab', href='#menu1') Publicaciones
+                li
+                  a(data-toggle='tab', href='#menu2') Productos
+                li
+                  a(data-toggle='tab', href='#menu3') Representante
+                if user.username == 'fmadueno@dintair.com'
+                  li
+                    a(data-toggle='tab', href='#menu4') Sugerencias
+                
+              .tab-content
+                #menu.tab-pane.fade.in.active
+                  div.comp_data_table
+                    div.firstPart
+
+                      div.imageComp
+                        img(src='#{user.imageProfile}')
+                      div.comp_data
+
+                        h3= user.comp_name
+
+                        if user.comp_name == ""
+                          div.comp_table
+
+                            a(href='')
+                              button() Agrega los datos de la empresa
+
+                            p Puedes agregar imágenes como el logo y portada de la empresa ingresando a tu cuenta de Dintair y editando tu perfil empresarial desde allí.
+                        else
+                          div.comp_data_table
+                            div.firstPart.col-lg-6.col-md-6.col-sm-6
+
+                              if user.rubroTarget
+                                div.field
+                                  h4 Rubro
+                                  p= user.rubroTarget
+                              else
+
+                              if user.country
+                                div.field
+                                  h4 País
+                                  p= user.country
+                              else
+
+                              if user.provincia
+                                div.field
+                                  h4 Provincia
+                                  p= user.provincia
+                              else
+
+                              if user.direccion
+                                div.field
+                                  h4 Dirección
+                                  p= user.direccion
+                              else
+
+                              if user.comp_inicios
+                                div.field
+                                  h4 Sobre la empresa
+                                  div.msg-post
+                                  - var gmsg = user.comp_inicios.split("\n")
+                                  for itemMsg in gmsg
+                                    p #{itemMsg}
+                              else
+
+                              if user.skills_comp
+                                div.field
+                                  h4 Especialidades
+                                  div.msg-post
+                                  - var gskills = user.skills_comp.split("\n")
+                                  for itemskills in gskills
+                                    p #{itemskills}
+                              else
+
+
+                            div.secondPart.col-lg-6.col-md-6.col-sm-6
+                              if user.iam
+                                if user.iam == 'Ambos'
+                                  div.field
+                                    h4 Dedicación
+                                    p Proveedor y Comprador
+                                else
+                                  div.field
+                                    h4 Dedicación
+                                    p= user.iam
+
+                              else
+
+                              if user.cant_trabajadores_comp
+                                div.field
+                                  h4 Cantidad de empleados
+                                  p= user.cant_trabajadores_comp
+                              else
+
+                              if user.dia && user.mes && user.ano
+                                div.field
+                                  h4 Inicio de operaciones
+                                  p= user.dia+' de '+user.mes+' de '+user.ano
+                              else
+
+                              if user.comp_dedicacion
+                                div.field
+                            
+                                  h4 Especialidades
+                                  p= user.comp_dedicacion
+                              else
+
+
+                              if user.pagina_web
+                                div.field
+                                  h4 Página web
+                                  a(href='http://'+user.pagina_web, target='_blank')
+                                    p= user.pagina_web
+                              else
+                                
+
+                              if user.urlFace
+                                div.field
+                                  h4 Página en Facebook
+                                  a(href=user.urlFace, target='_blank')
+                                    p= user.face_page
+                              else
+
+
+                              if user.username
+                                div.field
+                            
+                                  h4 Correo electóronico
+                                  p= user.username
+                              else
+
+                          a(href='/Dintair/profile/user/edit')
+                            button() 
+                              img.icon(src='/images/icons/iconsEditComp.png')
+                              | Editar empresa
+
+
+                      #content-map
+                        h2 Ubicaciones
+                        section.g-location
+                          div.flex_ion
+                            div.sec_ment
+                              //- var cssEdit = (user.id == newUser._id)? '' : 'dn';
+                              input(type='button', name="btnEdit", value="Agregar ubicación", class='')
+                            div.sec_ment.loc_ation
+                              input(type='button', name="locationAll", value="Ver ubicaciones", class='#{cssDN}')
+                          div.sec_ment
+                            -var cssDN = (places.length)? '' : 'dn';
+                            select(name='location' class='#{cssDN}', data-places='#{places.length}')
+                              each item, index in places
+                                option(value='#{index}', data-lat='#{item.lat}', data-lng='#{item.lng}', data-title='#{item.title}') #{item.title}
+                          
+                          
+                        section.g-search.dn
+                          input(type='text', id='search', name='search', placeholder='Busca una dirección')
+                          input(type='button', name="locationAllEdit", value="Mapear")
+                          
+                          section(class="content-sitem")
+                            each item, index in places
+                              article(class='js-item', data-lat='#{item.lat}', data-lng='#{item.lng}', data-title='#{item.title}', state='0')
+                                input(type='radio' name="check" value="" class="js-check")
+                                b(class="js-title") #{item.title}
+                                input(type="text" name="title" value="" class="dn js-title-edit")
+                                div.box_d_c
+                                  span(class="js-delete") X
+                                  span(class="js-change" behavior="0") Editar dirección
+
+                          input(type='button', name="btnSaved", value="Guardar cambios", data-url="/Dintair/update-map")
+
+                        section#map
+
+                #menu1.tab-pane.fade
+
+                  div.box_center_headers
+                  .tab-content
+
+                    #menu5.tab-pane.fade.in.active
+                      if publications.length
+                        for publication in publications
+                          if publication.status == false
+                            div.boxeachpublication(data-id="#{publication._id}")
+                              div.header
+                                div.imgandname
+                                  a(href='/Dintair/#{publication.creator.id}')
+                                    div.profileimg(style='background-image: url("#{publication.creator.imageProfile}")')
+                                  a(href='/Dintair/#{publication.creator.id}')
+                                    p= publication.creator.comp_name
+                                  
+
+                              div.dates
+                                p.dates= publication.fecha+' | '+publication.nuevafecha
+
+                              div.comment.msg-post
+                                - var gmsg = publication.estemensaje.split("\n")
+                                for itemMsg in gmsg
+                                  p #{itemMsg}
+
+                              if publication.imagePublics == undefined
+                              else
+                                -var gImg = publication.imagePublics.split('---');
+
+
+                                if gImg.length == 1
+                                  div.spaceLun
+                                    div.firstitem
+                                      p(onclick="document.getElementById('id0img1').style.display='block'")
+                                        img.one_image(src='#{gImg}', data-list-id='#{publication.imagePublics}')
+                                      div.first_img_cr(id="id0img1" class="modal_one_img")
+
+                                        div.modal-content_one_img(id='sectionResult')
+                                          div.header_message
+                                           
+                                            div(class="imgcontainer", style="width: 100%;")
+                                              span(onclick="document.getElementById('id0img1').style.display='none'" class="close" title="Close Modal") &times
+
+                                            div.messages(id='result')
+                                              
+
+                                else
+                                if gImg.length == 2
+                                  div.picturescontent
+                                    div.seconditem
+                                      p(onclick="document.getElementById('id0img2').style.display='block'")
+                                        img.one_image(src='#{gImg[0]}', data-list-id='#{gImg[0]}')
+
+                                      div.first_img_cr(id="id0img2" class="modal_one_img")
+
+                                        div.modal-content_one_img(id='sectionResult_2')
+                                          div.header_message
+                                           
+                                            div(class="imgcontainer", style="width: 100%;")
+                                              span(onclick="document.getElementById('id0img2').style.display='none'" class="close" title="Close Modal") &times
+
+                                            div.messages(id='result_2')
+
+                                  div.picturescontent
+                                    div.thirditem
+                                      p(onclick="document.getElementById('id0img3').style.display='block'")
+                                        img.one_image(src='#{gImg[1]}', data-list-id='#{gImg[1]}')
+
+
+                                      div.first_img_cr(id="id0img3" class="modal_one_img")
+
+                                        div.modal-content_one_img(id='sectionResult_2')
+                                          div.header_message
+                                           
+                                            div(class="imgcontainer", style="width: 100%;")
+                                              span(onclick="document.getElementById('id0img3').style.display='none'" class="close" title="Close Modal") &times
+
+                                            div.messages(id='result_3')
+                              div.cando.like
+                                div.check.boxsize
+                                  div.countn
+                                    img(src='/images/recommend-ok.png')
+                                    .js-like-number
+
+                                      if publication.like == undefined
+                                        p 0
+                                      else
+                                        p #{publication.like}
+
+                      else
+                        div.box_defect_pu
+                          P No haz realizado ninguna publicación dirigida
+                          a(href='/Dintair/recommendations/board')
+                            button.click_action() Iniciar publicación dirigida
+
+                #menu2.tab-pane.fade
+                  if myproducts.length || myServices.length
+                    
+                    div.allproductos
+                      if myproducts.length
+                        p.title_segment_prod_serv Mis productos
+                        for productos_user in myproducts
+                          if productos_user.deleted == false
+                            div.box_for_ps
+                              a(href='/Dintair/products/view/#{productos_user._id}')
+                                .list_other_prod
+                                  if productos_user.imgProductos
+                                    //img(src='#{productos_user.imgProductos}')
+
+                                    - file = productos_user.imgProductos.split('---')
+                                    //img(src='#{file[0]}')
+                                    div.prodImages(style="background-image: url(#{file[0]});")
+                                  else
+                                  div.content_text
+                                    p.nameT= productos_user.nombre
+                                    div.price
+                                      if productos_user.moneda == 'Contactar al Representante'
+                                        h3.moneda= productos_user.moneda
+                                      else
+                                        h3.moneda= productos_user.moneda
+                                        h3.precio= productos_user.precio
+
+                    
+                    div.allservicios
+                      if myServices.length
+                        p.title_segment_prod_serv Mis servicios
+                        for data_serv in myServices
+                          if data_serv.deleted == false
+                            div.box_for_ps
+                              a(href='/Dintair/services/view/#{data_serv._id}')
+                                .list_other_prod
+                                  if data_serv.imageServicios
+                                    //img(src='#{data_serv.imageServicios}')
+
+                                    - file = data_serv.imageServicios.split('---')
+                                    img(src='#{file[0]}')
+                                  else
+                                  div.content_text
+                                    p.nameT= data_serv.name_serv
+                  else
+                    div.defaultNoProducts
+                      img(src='/images/defaultimages/defaultpicpordserv.png')
+                      p No haz agregado productos o servicios
+                      div.btn_addprodserv
+                        a(href='/Dintair/products/add/Product')
+                          button() Agregar producto
+                        a(href='/Dintair/services/add/Service')
+                          button() Agregar servicio
+                        
+                #menu3.tab-pane.fade
+                  div.box_ambassador
+
+                    if ambassador.length
+                      for embajador_data in ambassador
+                        div.image
+                          img(src='#{embajador_data.ambassadorIMGs}')
+                        
+                        div.user_data
+                          if embajador_data.nameAmb
+                            h3= embajador_data.shortName+', representante'
+                          else
+                            h3= user.first_name+', representante'
+
+                          div.user_table
+                            div.firstPart.col-lg-6.col-md-6.col-sm-6
+                              div.field
+                                h4 Nombre
+                                p= embajador_data.nameAmb
+                              if embajador_data.cargoAmb
+                                div.field
+                                  h4 Cargo
+                                  p= embajador_data.cargoAmb
+                              else
+
+                              if embajador_data.country_Amb
+                                div.field
+                                  h4 País de nacimiento
+                                  p= embajador_data.country_Amb
+                              else
+
+                              if embajador_data.dia_1 && embajador_data.mes_1 && embajador_data.año_1
+                                div.field
+                                  h4 Fecha de nacimiento
+                                  p= embajador_data.dia_1+' de '+embajador_data.mes_1+' de '+embajador_data.año_1
+                              else
+
+                              if embajador_data.funcionAmb
+                                div.field
+                                  h4 Funciones
+                                  - var gfuncionAmb = embajador_data.funcionAmb.split("\n")
+                                  for itemfuncionAmb in gfuncionAmb
+                                    p #{itemfuncionAmb}
+                              else
+
+                            div.secondPart.col-lg-6.col-md-6.col-sm-6
+                              if embajador_data.numAmb
+                                div.field
+                                  h4 Número telefónico
+                                  p= embajador_data.numAmb
+                              else
+
+                              if embajador_data.emailAmb
+                                div.field
+                                  h4 Correo electrónico
+                                  p= embajador_data.emailAmb
+                              else
+
+                              if embajador_data.hobbiesAmb
+                                div.field
+                                  h4 Pasatiempos
+                                  - var ghobbies = embajador_data.hobbiesAmb.split("\n")
+                                  for itemhobbies in ghobbies
+                                    p #{itemhobbies}
+                              else
+
+                              
+                          a(href='/Dintair/profile/Ambassador/Edit/#{embajador_data._id}/#{embajador_data.nameAmb}')
+                            
+                            button() 
+                              img.icon(src='/images/icons/iconsEditUser.png')
+                              | Editar Representante
+
+
+                    else
+                      div.image
+
+                        img(src='/images/profile.png')
+                      
+                      div.user_data
+
+                        h3= user.first_name+', representante'
+                        div.user_table
+                          div.field
+                            h4 Nombre
+                            p= user.full_name
+                          div.field
+                            h4 Correo electrónico
+                            p= user.username
+                    
+
+                        a(href='/Dintair/profile/Ambassador')
+                          button() 
+                            img.icon(src='/images/icons/iconsEditUser.png')
+                            | Editar Representante
+
+                #menu4.tab-pane.fade
+                  div.box_sugg
+                    h2 Sugerencias, quejas, dudas o consultas de los empresarios
+                    if sugerencias.length
+                      for suggests in sugerencias
+                        div.box_each_sugg
+                          p.name= suggests.comp_name
+                          p.username= suggests.username
+                          p.tipo= 'Tipo: '+suggests.select_type
+                          p= suggests.text_suggest
+
+
+
+
+  script(src="/javascripts/copy_text/copy_url_profile.js")
+  script(src='/javascripts/previewImages/previewMarket.js')
+  script(src='/javascripts/previewImages/previewPortada.js')
+  script(src='/javascripts/previewImages/previewProfile.js')
+  script(src='/javascripts/dynamicLoad/pageprofuser/load.js')
+  script(src='/javascripts/PopUp/popUp.js')
+
+  script(src="//code.jquery.com/jquery.min.js")
+  script(src="/cropImage/dist/rcrop.min.js")
+
+  //script(src='/javascripts/flashmesg/editprofile.js')
+  script(src='/javascripts/publication-my-contact.js')
+  script(src='/javascripts/PopUp/publications.js')
+  script(src='/javascripts/PopUp/publications_2.js')
+  script(src='/javascripts/PopUp/publications_3.js')
+
+
+  script.
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFFO6Hs6i-QIFUkXsYvc0vhyx8jFMT3mw&libraries=places")
+  script(src='/javascripts/google-map.js')
+
+  style().
+    #content-map {
+      height: 350px;
+    }
+
+    #content-map h2{
+      margin:0 0 0px;
+      padding:0 0 0px;
+      font-size:17px;
+      padding-top:10px;
+      padding-bottom:10px;
+      color:#4080bf;
+      border-bottom:1px solid #f2f2f2;
+      font-weight:600;
+      letter-spacing:0.7px;
+    }
+
+    #content-map #map {
+      height: 100%;
+      width:100%;
+      border-radius:10px;
+    }
+
+    #content-map .g-location {
+      display: block;
+      width: 100%;
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+    #content-map .g-location div.flex_ion{
+      display:flex;
+    }
+    #content-map .g-location div.flex_ion div.sec_ment{
+      width:100%;
+    }
+    #content-map .g-location div.flex_ion div.loc_ation{
+      text-align:right;
+    }
+    #content-map .g-location div.sec_ment select{
+      width:100%;
+      border-radius:4px;
+      margin-top:5px;
+      margin-bottom:5px;
+      padding:8px;
+      -webkit-appearance:none;
+    }
+    .prod-start #content-map .g-search{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+
+    .content-sitem {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .content-sitem p.advice{
+      padding: 0 0 0px;
+      margin: 0 0 0px;
+      background:#f2f2f2;
+      padding:4px;
+
+    }
+
+    .content-sitem article {
+      width: 100%;
+      padding: 5px;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom:10px;
+      display:flex;
+      vertical-align:middle;
+      align-items:center;
+    }
+
+    .content-sitem .active {
+      background: #e6f7de;
+    }
+
+    .content-sitem article span {
+      float: right;
+      padding: 2px 5px;
+      background: #0f65d2;
+      color: #ffffff;
+      cursor: pointer;
+      margin-left: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      font-size:12px;
+    }
+
+    .content-sitem article input[type=radio] {
+      margin-right: 10px;
+      float: left;
+    }
+
+    .dn {
+      display: none;
+    }
+    .box_d_c{
+      display:block;
+      width:100%;
+    }

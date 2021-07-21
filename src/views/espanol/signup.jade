@@ -1,0 +1,61 @@
+extends templates/templateSingUp/default
+
+block content
+  .bigContenido
+
+  
+
+    form#formu.form-register.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-12(action='/Dintair/es/Signup', method='post', name='formu', onsubmit='return Validate()')
+
+      if message.length > 0
+        p.message<strong></strong> #{message}
+
+      if check.length > 0
+        p.check<strong></strong> #{check}
+
+      div.dintair
+        a.transformD(href='/')
+          img.dintair(src='/images/dintair/dintair_iso.png')
+
+        h2.text Únete a Dintair para continuar
+        
+      .form-register-second.col-lg-12.col-md-12.col-sm-12.col-xs-12
+        
+
+        input(id='full_name', type='text', name='full_name', placeholder='Nombre y apellido', autocomplete='off')
+        #error_full_name.error_full_name
+
+
+        input(id='comp_name', type='text', name='comp_name', placeholder='Nombre del negocio', autocomplete='off')
+        #error_comp_name.error_comp_name
+
+
+        input#comp_email(type='text', name='username', placeholder='Correo electrónico', autocomplete='off')
+        #error_comp_email.error_comp_email
+
+
+        input#password(type='password', name='password', placeholder='Ingresa una contraseña')
+        #error_comp_pass.error_comp_pass
+
+
+        
+        p.TermsCond Al dar clic en "Continuar", está aceptando las  
+          a(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso 
+          | y las 
+          a(href='/Dintair/privacyPolice', target='_blank') Políticas de privacidad 
+          | de Dintair.
+      
+        #btn-enviar.ui.button.submit
+          input#createaccount(type='submit', value='Continuar', name='createaccount')
+
+        div.signInLog
+          a(href='/Dintair/es/Signin') Iniciar sesión
+            
+  script(src='/javascripts/regist-validation.js')
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/focuses/signup.js')
+
+
+ 
+  
+

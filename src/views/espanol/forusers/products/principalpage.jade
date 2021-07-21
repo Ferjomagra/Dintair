@@ -1,0 +1,200 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsersRecommends
+
+    if myproducts.length || myServices.length
+
+
+      if myproducts.length && myServices.length
+        div.backColor
+          h3 Productos y servicios
+        div.ulList
+          div.centerCo
+            div.btnobjects1
+              a(data-toggle="tab" href="#menu")
+                button.productos(id='input1', onClick="asignarNota(1);", onmouseover="document.getElementById('input1').style.backgroundColor='#0066cc';", onmouseout="desmarcarNotas();") Mis productos
+
+            div.btnobjects2
+              a(data-toggle="tab" href="#menu1")
+                button.servicios(id='input2', onClick="asignarNota(2);", onmouseover="document.getElementById('input2').style.backgroundColor='#0066cc';", onmouseout="desmarcarNotas();") Mis Servicios
+
+        div.productosBox.tab-content
+          div(id='menu', class='tab-pane fade in active')
+            section.backProds
+              div.titlePage
+
+                a(href='/Dintair/products/add/Product')
+                  img.xicon(src='/images/icons/xicon.png')
+                  button() Nuevo producto
+                
+              div.imgText
+                img.data(src='/images/icons/alMayorPord.png')
+                h2.data Mis Productos
+
+            section.boxesProds
+              for productos_user in myproducts
+                if productos_user.deleted == false
+
+                  div.radioBtn.col-lg-4.col-md-6.col-sm-6.col-xs-12
+                            
+                    div.boxFDat()
+                      a(href='/Dintair/products/view/#{productos_user._id}')
+                        
+                        label.label(for='#{productos_user.nombre}')
+                       
+                          div.image
+                            if productos_user.imgProductos
+                              - file = productos_user.imgProductos.split('---')
+                              img(src='#{file[0]}')
+
+                          div.dataProd
+
+                            div.prods
+                              p.name()=productos_user.nombre
+                              if productos_user.moneda == 'Contactar al Representante'
+                                p.price Contactar para el precio
+                              else
+                                if productos_user.precio
+                                  p.price=productos_user.moneda
+                                  p.price= productos_user.precio
+                                else
+
+          div(id='menu1', class='tab-pane fade')
+            section.backProds
+              div.titlePage
+                
+                a(href='/Dintair/services/add/Service')
+                  img.xicon(src='/images/icons/xicon.png')
+                  button() Nuevo servicio
+
+              div.imgText
+                img.data(src='/images/icons/truck_icon.png')
+                h2.data Mis Servicios
+            for data_serv in myServices
+              if data_serv.deleted == false
+                div.radioBtn.col-lg-4.col-md-6.col-sm-6.col-xs-12
+                          
+                  div.boxFDat()
+                    a(href='/Dintair/services/view/#{data_serv._id}')
+                      
+                      label.label
+                     
+                        div.image
+                          if data_serv.imageServicios
+                            - file = data_serv.imageServicios.split('---')
+                            img(src='#{file[0]}')
+
+                        div.dataProd
+
+                          div.prods
+                            p.name()=data_serv.name_serv
+                            p.name= data_serv.tipo_serv
+      else
+
+      
+        if myproducts.length
+          div.backColorProd
+            h3 Tu lista de productos
+          div.ulList
+            div.centerCoProd
+              div.btnobjects1
+                a(data-toggle="tab" href="#menu")
+                  button.productos() Mis productos
+          div.productosBox.tab-content
+            div(id='menu', class='tab-pane fade in active')
+              section.backProds
+                div.titlePage
+                  
+                  a(href='/Dintair/products/add/Product')
+                    img.xicon(src='/images/icons/xicon.png')
+                    button() Nuevo producto
+
+                div.imgText
+                  img.data(src='/images/icons/alMayorPord.png')
+                  h2.data Mis Productos
+
+              section.boxesProds
+                for productos_user in myproducts
+                  if productos_user.deleted == false
+
+                    div.radioBtn.col-lg-4.col-md-6.col-sm-6.col-xs-12
+                              
+                      div.boxFDat()
+                        a(href='/Dintair/products/view/#{productos_user._id}')
+                          
+                          label.label(for='#{productos_user.nombre}')
+                         
+                            div.image
+                              if productos_user.imgProductos
+                                - file = productos_user.imgProductos.split('---')
+                                img(src='#{file[0]}')
+
+                            div.dataProd
+
+                              div.prods
+                                p.name()=productos_user.nombre
+                                if productos_user.moneda == 'Contactar al Representante'
+                                  p.price Contactar para el precio
+                                else
+                                  if productos_user.precio
+                                    p.price=productos_user.moneda
+                                    p.price= productos_user.precio
+                                  else
+        else
+
+          if myServices.length
+            div.backColorServ
+              h3 Tu lista de servicios
+
+            div.productosBox.tab-content
+              div(id='menu1', class='tab-pane fade in active')
+                section.backProds
+                  div.titlePage
+                    a(href='/Dintair/services/add/Service')
+                      img.xicon(src='/images/icons/xicon.png')
+                      button() Nuevo servicio
+                  div.imgText
+                    img.data(src='/images/icons/truck_icon.png')
+                    h2.data Mis Servicios
+                for data_serv in myServices
+                  if data_serv.deleted == false
+                    div.radioBtn.col-lg-4.col-md-6.col-sm-6.col-xs-12
+                              
+                      div.boxFDat()
+                        a(href='/Dintair/services/view/#{data_serv._id}')
+                          
+                          label.label
+                         
+                            div.image
+                              if data_serv.imageServicios
+                                - file = data_serv.imageServicios.split('---')
+                                img(src='#{file[0]}')
+
+                            div.dataProd
+
+                              div.prods
+                                p.name()=data_serv.name_serv
+                                p.name= data_serv.tipo_serv
+          else
+ 
+    else
+
+      div.imgDefaultProdServ
+        img(src='/images/defaultimages/defaultpicpordserv.png')
+
+      p.textSP No haz agregado ningún producto o servicio
+
+      div.boxDefault
+        a(href='/Dintair/products/add/Product')
+          button.prod() Agregar producto
+
+        a(href='/Dintair/services/add/Service')
+          button.serv() Agregar servicio
+
+
+
+
+
+  script(src='/javascripts/recommends/hidebuttons.js')

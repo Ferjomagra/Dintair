@@ -1,0 +1,89 @@
+header
+  div.firstHeader
+    a(href='/Dintair')
+      div.logo 
+        img(src='/images/dintair/dintair_iso.png')
+
+    div.searchLine
+      input(type='text', name='', id='', placeholder='Buscar') 
+
+    nav.headbar
+      ul.resp
+        li
+          a.action(href='') 
+            img.plus(src='')
+            | Crear Correo
+
+        li
+          a.profile(href='/Dintair/profile/user/#{user._id}/#{user.comp_name}')
+            ul
+              li
+                img.profile(src='#{user.imageProfile}')
+
+              li
+                div.dataRel
+                  p= user.first_name
+                  p= user.username
+
+        li
+          a.action2(href='', id='addprod') Agregar producto
+
+          a.action2(href='') Agregar servicio
+
+        li
+          a.action3(href='', id='myprod') Mis productos
+
+          a.action3(href='') Mis servicios
+        li
+          a.find(href='') Encontrar clientes
+        li
+          a.logout(href='/logout') Cerrar sesión
+
+
+      ul.desk
+    
+        .dropdown
+          
+
+          div.dataFNames.dropdown-toggle(data-toggle='dropdown')
+            img.profile(src='#{user.imageProfile}')
+            div.dataNames
+              p.names= user.comp_name
+              p.namesUser= user.username
+          
+          ul.dropdown-menu(style="right:0;/*left:0*/;")
+          
+            li
+              a.headerA(href='/Dintair/profile/user/#{user._id}/#{user.comp_name}')
+                p.name Mi perfil
+                p= user.username
+                
+            li
+              a(href='/Dintair/Contacts') Mis Contactos
+            li
+              a(href='/Dintair/messages') Mensajes
+            li
+              a(href='/Dintair/kindProduct') Productos
+            li
+              a.findCli(href='/Dintair/start/Newsbook') Newsbook
+
+            div.terms
+              li
+                a(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
+              li
+                a(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
+              li
+                a(href='/Dintair/suggestions') Contáctanos
+
+            li.logout
+              a(href='/logout') Cerrar sesión
+
+
+
+  div.menu-toggle
+    i(class="fas fa-bars")
+
+
+script(src='/javascripts/navBar/script.js')
+
+

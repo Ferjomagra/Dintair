@@ -1,0 +1,725 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Circular","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*INICIO DEL HEADER*/
+header{
+  position: absolute;
+  top:0;
+  left: 0;
+
+  /*background:#ff4d4d;*/
+  width: 100%;
+  padding: 25px 140px;
+  margin:0 auto;
+  z-index: 10000;
+
+  justify-content: center;
+    align-items: center;
+}
+header a .logodintair{
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  float: left;
+}
+header a .logodintair img{
+  width: 50px;
+}
+header .HomePage{
+  float: right;
+}
+header .HomePage ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .HomePage ul li{
+  list-style: none;
+}
+header .HomePage ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: white;
+  display: block;
+  letter-spacing: 0.3px;
+}
+header .HomePage ul li a.action{
+  color: white;
+  opacity: 0.98;
+  border-radius: 90px;
+  text-decoration: none;
+  background: linear-gradient(130deg, #0663c6, #087cf7);
+  transition: all 1s ease;
+}
+header .HomePage ul li a.active{
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+/*FIN DEL HEADER*/
+
+/*INIICO DE VISTA CATALOGOS*/
+div.globalviewcatalogs{
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  margin: 0 auto;
+}
+div.globalviewcatalogs div.catalogs_space{
+  margin-top: 50px;
+  margin:0 auto;
+  text-align: center;
+}
+div.globalviewcatalogs div.catalogs_space div.title{
+  position: relative;
+  display: block;
+  line-height: 0px;
+  text-decoration: none;
+  vertical-align: middle;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 20px;
+}
+div.globalviewcatalogs div.catalogs_space div.title div.section{
+  background:linear-gradient(135deg, rgba(153, 255, 204, 0.7), #0099cc);
+  padding: 30px;
+  transition: all 0.3s ease;
+  border-radius: 0px;
+}
+div.globalviewcatalogs div.catalogs_space div.title div.section h3{
+  margin: 0 0 0px;
+  padding: 0 0 0px;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+div.globalviewcatalogs div.catalogs_space div.title div.section{
+  text-align: center;
+  width: 100%;
+  padding-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 200px;
+}
+div.globalviewcatalogs div.catalogs_space div.title div.section h2{
+  margin: 0 0 0px;
+  padding: 0 0 0px;
+  font-size: 45px;
+  letter-spacing: 0.6px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+/*PARA MAKICAPCHI*/
+div.globalviewcatalogs div.catalogs_space div.title div.makitext{
+  background:linear-gradient(135deg, rgba(255, 153, 102, 0.7), #4d1f00);
+  padding: 30px;
+  transition: all 0.3s ease;
+  border-radius: 0px;
+}
+div.globalviewcatalogs div.catalogs_space div.title div.makitext h3{
+  margin: 0 0 0px;
+  padding: 0 0 0px;
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+div.globalviewcatalogs div.catalogs_space div.title div.makitext{
+  text-align: center;
+  width: 100%;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 120px;
+}
+div.globalviewcatalogs div.catalogs_space div.title div.makitext img{
+  width: 100%;
+  max-width: 200px;
+}
+
+
+
+
+div.globalviewcatalogs div.adcontent2{
+  width: 100%;
+  text-align: center;
+  background:linear-gradient(180deg, white, #4d1f00);
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+/* Card sizing */
+/* Colors */
+/* Calculations */
+/* Placeholders */
+ @media (min-width: 1000px) {
+   #timeline .demo-card:nth-child(odd) .head::after, #timeline .demo-card:nth-child(even) .head::after {
+     position: absolute;
+     content: "";
+     width: 0;
+     height: 0;
+     border-top: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+  }
+   #timeline .demo-card:nth-child(odd) .head::before, #timeline .demo-card:nth-child(even) .head::before {
+     position: absolute;
+     content: "";
+     width: 9px;
+     height: 9px;
+     background-color: #bdbdbd;
+     border-radius: 9px;
+     box-shadow: 0px 0px 2px 8px #f7f7f7;
+  }
+}
+/* Some Cool Stuff */
+ .demo-card:nth-child(1) {
+   order: 1;
+}
+ .demo-card:nth-child(2) {
+   order: 4;
+}
+ .demo-card:nth-child(3) {
+   order: 2;
+}
+ .demo-card:nth-child(4) {
+   order: 5;
+}
+ .demo-card:nth-child(5) {
+   order: 3;
+}
+ .demo-card:nth-child(6) {
+   order: 6;
+}
+/* Border Box */
+ * {
+   box-sizing: border-box;
+}
+
+#timeline {
+   padding: 100px 0;
+   background: white;
+}
+ #timeline h1 {
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 200;
+   margin-bottom: 20px;
+}
+ #timeline p.leader {
+   text-align: center;
+   max-width: 90%;
+   margin: auto;
+   margin-bottom: 45px;
+}
+ #timeline h4{
+  font-size: 35px;
+  font-weight: 600;
+  color: #595959;
+  text-align: center;
+  margin-bottom: 100px;
+}
+ #timeline .demo-card-wrapper {
+   position: relative;
+   margin: auto;
+}
+ @media (min-width: 1000px) {
+   #timeline .demo-card-wrapper {
+     display: flex;
+     flex-flow: column wrap;
+     width: 1170px;
+     height: 1650px;
+     margin: 0 auto;
+  }
+}
+ #timeline .demo-card-wrapper::after {
+   z-index: 1;
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+ @media (min-width: 1000px) {
+   #timeline .demo-card-wrapper::after {
+     border-left: 1px solid #bdbdbd;
+  }
+}
+ #timeline .demo-card {
+   position: relative;
+   display: block;
+   margin: 10px auto 80px;
+   max-width: 94%;
+   z-index: 2;
+}
+ @media (min-width: 480px) {
+   #timeline .demo-card {
+     max-width: 60%;
+     box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+ @media (min-width: 720px) {
+   #timeline .demo-card {
+     max-width: 40%;
+  }
+}
+ @media (min-width: 1000px) {
+   #timeline .demo-card {
+     max-width: 450px;
+     height: 400px;
+     margin: 90px;
+     margin-top: 45px;
+     margin-bottom: 45px;
+  }
+   #timeline .demo-card:nth-child(odd) {
+     margin-right: 45px;
+  }
+   #timeline .demo-card:nth-child(odd) .head::after {
+     border-left-width: 15px;
+     border-left-style: solid;
+     left: 100%;
+  }
+   #timeline .demo-card:nth-child(odd) .head::before {
+     left: 491.5px;
+  }
+   #timeline .demo-card:nth-child(even) {
+     margin-left: 45px;
+  }
+   #timeline .demo-card:nth-child(even) .head::after {
+     border-right-width: 15px;
+     border-right-style: solid;
+     right: 100%;
+  }
+   #timeline .demo-card:nth-child(even) .head::before {
+     right: 489.5px;
+  }
+   #timeline .demo-card:nth-child(2) {
+     margin-top: 180px;
+  }
+}
+ #timeline .demo-card .head {
+   position: relative;
+   display: flex;
+   align-items: center;
+   color: #fff;
+   font-weight: 400;
+}
+ #timeline .demo-card .head .number-box {
+   display: inline;
+   float: left;
+   margin: 15px;
+   padding: 10px;
+   font-size: 35px;
+   line-height: 35px;
+   font-weight: 600;
+   background: rgba(0, 0, 0, 0.17);
+}
+ #timeline .demo-card .head h2 {
+   font-size: 1.3rem;
+   font-weight: 600;
+   letter-spacing: 2px;
+   margin: 0;
+   padding-bottom: 0px;
+}
+ @media (min-width: 480px) {
+   #timeline .demo-card .head h2 {
+     font-size: 165%;
+     line-height: 1.2rem;
+  }
+}
+ #timeline .demo-card .head h2 span {
+   display: block;
+   font-size: 0.6rem;
+   margin: 0;
+}
+ @media (min-width: 480px) {
+   #timeline .demo-card .head h2 span {
+     font-size: 0.8rem;
+  }
+}
+ #timeline .demo-card .body {
+   background: #fff;
+   border: 1px solid rgba(191, 191, 191, 0.4);
+   border-top: 0;
+   padding: 15px;
+}
+ @media (min-width: 1000px) {
+   #timeline .demo-card .body {
+     height: 350px;
+  }
+}
+ #timeline .demo-card .body p {
+   font-size: 14px;
+   line-height: 18px;
+   margin-bottom: 15px;
+}
+ #timeline .demo-card .body img {
+   display: block;
+   width: 100%;
+}
+ #timeline .demo-card--step1 {
+   background-color: #993d00;
+}
+ #timeline .demo-card--step1 .head::after {
+   border-color: #993d00;
+}
+ #timeline .demo-card--step2 {
+   background-color: #cc6600;
+}
+ #timeline .demo-card--step2 .head::after {
+   border-color: #cc6600;
+}
+ #timeline .demo-card--step3 {
+   background-color: #ff9933;
+}
+ #timeline .demo-card--step3 .head::after {
+   border-color: #ff9933;
+}
+ #timeline .demo-card--step4 {
+   background-color: #ff8533;
+}
+ #timeline .demo-card--step4 .head::after {
+   border-color: #ff8533;
+}
+ #timeline .demo-card--step5 {
+   background-color: #ff3333;
+}
+ #timeline .demo-card--step5 .head::after {
+   border-color: #ff3333;
+}
+ 
+
+
+
+
+/*FIN DE PAR MAKICAPCHI*/
+
+
+
+
+
+
+
+
+
+
+
+div.globalviewcatalogs div.catalogs_space div.show_catalog{
+  width: 45%;
+  display: inline-block;
+}
+div.globalviewcatalogs div.catalogs_space div.show_catalog button{
+  border:none;
+  cursor: pointer;
+  padding: 20px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+div.globalviewcatalogs div.catalogs_space div.show_catalog button:hover{
+  transform: (1.1,1.1);
+  -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+div.globalviewcatalogs div.catalogs_space div.show_catalog button img{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border:1px solid #f2f2f2;
+}
+
+
+/*INICIO DE POPUP*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000000; /* Sit on top */
+  left: 0;
+  top: 0;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: transparent;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: none;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 780px;
+  margin: 0 auto;
+  z-index: 10000;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.close_mess {
+  position: absolute;
+  top: 60px;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.close_mess:hover,
+.close_mess:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.8s;
+  animation: animatezoom 0.8s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(0.7)}
+}
+@keyframes animatezoom {
+  from {-webkit-transform: scale(0);transform: scale(0)}
+  to {-webkit-transform: scale(0.7);transform: scale(0.7)}
+}
+
+
+
+div.globalviewcatalogs div.catalogs_space div.show_catalog div.clientes div.header_message{
+  background-color: #f2f2f2;
+  padding: 17px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/*FIN DE POPUP*/
+
+
+/*INICIO DE CAROUSEL*/
+.carousel-inner{
+  position:relative;
+  width: 80%;
+  overflow: hidden;
+  margin:0 auto;
+}
+.carousel-control-next, .carousel-control-prev{
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  text-align: center;
+  background: #f2f2f2;
+}
+/*FIN DE CAROUSEL*/
+
+
+/*footer*/
+div.globalviewcatalogs footer{
+  width: 100%;
+  background: #2d2d2d;
+  margin-top: 50px;
+}
+div.globalviewcatalogs footer div.myspace{
+  width: 16.6667%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border:1px solid #262626;
+}
+div.globalviewcatalogs footer div.myspace a.btn_in{
+  text-decoration: none;
+  color: #c6d9ec;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+div.globalviewcatalogs footer div.footer_2{
+  text-align: center;
+  padding: 20px;
+  background: #262626;
+}
+div.globalviewcatalogs footer div.footer_2 img{
+  width: 50px;
+  border-radius: 5px;
+}
+div.globalviewcatalogs footer div.footer_2 p{
+  margin:0 0 0px;
+  padding:0 0 0px;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  color:white;
+  margin-top: 5px;
+}
+/*fin de footer*/
+/*FIN DE VISTA CATALOGOS*/
+
+@media (max-width: 1024px){
+  header{
+    padding:0 20px;
+  }
+  .menu-toggle{
+    display: block;
+    color: white;
+  }
+  header .HomePage{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    opacity: 0.97;
+    background: #333;
+    top:50px;
+    left:0;
+    transition: 0.5s;
+  }
+  header .HomePage ul{
+    padding: 20px;
+    display: block;
+    text-align: center;
+  }
+  header .HomePage.active{
+    left:0;
+    display: block;
+  }
+  header .HomePage ul li a{
+    border-bottom: 1px solid rgba(0,0,0,.2);
+  }
+  header .HomePage ul li a.active{
+    color: white;
+    text-decoration: none;
+  }
+
+  div.globalviewcatalogs div.catalogs_space div.title h2{
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    color: #0663c6;
+    font-weight: 600;
+  }
+
+  /*inicio de catalogo*/
+  div.globalviewcatalogs div.catalogs_space div.show_catalog main #carousel{
+    position: relative;
+    height: 450px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+  div.globalviewcatalogs div.catalogs_space{
+    margin-top: 50px;
+    margin:0 auto;
+    text-align: center;
+  }
+
+
+  div.globalviewcatalogs div.catalogs_space div.show_catalog{
+    width: 100%;
+    display: block;
+  }
+
+  div.globalviewcatalogs div.catalogs_space div.show_catalog main #carousel img{
+    width:100%;
+    transition: width 1s;
+    border:1px solid #d9d9d9;
+    border-radius: 5px;
+  }
+  .modal-content {
+    background-color: transparent;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: none;
+    width: 90%; /* Could be more or less, depending on screen size */
+    max-width: 780px;
+    margin: 0 auto;
+    z-index: 10000;
+  }
+  div.globalviewcatalogs div.catalogs_space div.title div.section{
+    text-align: center;
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 200px;
+  }
+  div.globalviewcatalogs div.catalogs_space div.title div.section h2{
+    margin: 0 0 0px;
+    padding: 0 0 0px;
+    font-size: 45px;
+    letter-spacing: 0.6px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  /*inicio de footer*/
+  div.globalviewcatalogs footer div.myspace{
+    width: 100%;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    padding-left: 20px;
+  }
+  div.globalviewcatalogs footer div.footer_2{
+    text-align: left;
+    padding: 20px;
+    background: #262626;
+    padding-left: 20px;
+  }
+  /*fin de footer*/
+  /*fin de catalogos*/
+}

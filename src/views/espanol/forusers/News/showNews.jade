@@ -1,0 +1,75 @@
+extends ../../../templates/forusers/defaultforusers
+
+block content
+  .prod-start.col-lg-12.col-md-12.col-sm-12.col-xs-12
+    .allNews
+
+      a(href='/Dintair/Newsbook/'+1)
+        h2.titles_News Newsbook
+
+      .global_content.col-lg-12
+
+
+
+        div.show_news
+
+          //p.date=dataNews.fecha
+
+          p.date= dataNews.dia
+          p.date de
+          p.date= dataNews.mes
+          p.date de
+          p.date= dataNews.año
+          
+          
+          h4.antetitulo= dataNews.antetitulo
+          h3.titular= dataNews.titular
+
+          h4.parrafo= dataNews.primerParrafo
+          img(src='#{dataNews.imgNews}')
+          h6=dataNews.piedeImagen
+
+          h5.titles= dataNews.titulo1
+          h4.parrafo=dataNews.aspectosPrincipales
+
+          if dataNews.imgNewsAdd1
+            img(src='#{dataNews.imgNewsAdd1}')
+          h5.titles= dataNews.titulo2
+          h4.parrafo=dataNews.Pparagraph2
+          h5.titles= dataNews.titulo3
+          h4.parrafo=dataNews.Pparagraph3
+
+          if dataNews.imgNewsAdd2
+            img(src='#{dataNews.imgNewsAdd2}')
+          h5.titles= dataNews.titulo4
+          h4.parrafo=dataNews.aspectosMedios
+          h5.titles= dataNews.titulo5
+          h4.parrafo=dataNews.Mparagraph2
+
+          if dataNews.imgNewsAdd3
+            img(src='#{dataNews.imgNewsAdd3}')
+          h5.titles= dataNews.titulo6
+          h4.parrafo=dataNews.Mparagraph3
+          h5.titles= dataNews.titulo7
+          h4.parrafo=dataNews.aspectosSecundarios
+
+          
+          h5.titles= dataNews.titulo8
+          h4.parrafo=dataNews.Sparagraph2
+          h5.titles= dataNews.titulo9
+          h4.parrafo=dataNews.Sparagraph3
+
+          if dataNews.redactBy.length
+            div.redaccion 
+              h5.redactBy='Redacción: '+ dataNews.redactBy
+          
+       
+
+          if dataNews.Fonts.length
+            div.fuente
+              
+              h1.Fonts='Fuente: ' + dataNews.Fonts
+
+          
+
+        

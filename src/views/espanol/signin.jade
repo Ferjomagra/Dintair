@@ -1,0 +1,45 @@
+extends navforsignin
+
+block content
+  section.select-start-sign-in.container
+    a(href='/')
+      div.dintair
+        a.transformD(href='/')
+          img.dintair(src='/images/dintair/dintair_iso.png')
+
+    .box-sign-in
+
+      if message.length > 0
+        p.loginmessage<strong></strong> #{message}
+
+      h3 Ingresa
+
+      form.cube-sign-in.form-group(action='/Dintair/es/Signin', method='post', name='formu', onsubmit='return Validate()', autocomplete='on')
+
+
+        .form-group
+  
+          input#comp_email.input-email(type='text', name='username', placeholder='Correo electrónico')
+          #error_comp_email.error_comp_email
+        .form-group
+          input#comp_pass.input-pass(type='password', name='password', placeholder='Contraseña')
+        
+          
+        .btn_signIn
+          input(type='submit', value='Ingresar')
+
+        div.center
+          .btn_a_register
+            a(href='/Dintair/es/Signup') Registrarme
+
+          a.btn_a_forget(href='/Dintair/passwordReset/new') Olvide mi contraseña
+        
+
+
+
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/home/cases.js')
+  script(src='/javascripts/focuses/signin.js')
+
+
+

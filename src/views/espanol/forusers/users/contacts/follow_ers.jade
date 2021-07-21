@@ -1,0 +1,34 @@
+extends ../../../../templates/forusers/HomePage/default
+
+block content
+
+  section.dashboardPage
+    div.secondHeader
+      div.subox
+        div.follow_dashboard
+
+          h2 Me agregaron
+
+          if followers_count == 0
+          else
+            div.follow.flexible
+              h3.viewsqtn()= followers_count +' seguidores'
+
+          if followers.length
+            for mUserContact in followers
+              div.box_little
+                div.div_user_img(style='background-image: url("#{mUserContact.user_id.imageProfile}")')
+                a(href='/Dintair/#{mUserContact.user_id.id}')
+                  p.name= mUserContact.user_id.comp_name
+                  p.rtarget= mUserContact.user_id.rubroTarget
+                  p= mUserContact.user_id.country
+          else
+            div.box_center
+              p.msg Ningún empresario lo ha agregado aún. Inicie una publicación dirigida para alcanzar más mercados.
+              a(href='/Dintair/recommendations/board')
+                button.msg() Iniciar publicación
+
+
+
+
+

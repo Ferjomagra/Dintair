@@ -1,0 +1,50 @@
+nav.navbarra.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+      a.navbar-toggle(href='/Everest/Search')
+        span.icon-magnifying-glass
+      
+      a.logo(href='/Everest')
+        img.logocolor.img-responsive(src='/images/nombre-Everest-white.png')
+
+
+
+    #myNavbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        
+        .menu_perfil
+          a.comp_name(href='/Everest/profile/user/#{user._id}')= user.comp_name
+    
+        a.select(href='')
+          li.tre
+            span.icons-one.icon-users
+            | Usuarios
+
+        a.select(href='')
+          li.quatro
+            span.icons-one.icon-mail
+            | Mensajería
+
+        a.select(href='/Everest/admin/newsactive')
+          li.sei
+            span.icons-one.icon-open-book
+            | Noticias
+
+        a.politics(href='#')
+          li.politics
+            | Políticas
+
+        a.termscond(href='#')
+          li.termscond
+            | Términos y condiciones
+
+
+        a.go-out(href='/logout')
+          li.go-out
+            | Salir
+

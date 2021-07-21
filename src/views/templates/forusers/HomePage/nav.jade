@@ -1,0 +1,253 @@
+header
+  
+  .HomePage
+    div.ThreeSegments
+      div.firstSHomePage#partialw1
+        div.head1
+
+          div.logo
+            div.logotathis
+              a(href='/Dintair')
+                img(src='/images/dintair/dintair_iso.png')
+
+
+            div.alertsbtns
+              a#nhp(href='/Dintair/notification/profile')
+                p#not(data-url='/Dintair/exists-np')
+                img(src='/images/icons/bell.png')
+
+              
+            //div.alertsbtns
+              p#notificationHeader
+                a(href="/Platform/chat/")
+                img(src='/images/icons/message_icon.png')
+              input(type="hidden" name="userIdEmisor" id="userIdEmisor" value="") //value='#{user._id}'
+
+
+      div.secondSHomePage#segment2()
+        div.Search
+          form(id="formSearchHeader")
+            select(name="selectSearch", id="selectSearch")
+              option(value="product") Productos
+              option(value="business") Empresas
+
+            input(type='text',name='txtSearchHeader', id='txtSearchHeader', data-source="/Dintair/search-header", autocomplete="off", placeholder='Busca Productos')
+
+            img(src='/images/icons/scope.png')
+
+          div.block_search
+            section#content-search-header(style="box-sizing: content-box;width: 100%;")
+            
+
+
+      div.thirdSHomePage#partialw1
+
+        .dropdown
+          div.dataFNames(data-toggle='dropdown', id='noti_Button_2')
+            div.profilePic(style='background-image: url("#{user.imageProfile}")')
+          ul.dropdown-menu(style="right:0;/*left:0*/;", id='notifications2')
+            li
+              a.headerA(href='/Dintair/profile/user')
+                p.name Mi perfil
+                p= user.username
+
+            div.editing
+              li
+                a(href='/Dintair/profile/user/edit') Editar perfil
+              li
+                a(href='/Dintair/profile/Ambassador') Editar Representante
+
+            li
+              a(href='/Dintair/kindProduct')
+                img(src='/images/icons/box_d.png')
+                | Mis productos
+                
+            li
+              a(href='/Dintair/contacts/f&f')
+                img(src='/images/icons/contact_d.png')
+                | Contactos
+
+            //li
+              a(href='/Dintair/Search/1')
+                img(src='/images/icons/scope_d.png')
+                | Buscar
+            
+            li.logout
+              a(href='/logout') Cerrar sesión
+
+        div.buttonsforactions
+          div.createbox
+            button(id='noti_Button') 
+              img(src='/images/icons/xicon.png')
+              | Crear
+
+            div#notifications
+              div(style='100%;')
+                a(href='/Dintair/recommendations/board')
+                  div.prods()
+                    img(src='/images/icons/post_icon.png')
+                    h3 Publicación
+
+                a(href='/Dintair/products/add/Product')
+                  div.prods()
+                    img(src='/images/icons/alMayorPord.png')
+                    h3 Nuevo producto
+
+                a(href='/Dintair/services/add/Service')
+                  div.prods()
+                    img(src='/images/icons/truck_icon.png')
+                    h3 Nuevo Servicio
+
+                if user.username == 'aeropost.lim@aeropost.com'
+                  a(href='/Dintair/restricted')
+                    div.servs()
+                      img(src='/images/icons/contacts_n.png')
+                      h3 Producto restringido
+
+
+
+
+    nav
+      ul.resp
+        li
+          a.profile(href='/Dintair/profile/user')
+            ul
+              li
+                div.profile(style='background-image: url("#{user.imageProfile}")')
+           
+              li
+                div.dataRel
+                  p= user.comp_name
+                  p= user.username
+        //li
+          a.find(href='/Dintair/start/Newsbook') Newsbook
+
+        li.first_sg
+          a.terms(href='/Dintair/kindProduct') 
+            img(src='/images/icons/box_d.png')
+            |Mis Productos
+          a.terms(href='/Dintair/contacts/f&f') 
+            img(src='/images/icons/contact_d.png')
+            | Mis Contactos
+
+        li
+          a.terms(href='/Dintair/privacyPolice', target='_blank') 
+            img(src='/images/icons/escdo_d.png')
+            | Política de privacidad
+          a.terms(href='/Dintair/termsOfUse', target='_blank') 
+            img(src='/images/icons/lock_d.png')
+            | Condiciones de uso
+          a.terms(href='/Dintair/contact/us')
+            img(src='/images/icons/contactus_d.png')
+            | Contáctanos
+          a.logout(href='/logout') Cerrar sesión
+
+
+
+
+
+  div.headerResp
+    div.logoResp#forHeader
+      a(href='/Dintair')
+        img.respLogo(src='/images/dintair/dintair_iso.png')
+    div.menu-toggle#forHeader
+      i(class="fas fa-bars")
+
+    div.msglogo_resp#forHeader
+      //div.alertsbtns
+        a#notificationHeader2(href="/Platform/chat/")
+          p
+
+          img(src='/images/icons/msg_d.png')
+      input(type="hidden" name="userIdEmisor" id="userIdEmisor" value="#{user._id}")
+
+
+      div.alertsbtns
+        a#nhph(href='/Dintair/notification/profile')
+          p#not(data-url='/Dintair/exists-np') 
+          img(src='/images/icons/bell.png')
+
+
+    div.secondSHomePage()
+      div.Search
+        form(id="formSearchHeader_2")
+          select(name="selectSearch2", id="selectSearch2")
+            option(value="product") Productos
+            option(value="business") Empresas
+          input(type='text',name='txtSearchHeader_"', id='txtSearchHeader_2', data-source="/Dintair/search-header", autocomplete="off", placeholder='Busca Productos')
+          img(src='/images/icons/scope.png')
+
+
+
+        div.block_search2
+          section#content-search-header_2()
+
+
+        button.btn_create(onclick="document.getElementById('id01').style.display='block'") Crear
+        div.clientes(id="id01" class="modal")
+          div.modal-content.clientes
+            div.header_message
+             
+              div(class="imgcontainer", style="width: 100%;")
+                span(onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal") &times
+
+              div.content_tocreate
+                div(style='100%;')
+                  a(href='/Dintair/recommendations/board')
+                    div.prods()
+                      img(src='/images/icons/post_icon.png')
+                      h3 Publicación
+
+                  a(href='/Dintair/products/add/Product')
+                    div.prods()
+                      img(src='/images/icons/alMayorPord.png')
+                      h3 Nuevo producto
+
+                  a(href='/Dintair/services/add/Service')
+                    div.prods()
+                      img(src='/images/icons/truck_icon.png')
+                      h3 Nuevo Servicio
+                  if user.username == 'aeropost.lim@aeropost.com'
+                    a(href='/Dintair/restricted')
+                      div.servs()
+                        img(src='/images/icons/contacts_n.png')
+                        h3 Producto restringido
+
+
+footer
+  .footerbar
+    div.fo_bar
+      a(href='/Dintair', id='home')
+        img(src='/images/icons/world_footer.png', id='homeimg')
+        p Explorar
+
+    div.fo_bar
+      a(href='/Dintair/recommendations/board')
+        img(src='/images/icons/compass_footer.png')
+        p Encontrar
+
+    div.fo_bar
+      a(href='/Dintair/kindProduct')
+        img(src='/images/icons/productos_footer.png', id='productos')
+        p Productos
+    div.fo_bar
+      a(href='/Dintair/profile/user')
+        img(src='/images/icons/profile_footer.png', id='perfil')
+        p Perfil
+        
+
+
+
+
+
+script(src='/javascripts/navBar/script.js')
+script(src='/javascripts/searchengine/search-header.js')
+
+script(src='/socket.io/socket.io.js' charset="utf-8")
+script(src='/javascripts/chat.js')
+script(src='/javascripts/notification-profile.js')
+
+script(src='/javascripts/focuses/footer/home.js')
+script(src='/javascripts/PopUp/forcreatebutton.js')
+script(src='/javascripts/PopUp/forprofilebutton.js')
+script(src='/javascripts/validations/placeholderChange.js')

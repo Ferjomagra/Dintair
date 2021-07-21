@@ -1,0 +1,472 @@
+extends ../../../../templates/forusers/HomePage/default
+
+block content
+
+  section.environmentUsers
+    div.content_profile
+      form(action='/Dintair/profile/Ambassador/Edit/#{embajador_data._id}/#{embajador_data.nameAmb}?_method=PUT', method='post', id='uploadForm', name='formuAmb', enctype='multipart/form-data')
+        div.boxProfile
+
+          div.image
+          
+            img(src='#{embajador_data.ambassadorIMGs}')
+
+            div(id='port_img')
+              p.palabra(id='btnFhoto') Seleccionar imagen
+              input(type='file', name='ambassadorIMGs', id='ambassadorIMGs')
+              input(type='hidden' name='newFile' id='newFile' value='')
+
+            section#ct-items
+
+
+          div.user_data
+
+            div.user_table
+              div.firstPart.col-lg-6.col-md-6.col-sm-6.col-xs-12
+                div.field 
+                  h4 Nombre del representante
+                  if embajador_data.nameAmb
+                    input(type='text', name='nameAmb', id='nameAmb', value='#{embajador_data.nameAmb}')
+                  else
+                    input(type='text', name='nameAmb', id='nameAmb', value='#{user.full_name}')
+                    input.id(type='hidden', value='#{user._id}', id='id', name='id')
+
+                div.field
+                  h4 País de nacimiento
+                  select.country(id='country_Amb', name='country_Amb', value='#{embajador_data.country_Amb}')
+                    option(value='') Selecciona tu país
+                    option(value='Afganistán (لافغانستان)', selected=embajador_data.country_Amb=='Afganistán (لافغانستان)') Afganistán (لافغانستان)
+                    option(value='Albania (Shqipëri)', selected=embajador_data.country_Amb=='Albania (Shqipëri)') Albania (Shqipëri)
+                    option(value='Alemania (Deutschland)', selected=embajador_data.country_Amb=='Alemania (Deutschland)') Alemania (Deutschland)
+                    option(value='Andorra', selected=embajador_data.country_Amb=='Andorra') Andorra
+                    option(value='Angola', selected=embajador_data.country_Amb=='Angola') Angola
+                    option(value='Antigua y Barbuda (Antigua & Barbuda)', selected=embajador_data.country_Amb=='Antigua y Barbuda (Antigua & Barbuda)') Antigua y Barbuda (Antigua & Barbuda)
+                    option(value='Arabia Sauita (العربية السعودية)', selected=embajador_data.country_Amb=='Arabia Sauita (العربية السعودية)') Arabia Sauita (العربية السعودية)
+                    option(value='Argelia (Algeria)', selected=embajador_data.country_Amb=='Argelia (Algeria)') Argelia (Algeria)
+                    option(value='Argentina', selected=embajador_data.country_Amb=='Argentina') Argentina
+                    option(value='Armenia (Հայաստան)', selected=embajador_data.country_Amb=='Armenia (Հայաստան)') Armenia (Հայաստան)
+                    option(value='Aruba', selected=embajador_data.country_Amb=='Aruba' ) Aruba
+                    option(value='Australia', selected=embajador_data.country_Amb=='Australia') Australia
+                    option(value='Austria (Österreich)', selected=embajador_data.country_Amb=='Austria (Österreich)') Austria (Österreich)
+                    option(value='Azerbaiyán (Azərbaycan)', selected=embajador_data.country_Amb=='Azerbaiyán (Azərbaycan)') Azerbaiyán (Azərbaycan)
+                    option(value='Bahamas', selected=embajador_data.country_Amb=='Bahamas') Bahamas
+                    option(value='Bangladés (বাংলাদেশ)', selected=embajador_data.country_Amb=='Bangladés (বাংলাদেশ)') Bangladés (বাংলাদেশ)
+                    option(value='Barbados', selected=embajador_data.country_Amb=='Barbados') Barbados
+                    option(value='Baréin (البحرين)', selected=embajador_data.country_Amb=='Baréin (البحرين)') Baréin (البحرين)
+                    option(value='Belgica (Belgium)', selected=embajador_data.country_Amb=='Belgica (Belgium)') Belgica (Belgium)
+                    option(value='Belice (Belize)', selected=embajador_data.country_Amb=='Belice (Belize)') Belice (Belize)
+                    option(value='Benín (Bénin)', selected=embajador_data.country_Amb=='Benín (Bénin)') Benín (Bénin)
+                    option(value='Bielorrusia (Беларусь)', selected=embajador_data.country_Amb=='Bielorrusia (Беларусь)') Bielorrusia (Беларусь)
+                    option(value='Birmania (မြန်မာနိုင်ငံ)', selected=embajador_data.country_Amb=='Birmania (မြန်မာနိုင်ငံ)') Birmania (မြန်မာနိုင်ငံ)
+                    option(value='Bolivia', selected=embajador_data.country_Amb=='Bolivia') Bolivia
+                    option(value='Bosnia-Herzegovina (Bosna i Hercegovina)', selected=embajador_data.country_Amb=='Bosnia-Herzegovina (Bosna i Hercegovina)') Bosnia-Herzegovina (Bosna i Hercegovina)
+                    option(value='Botsuana (Botswana)', selected=embajador_data.country_Amb=='Botsuana (Botswana)') Botsuana (Botswana)
+                    option(value='Brasil', selected=embajador_data.country_Amb=='Brasil') Brasil
+                    option(value='Brunéi (Brunei)', selected=embajador_data.country_Amb=='Brunéi (Brunei)') Brunéi (Brunei)
+                    option(value='Bulgaria (България)', selected=embajador_data.country_Amb=='Bulgaria (България)') Bulgaria (България)
+                    option(value='Burkina Faso', selected=embajador_data.country_Amb=='Burkina Faso') Burkina Faso
+                    option(value='Burundi (Uburundi)', selected=embajador_data.country_Amb=='Burundi (Uburundi)') Burundi (Uburundi)
+                    option(value='Bután', selected=embajador_data.country_Amb=='Bután') Bután
+                    option(value='Cabo Verde (Kabu Verdi)', selected=embajador_data.country_Amb=='Cabo Verde (Kabu Verdi)') Cabo Verde (Kabu Verdi)
+                    option(value='Camboya', selected=embajador_data.country_Amb=='Camboya') Camboya
+                    option(value='Camerún (Cameroun)', selected=embajador_data.country_Amb=='Camerún (Cameroun)') Camerún (Cameroun)
+                    option(value='Canadá (Canada)', selected=embajador_data.country_Amb=='Canadá (Canada)') Canadá (Canada)
+                    option(value='Catar (طعم)', selected=embajador_data.country_Amb=='Catar (طعم)') Catar (طعم)
+                    option(value='Chad (Tchad)', selected=embajador_data.country_Amb=='Chad (Tchad)') Chad (Tchad)
+                    option(value='Chile', selected=embajador_data.country_Amb=='Chile') Chile
+                    option(value='China (中国)', selected=embajador_data.country_Amb=='China (中国)') China (中国)
+                    option(value='Chipre (Κύπρος)', selected=embajador_data.country_Amb=='Chipre (Κύπρος)') Chipre (Κύπρος)
+                    option(value='Colombia', selected=embajador_data.country_Amb=='Colombia') Colombia
+                    option(value='Comoras (جزر القمر)', selected=embajador_data.country_Amb=='Comoras (جزر القمر)') Comoras (جزر القمر)
+                    option(value='Congo', selected=embajador_data.country_Amb=='Congo') Congo
+                    option(value='Corea del Norte (북한)', selected=embajador_data.country_Amb=='Corea del Norte (북한)') Corea del Norte (북한)
+                    option(value='Corea del Sur (대한민국)', selected=embajador_data.country_Amb=='Corea del Sur (대한민국)') Corea del Sur (대한민국)
+                    option(value='Costa de Marfil', selected=embajador_data.country_Amb=='Costa de Marfil') Costa de Marfil
+                    option(value='Costa Rica', selected=embajador_data.country_Amb=='Costa Rica') Costa Rica
+                    option(value='Croacia (Hrvatska)', selected=embajador_data.country_Amb=='Croacia (Hrvatska)') Croacia (Hrvatska)
+                    option(value='Cuba', selected=embajador_data.country_Amb=='Cuba') Cuba
+                    option(value='Dinamarca (Denmark)', selected=embajador_data.country_Amb=='Dinamarca (Denmark)') Dinamarca (Denmark)
+                    option(value='Dominicana', selected=embajador_data.country_Amb=='Dinamarca') Dominicana
+                    option(value='Ecuador', selected=embajador_data.country_Amb=='Ecuador') Ecuador
+                    option(value='Egipto (مصر)', selected=embajador_data.country_Amb=='Egipto (مصر)') Egipto (مصر)
+                    option(value='El Salvador', selected=embajador_data.country_Amb=='El Salvador') El Salvador
+                    option(value='Emiratos Árabes unidos (الأمارات العربية المتحدة)', selected=embajador_data.country_Amb=='Emiratos Árabes unidos (الأمارات العربية المتحدة)') Emiratos Árabes unidos (الأمارات العربية المتحدة)
+                    option(value='Iritrea', selected=embajador_data.country_Amb=='Iritrea') Iritrea
+                    option(value='Eslovaquia (Slovensko)', selected=embajador_data.country_Amb=='Eslovaquia (Slovensko)') Eslovaquia (Slovensko)
+                    option(value='Eslovenia (Slovenija)', selected=embajador_data.country_Amb=='Eslovenia (Slovenija)') Eslovenia (Slovenija)
+                    option(value='España', selected=embajador_data.country_Amb=='España') España
+                    option(value='Estados Unidos (United States)', selected=embajador_data.country_Amb=='Estados Unidos (United States)') Estados Unidos (United States)
+                    option(value='Estonia (Eesti)', selected=embajador_data.country_Amb=='Estonia (Eesti)') Estonia (Eesti)
+                    option(value='Etiopía (Ethiopia)', selected=embajador_data.country_Amb=='Etiopía (Ethiopia)') Etiopía (Ethiopia)
+                    option(value='Filipinas (Philippines)', selected=embajador_data.country_Amb=='Filipinas (Philippines)') Filipinas (Philippines)
+                    option(value='Finlandia (Suomi)', selected=embajador_data.country_Amb=='Finlandia (Suomi)') Finlandia (Suomi)
+                    option(value='Fiyi (Fiji)', selected=embajador_data.country_Amb=='Fiyi (Fiji)') Fiyi (Fiji)
+                    option(value='Francia (France)', selected=embajador_data.country_Amb=='Francia (France)') Francia (France)
+                    option(value='Gabón (Gabon)', selected=embajador_data.country_Amb=='Gabón (Gabon)') Gabón (Gabon)
+                    option(value='Gambia', selected=embajador_data.country_Amb=='Gambia') Gambia
+                    option(value='Georgia (საქართველო)', selected=embajador_data.country_Amb=='Georgia (საქართველო)') Georgia (საქართველო)
+                    option(value='Ghana (Gaana)', selected=embajador_data.country_Amb=='Ghana (Gaana)') Ghana (Gaana)
+                    option(value='Granada (Grenada)', selected=embajador_data.country_Amb=='Granada (Grenada)') Granada (Grenada)
+                    option(value='Grecia (Ελλάδα)', selected=embajador_data.country_Amb=='Grecia (Ελλάδα)') Grecia (Ελλάδα)
+                    option(value='Guatemala', selected=embajador_data.country_Amb=='Guatemala') Guatemala
+                    option(value='Guinea (Guinée)', selected=embajador_data.country_Amb=='Guinea (Guinée)') Guinea (Guinée)
+                    option(value='Guinea Ecuatorial', selected=embajador_data.country_Amb=='Guinea Ecuatorial') Guinea Ecuatorial
+                    option(value='Guinea-Bisáu (Guiné-Bissau)', selected=embajador_data.country_Amb=='Guinea-Bisáu (Guiné-Bissau)') Guinea-Bisáu (Guiné-Bissau)
+                    option(value='Guyana', selected=embajador_data.country_Amb=='Guyana') Guyana
+                    option(value='Haití (Haiti)', selected=embajador_data.country_Amb=='Haití (Haiti)') Haití (Haiti)
+                    option(value='Honduras', selected=embajador_data.country_Amb=='Honduras') Honduras
+                    option(value='Hong Kong (香港)', selected=embajador_data.country_Amb=='Hong Kong (香港)') Hong Kong (香港)
+                    option(value='Hungría (Magyarország)', selected=embajador_data.country_Amb=='Hungría (Magyarország)') Hungría (Magyarország)
+                    option(value='India (भारत)', selected=embajador_data.country_Amb=='India (भारत)') India (भारत)
+                    option(value='Indonesia', selected=embajador_data.country_Amb=='Indonesia') Indonesia
+                    option(value='Irak (العراق)', selected=embajador_data.country_Amb=='Irak (العراق)') Irak (العراق)
+                    option(value='Irán (إيران)', selected=embajador_data.country_Amb=='Irán (إيران)') Irán (إيران)
+                    option(value='Irlanda (Ireland)', selected=embajador_data.country_Amb=='Irlanda (Ireland)') Irlanda (Ireland)
+                    option(value='Islandia', selected=embajador_data.country_Amb=='Islandia') Islandia
+                    option(value='Islas Marshall (Marshall Islands)', selected=embajador_data.country_Amb=='Islas Marshall (Marshall Islands)') Islas Marshall (Marshall Islands)
+                    option(value='Islas Salomón (Salomon Islands)', selected=embajador_data.country_Amb=='Islas Salomón (Salomon Islands)') Islas Salomón (Salomon Islands)
+                    option(value='Israel (יִשְרָאֵל)', selected=embajador_data.country_Amb=='Israel (יִשְרָאֵל)') Israel (יִשְרָאֵל)
+                    option(value='Italia', selected=embajador_data.country_Amb=='Italia') Italia
+                    option(value='Jamaica', selected=embajador_data.country_Amb=='Jamaica') Jamaica
+                    option(value='Japón (日本)', selected=embajador_data.country_Amb=='Japón (日本)') Japón (日本)
+                    option(value='Jordania (الأردن)', selected=embajador_data.country_Amb=='Jordania (الأردن)') Jordania (الأردن)
+                    option(value='Kazajistán (Казахстан)', selected=embajador_data.country_Amb=='Kazajistán (Казахстан)') Kazajistán (Казахстан)
+                    option(value='Kenia (Kenya)', selected=embajador_data.country_Amb=='Kenia (Kenya)') Kenia (Kenya)
+                    option(value='Kirguistán (Кыргызстан)', selected=embajador_data.country_Amb=='Kirguistán (Кыргызстан)') Kirguistán (Кыргызстан)
+                    option(value='Kiribati', selected=embajador_data.country_Amb=='Kiribati') Kiribati
+                    option(value='Kosovo (Kosovë)', selected=embajador_data.country_Amb=='Kosovo (Kosovë)') Kosovo (Kosovë)
+                    option(value='Kuwait (الكويت)', selected=embajador_data.country_Amb=='Kuwait (الكويت)') Kuwait (الكويت)
+                    option(value='Laos (ລາວ)', selected=embajador_data.country_Amb=='Laos (ລາວ)') Laos (ລາວ)
+                    option(value='Lesoto (Lesotho)', selected=embajador_data.country_Amb=='Lesoto (Lesotho)') Lesoto (Lesotho)
+                    | *
+                    option(value='Letonia (Latvija)', selected=embajador_data.country_Amb=='Letonia (Latvija)') Letonia (Latvija)
+                    option(value='Líbano (لبنان)', selected=embajador_data.country_Amb=='Líbano (لبنان)') Líbano (لبنان)
+                    option(value='Liberia', selected=embajador_data.country_Amb=='Liberia') Liberia
+                    option(value='Libia (ليبيا)', selected=embajador_data.country_Amb=='Libia (ليبيا)') Libia (ليبيا)
+                    option(value='Liechtenstein', selected=embajador_data.country_Amb=='Liechtenstein') Liechtenstein
+                    | *
+                    option(value='Lituania (Lietuva)', selected=embajador_data.country_Amb=='Lituania (Lietuva)') Lituania (Lietuva)
+                    option(value='Luxemburgo (Luxembourg)', selected=embajador_data.country_Amb=='Luxemburgo (Luxembourg)') Luxemburgo (Luxembourg)
+                    option(value='Macao (澳門)', selected=embajador_data.country_Amb=='Macao (澳門)') Macao (澳門)
+                    option(value='Macedonia (Република Македонија)', selected=embajador_data.country_Amb=='Macedonia (Република Македонија)') Macedonia (Република Македонија)
+                    option(value='Madagascar (Magadasikara)', selected=embajador_data.country_Amb=='Madagascar (Magadasikara)') Madagascar (Magadasikara)
+                    option(value='Malasia (Malaysia)', selected=embajador_data.country_Amb=='Malasia (Malaysia)') Malasia (Malaysia)
+                    option(value='Malaui (Malawi)', selected=embajador_data.country_Amb=='Malaui (Malawi)') Malaui (Malawi)
+                    option(value='Maldivas (Maldives)', selected=embajador_data.country_Amb=='Maldivas (Maldives)') Maldivas (Maldives)
+                    option(value='Mali', selected=embajador_data.country_Amb=='Mali') Mali
+                    option(value='Malta', selected=embajador_data.country_Amb=='Malta') Malta
+                    option(value='Marruecos (Morocco)', selected=embajador_data.country_Amb=='Marruecos (Morocco)') Marruecos (Morocco)
+                    option(value='Mauricio (Moris)', selected=embajador_data.country_Amb=='Mauricio (Moris)') Mauricio (Moris)
+                    option(value='Mauritania (موريتانيا)', selected=embajador_data.country_Amb=='Mauritania (موريتانيا)') Mauritania (موريتانيا)
+                    option(value='México', selected=embajador_data.country_Amb=='México') México
+                    option(value='Micronesia', selected=embajador_data.country_Amb=='Micronesia') Micronesia
+                    option(value='Moldavia (República Moldava)', selected=embajador_data.country_Amb=='Moldavia (República Moldava)') Moldavia (República Moldava)
+                    option(value='Mónaco (Monaco)', selected=embajador_data.country_Amb=='Mónaco (Monaco)') Mónaco (Monaco)
+                    option(value='Mongolia (Монгол улс)', selected=embajador_data.country_Amb=='Mongolia (Монгол улс)') Mongolia (Монгол улс)
+                    option(value='Montenegro (Crna Gora)', selected=embajador_data.country_Amb=='Montenegro (Crna Gora)') Montenegro (Crna Gora)
+
+
+                    option(value='Mozambique (Moçambique)', selected=embajador_data.country_Amb=='Mozambique (Moçambique)') Mozambique (Moçambique)
+                    option(value='Namibia (Namibië)', selected=embajador_data.country_Amb=='Namibia (Namibië)') Namibia (Namibië)
+                    option(value='Nauru', selected=embajador_data.country_Amb=='Nauru') Nauru
+                    option(value='Nepal (नेपाल)', selected=embajador_data.country_Amb=='Nepal (नेपाल)') Nepal (नेपाल)
+                    option(value='Nicaragua', selected=embajador_data.country_Amb=='Nicaragua') Nicaragua
+                    option(value='Níger (Nijar)', selected=embajador_data.country_Amb=='Níger (Nijar)') Níger (Nijar)
+                    option(value='Nigeria', selected=embajador_data.country_Amb=='Nigeria') Nigeria
+                    option(value='Noruega (Norge)', selected=embajador_data.country_Amb=='Noruega (Norge)') Noruega (Norge)
+                    option(value='Nueva Zelanda (New Zealand)', selected=embajador_data.country_Amb=='Nueva Zelanda (New Zealand)') Nueva Zelanda (New Zealand)
+                    option(value='Omán (عمان)', selected=embajador_data.country_Amb=='Omán (عمان)') Omán (عمان)
+                    option(value='Paises Bajos (Nederland)', selected=embajador_data.country_Amb=='Paises Bajos (Nederland)') Paises Bajos (Nederland)
+                    option(value='Pakistán (باكستان)', selected=embajador_data.country_Amb=='Pakistán (باكستان)') Pakistán (باكستان)
+                    option(value='Palaos (Palau)', selected=embajador_data.country_Amb=='Palaos (Palau)') Palaos (Palau)
+                    option(value='Palestina (فلسطين)', selected=embajador_data.country_Amb=='Palestina (فلسطين)') Palestina (فلسطين)
+                    option(value='Panamá', selected=embajador_data.country_Amb=='Panamá') Panamá
+                    option(value='Papúa Nueva Guinea (Papua New Guinea)', selected=embajador_data.country_Amb=='Papúa Nueva Guinea (Papua New Guinea)') Papúa Nueva Guinea (Papua New Guinea)
+                    option(value='Paraguay', selected=embajador_data.country_Amb=='Paraguay') Paraguay
+                    option(value='Perú', selected=embajador_data.country_Amb=='Perú') Perú
+                    option(value='Polonia (Polska)', selected=embajador_data.country_Amb=='Polonia (Polska)') Polonia (Polska)
+
+
+                    option(value='Portugal', selected=embajador_data.country_Amb=='Portugal') Portugal
+                    option(value='Reino Unido (United Kingdom)', selected=embajador_data.country_Amb=='Reino Unido (United Kingdom)') Reino Unido (United Kingdom)
+                    option(value='República Centroafricana (République Centrafricaine)', selected=embajador_data.country_Amb=='República Centroafricana (République Centrafricaine)') República Centroafricana (République Centrafricaine)
+                    option(value='República Checa', selected=embajador_data.country_Amb=='República Checa') República Checa
+                    option(value='República Democrática del Congo (Jamhuri ya Kidemokrasia ya Kongo)', selected=embajador_data.country_Amb=='República Democrática del Congo (Jamhuri ya Kidemokrasia ya Kongo)') República Democrática del Congo (Jamhuri ya Kidemokrasia ya Kongo)
+                    option(value='República Dominicana', selected=embajador_data.country_Amb=='República Dominicana') República Dominicana
+                    option(value='Ruanda (Rwanda)', selected=embajador_data.country_Amb=='Ruanda (Rwanda)') Ruanda (Rwanda)
+                    option(value='Rumania (România)', selected=embajador_data.country_Amb=='Rumania (România)') Rumania (România)
+                    option(value='Rusia (Россия)', selected=embajador_data.country_Amb=='Rusia (Россия)') Rusia (Россия)
+                    option(value='Samoa', selected=embajador_data.country_Amb=='Samoa') Samoa
+                    option(value='San Cristóbal y Nieves (St. Kitts & Nevis)', selected=embajador_data.country_Amb=='San Cristóbal y Nieves (St. Kitts & Nevis)') San Cristóbal y Nieves (St. Kitts & Nevis)
+                    option(value='San Marino', selected=embajador_data.country_Amb=='San Marino') San Marino
+                    option(value='San Vicente y Las Granadinas', selected=embajador_data.country_Amb=='San Vicente y Las Granadinas') San Vicente y Las Granadinas
+                    option(value='Santa Lucia (St. Lucia)', selected=embajador_data.country_Amb=='Santa Lucia (St. Lucia)') Santa Lucia (St. Lucia)
+                    option(value='Santo Tomé y Príncipe (Säo Tomé e Principe)', selected=embajador_data.country_Amb=='Santo Tomé y Príncipe (Säo Tomé e Principe)') Santo Tomé y Príncipe (Säo Tomé e Principe)
+                    option(value='Senegal', selected=embajador_data.country_Amb=='Senegal') Senegal
+                    option(value='Serbia (Србија)', selected=embajador_data.country_Amb=='Serbia (Србија)') Serbia (Србија)
+                    option(value='Seychelles', selected=embajador_data.country_Amb=='Seychelles') Seychelles
+
+
+
+                    option(value='Sierra Leona (Sierra Leone)', selected=embajador_data.country_Amb=='Sierra Leona (Sierra Leone)') Sierra Leona (Sierra Leone)
+                    option(value='Singapur (Singapore)', selected=embajador_data.country_Amb=='Singapur (Singapore)') Singapur (Singapore)
+                    option(value='Siria (سوريا)', selected=embajador_data.country_Amb=='Siria (سوريا)') Siria (سوريا)
+                    option(value='Somalia (Soomaaliya)', selected=embajador_data.country_Amb=='Somalia (Soomaaliya)') Somalia (Soomaaliya)
+                    option(value='Sri Lanka (ශ්‍රී ලංකා)', selected=embajador_data.country_Amb=='Sri Lanka (ශ්‍රී ලංකා)') Sri Lanka (ශ්‍රී ලංකා)
+                    option(value='Suazilandia (Swaziland)', selected=embajador_data.country_Amb=='Suazilandia (Swaziland)') Suazilandia (Swaziland)
+                    option(value='Sudáfrica (South Africa)', selected=embajador_data.country_Amb=='Sudáfrica (South Africa)') Sudáfrica (South Africa)
+                    option(value='Sudán (سودان)', selected=embajador_data.country_Amb=='Sudán (سودان)') Sudán (سودان)
+                    option(value='Sudán del Sur (جنوب السودان)', selected=embajador_data.country_Amb=='Sudán del Sur (جنوب السودان)') Sudán del Sur (جنوب السودان)
+                    | *
+                    option(value='Suecia (Sverige)', selected=embajador_data.country_Amb=='Suecia (Sverige)') Suecia (Sverige)
+                    option(value='Suiza (Schweiz)', selected=embajador_data.country_Amb=='Suiza (Schweiz)') Suiza (Schweiz)
+                    option(value='Surinam (Suriname)', selected=embajador_data.country_Amb=='Surinam (Suriname)') Surinam (Suriname)
+                    option(value='Tailandia (ประเทศไทย)', selected=embajador_data.country_Amb=='Tailandia (ประเทศไทย)') Tailandia (ประเทศไทย)
+                    option(value='Taiwán (台灣)', selected=embajador_data.country_Amb=='Taiwán (台灣)') Taiwán (台灣)
+                    option(value='Tanzania', selected=embajador_data.country_Amb=='Tanzania') Tanzania
+
+
+                    option(value='Tayikistán (Tajikistan)', selected=embajador_data.country_Amb=='Tayikistán (Tajikistan)') Tayikistán (Tajikistan)
+                    option(value='Timor Oriental', selected=embajador_data.country_Amb=='Timor Oriental') Timor Oriental
+                    option(value='Togo', selected=embajador_data.country_Amb=='Togo') Togo
+                    option(value='Tonga', selected=embajador_data.country_Amb=='Tonga') Tonga
+                    option(value='Trinidad Y Tobago (Trinidad & Tobago)', selected=embajador_data.country_Amb=='Trinidad Y Tobago (Trinidad & Tobago)') Trinidad Y Tobago (Trinidad & Tobago)
+                    option(value='Túnez (Tunisia)', selected=embajador_data.country_Amb=='Túnez (Tunisia)') Túnez (Tunisia)
+                    option(value='Turkmenistán (Turkmenistan)', selected=embajador_data.country_Amb=='Turkmenistán (Turkmenistan)') Turkmenistán (Turkmenistan)
+                    option(value='Turquía (Türkiye)', selected=embajador_data.country_Amb=='Turquía (Türkiye)') Turquía (Türkiye)
+                    option(value='Tuvalu', selected=embajador_data.country_Amb=='Tuvalu') Tuvalu
+                    option(value='Ucrania (Україна)', selected=embajador_data.country_Amb=='Ucrania (Україна)') Ucrania (Україна)
+                    option(value='Uganda', selected=embajador_data.country_Amb=='Uganda') Uganda
+                    option(value='Uruaguay', selected=embajador_data.country_Amb=='Uruaguay') Uruaguay
+                    option(value='Uzbekistán (O‘zbekiston)', selected=embajador_data.country_Amb=='Uzbekistán (O‘zbekiston)') Uzbekistán (O‘zbekiston)
+                    option(value='Vanuatu', selected=embajador_data.country_Amb=='Vanuatu') Vanuatu
+                    option(value='Vaticano', selected=embajador_data.country_Amb=='Vaticano') Vaticano
+                    | *
+                    option(value='Venezuela', selected=embajador_data.country_Amb=='Venezuela') Venezuela
+                    option(value='Vietnam (Việt Nam)', selected=embajador_data.country_Amb=='Vietnam (Việt Nam)') Vietnam (Việt Nam)
+                    | *
+                    option(value='Yemen (يمني)', selected=embajador_data.country_Amb=='Uruaguay') Yemen (يمني)
+                    option(value='Yibuti (Djibouti)', selected=embajador_data.country_Amb=='Yibuti (Djibouti)') Yibuti (Djibouti)
+                    option(value='Zambia', selected=embajador_data.country_Amb=='Zambia') Zambia
+                    | *
+                    option(value='Zimbabue (Zimbabwe)', selected=embajador_data.country_Amb=='Zimbabue (Zimbabwe)') Zimbabue (Zimbabwe)
+                    | *
+
+                div.field
+                  h4 Cargo
+                  input(type='text', name='cargoAmb', id='cargoAmb', value='#{embajador_data.cargoAmb}')
+
+                div.field
+                  h4 ¿Qué función desempeña en el cargo?
+                  textarea(name='funcionAmb', id='funcionAmb')= embajador_data.funcionAmb
+
+                div.field
+                  h4 Correo electrónico del representante
+                  input(type='text', name='emailAmb', id='emailAmb', value='#{embajador_data.emailAmb}')
+
+
+              div.secondPart.col-lg-6.col-md-6.col-sm-6.col-xs-12
+                div.field
+                  h4 Fecha de nacimiento
+                  select.day(id='dia_1', name='dia_1', value='#{embajador_data.dia_1}')
+                    option(value='Día') Día
+                    option(value='01', selected=embajador_data.dia_1=='01') 01
+                    option(value='02', selected=embajador_data.dia_1=='02') 02
+                    option(value='03', selected=embajador_data.dia_1=='03') 03
+                    option(value='04', selected=embajador_data.dia_1=='04') 04
+                    option(value='05', selected=embajador_data.dia_1=='05') 05
+                    option(value='06', selected=embajador_data.dia_1=='06') 06
+                    option(value='07', selected=embajador_data.dia_1=='07') 07
+                    option(value='08', selected=embajador_data.dia_1=='08') 08
+                    option(value='09', selected=embajador_data.dia_1=='09') 09
+                    option(value='10', selected=embajador_data.dia_1=='10') 10
+                    option(value='11', selected=embajador_data.dia_1=='11') 11
+                    option(value='12', selected=embajador_data.dia_1=='12') 12
+                    option(value='13', selected=embajador_data.dia_1=='13') 13
+                    option(value='14', selected=embajador_data.dia_1=='14') 14
+                    option(value='15', selected=embajador_data.dia_1=='15') 15
+                    option(value='16', selected=embajador_data.dia_1=='16') 16
+                    option(value='17', selected=embajador_data.dia_1=='17') 17
+                    option(value='18', selected=embajador_data.dia_1=='18') 18
+                    option(value='19', selected=embajador_data.dia_1=='19') 19
+                    option(value='20', selected=embajador_data.dia_1=='20') 20
+                    option(value='21', selected=embajador_data.dia_1=='21') 21
+                    option(value='22', selected=embajador_data.dia_1=='22') 22
+                    option(value='23', selected=embajador_data.dia_1=='23') 23
+                    option(value='24', selected=embajador_data.dia_1=='24') 24
+                    option(value='25', selected=embajador_data.dia_1=='25') 25
+                    option(value='26', selected=embajador_data.dia_1=='26') 26
+                    option(value='27', selected=embajador_data.dia_1=='27') 27
+                    option(value='28', selected=embajador_data.dia_1=='28') 28
+                    option(value='29', selected=embajador_data.dia_1=='29') 29
+                    option(value='30', selected=embajador_data.dia_1=='30') 30
+                    option(value='31', selected=embajador_data.dia_1=='31') 31
+
+                  select.month(id='mes_1', name='mes_1', value='#{embajador_data.mes_1}')
+                    option(value='Mes') Mes
+                    option(value='Enero', selected=embajador_data.mes_1=='Enero') Enero
+                    option(value='Febrero', selected=embajador_data.mes_1=='Febrero') Febrero
+                    option(value='Marzo', selected=embajador_data.mes_1=='Marzo') Marzo
+                    option(value='Abril', selected=embajador_data.mes_1=='Abril') Abril
+                    option(value='Mayo', selected=embajador_data.mes_1=='Mayo') Mayo
+                    option(value='Junio', selected=embajador_data.mes_1=='Junio') Junio
+                    option(value='Julio', selected=embajador_data.mes_1=='Julio') Julio
+                    option(value='Agosto', selected=embajador_data.mes_1=='Agosto') Agosto
+                    option(value='Setiembre', selected=embajador_data.mes_1=='Setiembre') Setiembre
+                    option(value='Octubre', selected=embajador_data.mes_1=='Octubre') Octubre
+                    option(value='Noviembre', selected=embajador_data.mes_1=='Noviembre') Noviembre
+                    option(value='Diciembre', selected=embajador_data.mes_1=='Diciembre') Diciembre
+
+                  select.year(id='año_1', name='año_1', value='#{embajador_data.año_1}')
+                    option(value='Año') Año
+                    option(value='2018', selected=embajador_data.año_1=='2018') 2018
+                    option(value='2017', selected=embajador_data.año_1=='2017') 2017
+                    option(value='2016', selected=embajador_data.año_1=='2016') 2016
+                    option(value='2015', selected=embajador_data.año_1=='2015') 2015
+                    option(value='2014', selected=embajador_data.año_1=='2014') 2014
+                    option(value='2013', selected=embajador_data.año_1=='2013') 2013
+                    option(value='2012', selected=embajador_data.año_1=='2012') 2012
+                    option(value='2011', selected=embajador_data.año_1=='2011') 2011
+                    option(value='2010', selected=embajador_data.año_1=='2010') 2010
+                    option(value='2009', selected=embajador_data.año_1=='2009') 2009
+                    option(value='2008', selected=embajador_data.año_1=='2008') 2008
+                    option(value='2007', selected=embajador_data.año_1=='2007') 2007
+                    option(value='2006', selected=embajador_data.año_1=='2006') 2006
+                    option(value='2005', selected=embajador_data.año_1=='2005') 2005
+                    option(value='2004', selected=embajador_data.año_1=='2004') 2004
+                    option(value='2003', selected=embajador_data.año_1=='2003') 2003
+                    option(value='2002', selected=embajador_data.año_1=='2002') 2002
+                    option(value='2001', selected=embajador_data.año_1=='2001') 2001
+                    option(value='2000', selected=embajador_data.año_1=='2000') 2000
+                    option(value='1999', selected=embajador_data.año_1=='1999') 1999
+                    option(value='1998', selected=embajador_data.año_1=='1998') 1998
+                    option(value='1997', selected=embajador_data.año_1=='1997') 1997
+                    option(value='1996', selected=embajador_data.año_1=='1996') 1996
+                    option(value='1995', selected=embajador_data.año_1=='1995') 1995
+                    option(value='1994', selected=embajador_data.año_1=='1994') 1994
+                    option(value='1993', selected=embajador_data.año_1=='1993') 1993
+                    option(value='1992', selected=embajador_data.año_1=='1992') 1992
+                    option(value='1991', selected=embajador_data.año_1=='1991') 1991
+                    option(value='1990', selected=embajador_data.año_1=='1990') 1990
+                    option(value='1989', selected=embajador_data.año_1=='1989') 1989
+                    option(value='1988', selected=embajador_data.año_1=='1988') 1988
+                    option(value='1987', selected=embajador_data.año_1=='1987') 1987
+                    option(value='1986', selected=embajador_data.año_1=='1986') 1986
+                    option(value='1985', selected=embajador_data.año_1=='1985') 1985
+                    option(value='1984', selected=embajador_data.año_1=='1984') 1984
+                    option(value='1983', selected=embajador_data.año_1=='1983') 1983
+                    option(value='1982', selected=embajador_data.año_1=='1982') 1982
+                    option(value='1981', selected=embajador_data.año_1=='1981') 1981
+                    option(value='1980', selected=embajador_data.año_1=='1980') 1980
+                    option(value='1979', selected=embajador_data.año_1=='1979') 1979
+                    option(value='1978', selected=embajador_data.año_1=='1978') 1978
+                    option(value='1977', selected=embajador_data.año_1=='1977') 1977
+                    option(value='1976', selected=embajador_data.año_1=='1976') 1976
+                    option(value='1975', selected=embajador_data.año_1=='1975') 1975
+                    option(value='1974', selected=embajador_data.año_1=='1974') 1974
+                    option(value='1973', selected=embajador_data.año_1=='1973') 1973
+                    option(value='1972', selected=embajador_data.año_1=='1972') 1972
+                    option(value='1971', selected=embajador_data.año_1=='1971') 1971
+                    option(value='1970', selected=embajador_data.año_1=='1970') 1970
+                    option(value='1969', selected=embajador_data.año_1=='1969') 1969
+                    option(value='1968', selected=embajador_data.año_1=='1968') 1968
+                    option(value='1967', selected=embajador_data.año_1=='1967') 1967
+                    option(value='1966', selected=embajador_data.año_1=='1966') 1966
+                    option(value='1965', selected=embajador_data.año_1=='1965') 1965
+                    option(value='1964', selected=embajador_data.año_1=='1964') 1964
+                    option(value='1963', selected=embajador_data.año_1=='1963') 1963
+                    option(value='1962', selected=embajador_data.año_1=='1962') 1962
+                    option(value='1961', selected=embajador_data.año_1=='1961') 1961
+                    option(value='1960', selected=embajador_data.año_1=='1960') 1960
+                    option(value='1959', selected=embajador_data.año_1=='1959') 1959
+                    option(value='1958', selected=embajador_data.año_1=='1958') 1958
+                    option(value='1957', selected=embajador_data.año_1=='1957') 1957
+                    option(value='1956', selected=embajador_data.año_1=='1956') 1956
+                    option(value='1955', selected=embajador_data.año_1=='1955') 1955
+                    option(value='1954', selected=embajador_data.año_1=='1954') 1954
+                    option(value='1953', selected=embajador_data.año_1=='1953') 1953
+                    option(value='1952', selected=embajador_data.año_1=='1952') 1952
+                    option(value='1951', selected=embajador_data.año_1=='1951') 1951
+                    option(value='1950', selected=embajador_data.año_1=='1950') 1950
+                    option(value='1949', selected=embajador_data.año_1=='1949') 1949
+                    option(value='1948', selected=embajador_data.año_1=='1948') 1948
+                    option(value='1947', selected=embajador_data.año_1=='1947') 1947
+                    option(value='1946', selected=embajador_data.año_1=='1946') 1946
+                    option(value='1945', selected=embajador_data.año_1=='1945') 1945
+                    option(value='1944', selected=embajador_data.año_1=='1944') 1944
+                    option(value='1943', selected=embajador_data.año_1=='1943') 1943
+                    option(value='1942', selected=embajador_data.año_1=='1942') 1942
+                    option(value='1941', selected=embajador_data.año_1=='1941') 1941
+                    option(value='1940', selected=embajador_data.año_1=='1940') 1940
+                    option(value='1939', selected=embajador_data.año_1=='1939') 1939
+                    option(value='1938', selected=embajador_data.año_1=='1938') 1938
+                    option(value='1937', selected=embajador_data.año_1=='1937') 1937
+                    option(value='1936', selected=embajador_data.año_1=='1936') 1936
+                    option(value='1935', selected=embajador_data.año_1=='1935') 1935
+                    option(value='1934', selected=embajador_data.año_1=='1934') 1934
+                    option(value='1933', selected=embajador_data.año_1=='1933') 1933
+                    option(value='1932', selected=embajador_data.año_1=='1932') 1932
+                    option(value='1931', selected=embajador_data.año_1=='1931') 1931
+                    option(value='1930', selected=embajador_data.año_1=='1930') 1930
+                    option(value='1929', selected=embajador_data.año_1=='1929') 1929
+                    option(value='1928', selected=embajador_data.año_1=='1928') 1928
+                    option(value='1927', selected=embajador_data.año_1=='1927') 1927
+                    option(value='1926', selected=embajador_data.año_1=='1926') 1926
+                    option(value='1925', selected=embajador_data.año_1=='1925') 1925
+                    option(value='1924', selected=embajador_data.año_1=='1924') 1924
+                    option(value='1923', selected=embajador_data.año_1=='1923') 1923
+                    option(value='1922', selected=embajador_data.año_1=='1922') 1922
+                    option(value='1921', selected=embajador_data.año_1=='1921') 1921
+                    option(value='1920', selected=embajador_data.año_1=='1920') 1920
+                    option(value='1919', selected=embajador_data.año_1=='1919') 1919
+                    option(value='1918', selected=embajador_data.año_1=='1918') 1918
+                    option(value='1917', selected=embajador_data.año_1=='1917') 1917
+                    option(value='1916', selected=embajador_data.año_1=='1916') 1916
+                    option(value='1915', selected=embajador_data.año_1=='1915') 1915
+                    option(value='1914', selected=embajador_data.año_1=='1914') 1914
+                    option(value='1913', selected=embajador_data.año_1=='1913') 1913
+                    option(value='1912', selected=embajador_data.año_1=='1912') 1912
+                    option(value='1911', selected=embajador_data.año_1=='1911') 1911
+                    option(value='1910', selected=embajador_data.año_1=='1910') 1910
+                    option(value='1909', selected=embajador_data.año_1=='1909') 1909
+                    option(value='1908', selected=embajador_data.año_1=='1908') 1908
+                    option(value='1907', selected=embajador_data.año_1=='1907') 1907
+                    option(value='1906', selected=embajador_data.año_1=='1906') 1906
+                    option(value='1905', selected=embajador_data.año_1=='1905') 1905
+                    option(value='1904', selected=embajador_data.año_1=='1904') 1904
+                    option(value='1903', selected=embajador_data.año_1=='1903') 1903
+                    option(value='1902', selected=embajador_data.año_1=='1902') 1902
+                    option(value='1901', selected=embajador_data.año_1=='1901') 1901
+                    option(value='1900', selected=embajador_data.año_1=='1900') 1900
+
+                div.field
+                  h4 Número telefónico del representante
+                  input(type='text', name='numAmb', id='numAmb', value='#{embajador_data.numAmb}')
+
+                div.field
+                  h4 Número de WhatsApp del representante (opcional)
+                  input(type='text', name='wtpNumAmb', id='wtpNumAmb', value='#{embajador_data.wtpNumAmb}')
+
+                div.field
+                  h4 Pasatiempos (opcional)
+                  textarea(name='hobbiesAmb', id='hobbiesAmb')= embajador_data.hobbiesAmb
+
+
+          
+            input(type='submit', value='Guardar representante')
+
+  div.main-navegation
+    a.active(href="/Dintair") Inicio
+    a(href="") Buscar
+    a(href="") Productos
+    a(href="/Dintair/profile/user") Perfil 
+
+
+  script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/previewImages/previewProfile.js')
+  script(src='/javascripts/select_data_rubro.js')
+  script(src='/javascripts/editProfile/profile.js')
+
+
+  script(src='/javascripts/previewImages/previewAmbassador.js')
+  script(src='/javascripts/select_data_ambassador.js')      

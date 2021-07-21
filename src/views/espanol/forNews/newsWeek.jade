@@ -1,0 +1,58 @@
+extends ../templates/default
+
+block content
+  .bigContenido
+    .newsField
+
+      .global_content.col-lg-12
+
+        div.show_news
+
+          //p.date=dataNews.fecha
+
+          p.date= dataNewsS.dia
+          p.date de
+          p.date= dataNewsS.mes
+          p.date de
+          p.date= dataNewsS.año
+          
+          
+          h4.antetitulo= dataNewsS.antetitulo
+          h3.titular= dataNewsS.titular
+
+          h4.parrafo= dataNewsS.primerParrafo
+
+          img(src='#{dataNewsS.imgNews}')
+          h6=dataNewsS.piedeImagen
+
+          h5.titles= dataNewsS.titulo1
+          h4.parrafo=dataNewsS.aspectosPrincipales
+          h5.titles= dataNewsS.titulo2
+          h4.parrafo=dataNewsS.Pparagraph2
+          h5.titles= dataNewsS.titulo3
+          h4.parrafo=dataNewsS.Pparagraph3
+
+          h5.titles= dataNewsS.titulo4
+          h4.parrafo=dataNewsS.aspectosMedios
+          h5.titles= dataNewsS.titulo5
+          h4.parrafo=dataNewsS.Mparagraph2
+          h5.titles= dataNewsS.titulo6
+          h4.parrafo=dataNewsS.Mparagraph3
+
+          h5.titles= dataNewsS.titulo7
+          h4.parrafo=dataNewsS.aspectosSecundarios
+          h5.titles= dataNewsS.titulo8
+          h4.parrafo=dataNewsS.Sparagraph2
+          h5.titles= dataNewsS.titulo9
+          h4.parrafo=dataNewsS.Sparagraph3
+
+          if dataNewsS.redactBy.length
+            div.redaccion 
+              h5.redactBy='Redacción: '+ dataNewsS.redactBy
+          
+       
+
+          if dataNewsS.Fonts.length
+            div.fuente
+              
+              h1.Fonts='Fuente: ' + dataNewsS.Fonts

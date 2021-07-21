@@ -1,0 +1,50 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+  .prod-start
+    .perfiluser
+
+      div.content_group
+
+        div.miniProfile
+          div.sprofile(style="background-image: url(#{user.imageProfile})")  
+            
+          h3.title_user= user.comp_name
+
+        form.delete_profile_form(action='/Dintair/profile/DELETE/#{user._id}/#{user.comp_name}/#{user.username}/#{user.fecha_signup}?_method=DELETE', method='post')
+
+
+          div.for_text
+            h3 Lamentamos que este tomando esta decición
+
+
+          div.content_for_fields
+            p.secundary_text Seleccione el motivo
+            select(name='deleteWhy', id='deleteWhy')
+              option(value='Inconformidad con el servicio') Inconformidad con el servicio
+              option(value='Pérdida de información') Pérdida de información
+              option(value='Disgusto por alguno de nuestros servicios') Disgusto por alguno de nuestros servicios
+              option(value='Poco espacio personal') Poco espacio personal
+
+              option(value='La interfaz de usuario no es buena') La interfaz de usuario no es buena
+              option(value='Existen servicios mejores') Existen servicios mejores
+              option(value='La seguridad es poca o no cumple mis expectativas') La seguridad es poca o no cumple mis expectativas
+
+              option(value='Pérdida de interés por lo que ofrecemos') Pérdida de interés por lo que ofrecemos
+
+              option(value='Otro') Otros
+
+            p.secundary_text Escriba una breve explicación del motivo
+            textarea(name='deleteDescription', id='deleteDescription')
+
+
+          div.for_btn_delete
+            input(type='submit', name='', id='btn_deletePass_2', value='Cerrar mi cuenta')
+
+          div.alert_message
+            h5 *Al cerrar su cuenta perderá el acceso a nuestros servicios y será redireccionado a la página de inicio.
+            h5 Para más información cunsulte nuestra 
+              a(href='/Dintair/privacyPolice', target='_blank') política de privacidad 
+              | en la sección "El cierre de su cuenta."
+
+  script(src='/javascripts/alerts/alert_deletePass2.js')

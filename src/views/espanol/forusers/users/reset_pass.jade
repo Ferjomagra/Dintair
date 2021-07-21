@@ -1,0 +1,41 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+  .prod-start
+    .perfiluser
+      div.content_group
+
+        if messageReset.length > 0
+            p.messageReset<strong></strong> #{messageReset}
+
+        if messageError.length > 0
+            p.messageError<strong></strong> #{messageError}
+
+        div.img_lock
+          img(src='/images/icons/lock_image.png')
+
+        div.miniProfile
+          div.sprofile(style="background-image: url(#{user.imageProfile})")  
+            
+          h3.title_user= user.comp_name
+
+        form(method='post', action='/Dintair/profile/resetPassword/#{user._id}?_method=put', name='formu', onsubmit='return Validate()')
+
+          div.inputs_pass
+            .input_username
+              .part_label
+                label Nueva contraseña
+              #error_password.error_password
+              input.field_username(type='password', name='password', size='21')
+              
+
+            .input_username
+              .part_label
+                label Ingrese nuevamente la contraseña
+              input.btn_password(type='password', name='confirm', size='21')
+
+            input#changeUsername(type='submit', value='Restablecer')
+
+  //script(src='/javascripts/outlines-boxes.js')
+  script(src='/javascripts/for_password/alert_pass.js')
+  script(src='/javascripts/for_password/reset_password.js')

@@ -1,0 +1,120 @@
+extends templates/templateSingUp/default
+
+block content
+  .bigContenido
+
+    
+
+    form#msform(action='/Dintair/es/Signup', method='post', name='formu')
+      div.dintair
+        a.transformD(href='/')
+          img.dintair(src='/images/dintair/dintair_iso.png')
+
+            
+      if message.length > 0
+        p.message<strong></strong> #{message}
+
+      if check.length > 0
+        p.check<strong></strong> #{check}
+
+
+      
+      // progressbar
+
+      // fieldsets
+      fieldset
+        h4 Nombre y apellido
+        #error_full_name.error_full_name
+        input(id='full_name', type='text', name='full_name', data-error-id="error_full_name")
+        
+        h4 Nombre del negocio o empresa
+        #error_comp_name.error_comp_name
+        input(id='comp_name', type='text', name='comp_name', autocomplete='off', data-error-id="error_comp_name")
+        
+
+        
+        h4 Correo corporativo
+        #error_comp_email.error_comp_email
+        input(type='text', name='username', id='username', autocomplete='off', data-error-id="error_comp_email")
+        
+
+
+        h4 Contraseña
+        #error_comp_pass.error_comp_pass
+        input#password(type='password', name='password', data-error-id="error_comp_pass")
+        
+
+        input.next.action-button(type='button', name='Continuar', value='Continuar', id='btn_next')
+
+
+
+      fieldset
+
+        h4 Número de WhatsApp
+        #error_wtpnumber.error_wtpnumber
+        input.sede(type='text', id='wtpnumber', name='wtpnumber', autocomplete = 'off', data-error-id="error_wtpnumber")
+        
+
+        h4 Soy:
+        #error_iam.error_iam
+        .radio-group
+          input(type='radio', name='iam', id='comprador', value='Comprador')
+          label(for='comprador') Comprador
+
+          input(type='radio', name='iam', id='proveedor', value='Proveedor')
+          label(for='proveedor') Proveedor
+
+          input(type='radio', name='iam', id='ambos', value='Ambos')
+          label(for='ambos') Ambos
+        
+
+        h4 Selecciona el rubro al que te dedicas
+        #error_rubroTarget.error_rubroTarget
+        select.rubroTarget(name='rubroTarget', id='rubrotarget', data-error-id="error_rubroTarget")
+          option(value='')
+          //Nueva lista
+          option(value='Alimentos y Bebidas') Alimentos y Bebidas
+          option(value='Tienda online y Local comercial') Tienda online y Local comercial
+
+        
+      
+    
+        h4 Selecciona tu país
+        #error_country.error_country
+        select#editable-select1.country(name='country' onchange='cambia();', data-error-id="error_country")
+          option(value='')
+          option(value='Argentina') Argentina
+          option(value='Bolivia') Bolivia
+          option(value='Chile') Chile
+          option(value='Colombia') Colombia
+          option(value='Cuba') Cuba
+          option(value='Ecuador') Ecuador
+          option(value='ElSalvador') El Salvador
+          option(value='Guatemala') Guatemala
+          option(value='Honduras') Honduras
+          option(value='México') México
+          option(value='Paraguay') Paraguay
+          option(value='Perú') Perú
+          option(value='Uruaguay') Uruaguay
+          option(value='Venezuela') Venezuela
+        
+
+        h4 Selecciona tu provincia
+        #error_provincia.error_provincia
+        select#editable-select2.country(name='provincia', data-error-id="error_provincia")
+          option(value='')
+        
+        input.previous.action-button(type='button', name='Anterior', value='Anterior')
+        input.next.action-button(type='submit', value='Registrarme', id='btnSend')
+
+
+  script(src='/javascripts/dynamicForms/script.js')
+  script(src='/javascripts/dynamicForms/script1.js')
+  //script(src='/javascripts/MultiStepForm/signup/validateMulti.js')
+  script(src='/javascripts/MultiStepForm/signup/script.js')
+  script(src='/javascripts/selectprovidence/script.js')
+        
+
+ 
+  
+

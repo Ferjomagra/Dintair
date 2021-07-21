@@ -1,0 +1,102 @@
+extends ../../../templates/forusers/HomePage/default
+
+block content
+  
+  section.environmentUsersProds
+
+    div.box_prods_vista
+      div.box_by_flex
+        div.box_prods_vista_1
+
+          div.views_number
+            if data_serv.vistas == undefined
+            else
+              if data_serv.vistas < 2
+                p.visitas= data_serv.vistas + ' visita'
+              else
+                p.visitas= data_serv.vistas + ' visitas'
+
+          div.leftBOX
+            #myCarousel.carousel.slide
+              .carousel-inner
+                each item, index in data_serv.files
+
+                  if index == 0
+                    .active.item(data-slide-number=index)
+                      .ctn-img
+                        img.img-fluid(src='#{item}')
+                  
+                  else
+                    .item(data-slide-number=index)
+                      .ctn-img
+                        img.img-fluid(src='#{item}')
+
+                a.carousel-control.left.pt-3(href='#myCarousel', data-slide='prev')
+                  i.fa.fa-chevron-left
+                a.carousel-control.right.pt-3(href='#myCarousel', data-slide='next')
+                  i.fa.fa-chevron-right
+
+              ul.carousel-indicators.list-inline
+                each item, index in data_serv.files
+                  if index == 0
+                    li.list-inline-item.active
+                      a#carousel-selector-0.selected(data-slide-to=index, data-target='#myCarousel')
+                        img.img-fluid(src='#{item}')
+                  else 
+                    li.list-inline-item
+                      a#carousel-selector-0.selected(data-slide-to=index, data-target='#myCarousel')
+                        img.img-fluid(src='#{item}')
+
+          div.description
+            h2.name_prod= data_serv.name_serv
+
+            h3 Descripción
+            - var gdescript = data_serv.desc_serv.split("\n")
+            for itemdescript in gdescript
+              p.text #{itemdescript}
+
+        div.box_prods_vista_2
+
+          h2.title_second_p Información adicional
+
+          if data_serv.hora_apertura && data_serv.hora_cierre
+            div.timeopen
+              h2 Horario de atención
+              div.flex_d_t
+                div.date
+                  p= 'De '+ data_serv.dia_aper +' a '+ data_serv.dia_cierr
+
+                div.time
+                  if data_serv.hora_apertura && data_serv.hora_cierre
+                    p= 'De '+data_serv.hora_apertura +' AM a '+data_serv.hora_cierre+' PM'
+          else
+
+          div.stock
+            p.titles Tipo de servicio
+            p.tipo_serv= data_serv.tipo_serv
+
+          div.stock
+            p.titles Lugar de origen
+            p.origen= data_serv.origin_serv
+
+          div.stock
+            p.titles Especialidades
+            - var gdescriptesp = data_serv.especialidades_serv.split("\n")
+            for itemdescriptesp in gdescriptesp
+              p.text #{itemdescriptesp}
+
+
+
+          div.timestamp
+            div.titleBox
+              h5.text Fecha de publicación
+            div.flexBox
+              div.Times
+                p= data_serv.fecha_creacion
+              div.Times
+                p= data_serv.nuevafecha
+
+
+
+  script(src='/javascripts/alerts/alert_service.js')
+  script(src='/javascripts/carousel/viewProductsImages.js')

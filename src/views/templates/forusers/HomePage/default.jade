@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title=  'Dintair - '+ user.comp_name
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='theme-color' content='#008ae6')
+
+    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+    link(rel="icon" href="/images/dintair/dintaircover.png")
+    link(rel='stylesheet', href='/stylesheets/styleForHomePage.css')
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    link(rel="stylesheet" href="/fonts/style.css")
+    link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+    link(href="/cropImage/dist/rcrop.min.css" rel="stylesheet")
+    link(rel='stylesheet', type='text/css', href='/javascripts/lightbox/dist/css/lightbox.min.css')
+    link(href="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css" rel="stylesheet")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+    //Timepicker
+    link(href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css")
+    //timepicker
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+    script(src='/javascripts/Searching/search.js')
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src='/javascripts/navegadores/navjs.js')
+    script(src='/javascripts/lightbox/dist/js/lightbox-plus-jquery.min.js')
+
+    script(src="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.js")
+
+    script(src='/javascripts/recommends/detectinglink.js')
+
+    //Timepicker
+    script(src='/javascripts/timepicker/code1.min.js')
+    //timepicker
+
+    
+
+
+    
+   
+
+  body(onresize="myFunction()")
+    include nav
+  
+    block content
